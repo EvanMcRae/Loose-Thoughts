@@ -23,12 +23,15 @@ public class enemyThatMisses : Obstacle
     private float waitTime;
     public GameObject objectThatHasMovePositions;
     public bool roamsRandomly = false;
+    public float maxRotation;
+    private float startSpeed;
     // Start is called before the first frame update
     new void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         waitTime = startWaitTime;
         targetIndex = 0;
+        startSpeed = speed;
     }
 
     // Update is called once per frame
@@ -67,7 +70,7 @@ public class enemyThatMisses : Obstacle
                 }
                 else
                 {
-
+                    transform.rotation = Quaternion.Euler(0f, 0f, maxRotation * Mathf.Sin(Time.time * startSpeed));
                     waitTime -= Time.deltaTime;
                 }
             }

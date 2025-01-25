@@ -772,8 +772,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1924100058}
     - target: {fileID: 3964456937835837535, guid: ed5f999d4d2680943aba9eaf333617c7, type: 3}
+      propertyPath: maxRotation
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964456937835837535, guid: ed5f999d4d2680943aba9eaf333617c7, type: 3}
       propertyPath: roamsRandomly
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964456937835837535, guid: ed5f999d4d2680943aba9eaf333617c7, type: 3}
+      propertyPath: startWaitTime
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4722166534358750008, guid: ed5f999d4d2680943aba9eaf333617c7, type: 3}
       propertyPath: m_Icon
@@ -902,8 +910,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1924100058}
     - target: {fileID: 4244308260690417168, guid: 3c071f5313c888742b2a6bb95f30cebf, type: 3}
+      propertyPath: maxRotation
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4244308260690417168, guid: 3c071f5313c888742b2a6bb95f30cebf, type: 3}
       propertyPath: roamsRandomly
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4244308260690417168, guid: 3c071f5313c888742b2a6bb95f30cebf, type: 3}
+      propertyPath: startWaitTime
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5235048955977560054, guid: 3c071f5313c888742b2a6bb95f30cebf, type: 3}
       propertyPath: targetLocations.Array.size
@@ -1022,7 +1038,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8753197558162797832, guid: 91a246480cc3b4248bfc2eb198932535, type: 3}
       propertyPath: startWaitTime
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8753197558162797832, guid: 91a246480cc3b4248bfc2eb198932535, type: 3}
       propertyPath: verticalSpeed
@@ -1041,6 +1057,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5928425248190129654, guid: 452090926e2a9a24d9133b25147bf930, type: 3}
+      propertyPath: maxRotation
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5928425248190129654, guid: 452090926e2a9a24d9133b25147bf930, type: 3}
+      propertyPath: startWaitTime
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5928425248190129654, guid: 452090926e2a9a24d9133b25147bf930, type: 3}
       propertyPath: handleMovement
       value: 0

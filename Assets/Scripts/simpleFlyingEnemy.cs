@@ -21,11 +21,14 @@ public class simpleFlyingEnemy : Obstacle
     public float startWaitTime;
     private float waitTime;
     public bool roamsRandomly = false;
+    public float maxRotation;
+    private float startSpeed;
     // Start is called before the first frame update
     new void Start()
     {
         // targetVector = new Vector2(target.position.x, target.position.y, -8f)
         rb = GetComponent<Rigidbody2D>();
+        startSpeed = speed;
 
     }
 
@@ -70,7 +73,7 @@ public class simpleFlyingEnemy : Obstacle
                 }
                 else
                 {
-
+                    transform.rotation = Quaternion.Euler(0f, 0f, maxRotation * Mathf.Sin(Time.time * startSpeed));
                     waitTime -= Time.deltaTime;
                 }
             }

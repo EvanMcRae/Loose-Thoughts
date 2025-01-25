@@ -11,6 +11,8 @@ public class randomlyMovingEnemy : Obstacle
     private float waitTime;
 
     public GameObject objectThatHasMovePositions;
+    public float maxRotation;
+    private float startSpeed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     new void Start()
     {
@@ -18,6 +20,7 @@ public class randomlyMovingEnemy : Obstacle
 
         waitTime = startWaitTime;
         targetIndex = 0;
+        startSpeed = speed;
     }
 
     // Update is called once per frame
@@ -44,7 +47,7 @@ public class randomlyMovingEnemy : Obstacle
                 }
                 else
                 {
-
+                    transform.rotation = Quaternion.Euler(0f, 0f, maxRotation * Mathf.Sin(Time.time * startSpeed));
                     waitTime -= Time.deltaTime;
                 }
             }
