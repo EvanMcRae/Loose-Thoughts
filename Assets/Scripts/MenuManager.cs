@@ -1,6 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
@@ -38,8 +39,7 @@ public class MenuManager : MonoBehaviour
 
     public void Play()
     {
-        // TODO LOAD SCENE HERE!!
-        Debug.Log("start game");
+        SceneManager.LoadScene("SampleScene");
         busy = false;
     }
 
