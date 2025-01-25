@@ -13,6 +13,8 @@ public class Obstacle : MonoBehaviour
     // Update is called once per frame
     public virtual void Update()
     {
-        
+        //
+        transform.position -= Vector3.up * ZoneTracker.main.levelSpeed * Time.deltaTime;
+
     }
 }
