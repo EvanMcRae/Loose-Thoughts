@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="Loose Thoughts_WwiseProject" GUID="{340AA545-525F-4AF8-96F5-089EA461C539}" Generator="2023.1.4.8496"/>
+	<CacheRoot>../../../../Loose Thoughts_WwiseProject/.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Mac" GUID="{98FCB4C0-E4C3-4DC5-8A0A-4159C21CF342}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../../Loose Thoughts_WwiseProject/GeneratedSoundBanks/Mac"/>
+		<Platform Name="Windows" GUID="{BFE687E9-6324-47D3-AEBE-14FE42229F0B}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../../../Loose Thoughts_WwiseProject/GeneratedSoundBanks/Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{C6E97C2F-0580-4308-8469-02AB599D840E}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{86FA614F-AD8B-2BC0-87D3-41A74687340B}</FileHash>
+</ProjectInfo>

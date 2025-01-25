@@ -15,7 +15,7 @@ public class Crossfade : MonoBehaviour
     public Action PostFadeIn, PostFadeOut;
     public static bool over = false;
     public float speed = 1;
-    private Action currentAction;
+    private Action fadeInAction, fadeOutAction;
 
     void Start()
     {
@@ -52,7 +52,7 @@ public class Crossfade : MonoBehaviour
         if (animator.GetFloat("Speed") < 0)
         {
             PostFadeIn?.Invoke();
-            PostFadeIn -= currentAction;
+            PostFadeIn -= fadeInAction;
         }
     }
 
@@ -62,11 +62,17 @@ public class Crossfade : MonoBehaviour
         // ChangeScene.changingScene = false;
     }
 
+    public void EndFadeAction(Action action)
+    {
+        fadeOutAction = action;
+        PostFadeOut += fadeOutAction;
+    }
+
     public void StartFadeWithAction(Action action)
     {
         StartFade();
-        currentAction = action;
-        PostFadeIn += currentAction;
+        fadeInAction = action;
+        PostFadeIn += fadeInAction;
     }
 
     public void StartFade()
@@ -101,6 +107,7 @@ public class Crossfade : MonoBehaviour
             animator.SetFloat("Speed", 0);
             speed = 1;
             PostFadeOut?.Invoke();
+            PostFadeOut -= fadeOutAction;
         }        
     }
 }

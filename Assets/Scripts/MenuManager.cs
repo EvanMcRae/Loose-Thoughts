@@ -6,14 +6,22 @@ using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
     public GameObject startButton;
-    public GameObject selected;
-    public static bool busy = false;
+    public GameObject settingsButton, settingsExit, settingsPanel;
+    public GameObject creditsButton, creditsExit, creditsPanel;
+    public GameObject selected, prevSelected;
+    public static bool busy = false, firstopen = false, panelJustClosed = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         EventSystem.current.SetSelectedGameObject(startButton);
         selected = startButton;
+        Crossfade.current.EndFadeAction(FirstOpen);
+    }
+
+    void FirstOpen()
+    {
+        firstopen = true;
     }
 
     // Update is called once per frame
@@ -26,6 +34,11 @@ public class MenuManager : MonoBehaviour
             else
                 selected = EventSystem.current.currentSelectedGameObject;
         }
+    }
+
+    void LateUpdate()
+    {
+        panelJustClosed = false;
     }
 
     public void StartGame()
@@ -45,14 +58,30 @@ public class MenuManager : MonoBehaviour
 
     public void Settings()
     {
-        // TODO
-        Debug.Log("open settings");
+        if (busy) return;
+        settingsPanel.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(settingsExit);
+    }
+
+    public void ExitSettings()
+    {
+        SettingsManager.SaveSettings();
+        settingsPanel.SetActive(false);
+        panelJustClosed = true;
+        EventSystem.current.SetSelectedGameObject(settingsButton);
     }
 
     public void Credits()
     {
-        // TODO
-        Debug.Log("open credits");
+        if (busy) return;
+        creditsPanel.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(creditsExit);
+    }
+
+    public void ExitCredits()
+    {
+        creditsPanel.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(creditsButton);
     }
 
     public void QuitGame()
@@ -75,6 +104,6 @@ public class MenuManager : MonoBehaviour
 
     void OnApplicationQuit()
     {
-        // SettingsManager.SaveSettings();
+        SettingsManager.SaveSettings();
     }
 }
