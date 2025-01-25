@@ -37,11 +37,11 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="musicVolume" ID="{C9F6F561-3EA6-417D-97D1-A96ACAF864AA}"/>
-							<Value>50</Value>
+							<Value>63.1898971000935</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="masterVolume" ID="{639704D0-56A3-4677-90F9-7C1ADC0F9A3E}"/>
-							<Value>50</Value>
+							<Value>46.1646398503274</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="soundVolume" ID="{48D1E87B-8151-4B93-A9D2-32726E90694C}"/>
@@ -49,7 +49,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Gameplay" ID="{A977CE01-52BC-4F7A-9A9C-9B11A9541CCD}"/>
+						<CurrentStateRef Name="Title" ID="{9C3F13FF-9816-4B63-8621-B61B5B1926B2}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="U3" ID="{58C7DE4A-9978-49D0-933B-7D4CF96BBD09}"/>

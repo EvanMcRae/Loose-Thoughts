@@ -9,7 +9,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3497A94-FD36-46E7-B32B-9200EDCE2B05}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8EA3A0E1-F8AA-4AA1-8B92-9B8B4E64B3C4}"/>
+							<ObjectRef Name="Music" ID="{1E11374A-F518-491D-A86E-548487A7A3DF}" WorkUnitID="{8EA3A0E1-F8AA-4AA1-8B92-9B8B4E64B3C4}"/>
 						</Reference>
 						<Reference Name="TransitionRoot">
 							<Custom>
@@ -310,7 +310,7 @@
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-13</Value>
+														<Value>-1</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -400,6 +400,9 @@
 													<Reference>
 														<Local>
 															<EffectSlot Name="" ID="{E3EFC2A5-5978-4805-BCE2-63A284373A8D}" ShortID="500947781">
+																<PropertyList>
+																	<Property Name="Render" Type="bool" Value="True"/>
+																</PropertyList>
 																<ReferenceList>
 																	<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 																		<ObjectRef Name="Plate_Medium" ID="{33384D0C-6ACB-4E3D-AC82-73AAB3AE1CA5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
@@ -3627,7 +3630,7 @@
 																								<PointList>
 																									<Point>
 																										<XPos>0.4131</XPos>
-																										<YPos>-0</YPos>
+																										<YPos>0</YPos>
 																										<Flags>5</Flags>
 																									</Point>
 																									<Point>
@@ -12178,6 +12181,35 @@
 										</ObjectList>
 									</ObjectLists>
 								</MusicSegment>
+								<MusicSegment Name="a" ID="{FFB87CD5-F4F5-4AEA-B50B-8F9B166F2F5F}" ShortID="966585466">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3497A94-FD36-46E7-B32B-9200EDCE2B05}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8EA3A0E1-F8AA-4AA1-8B92-9B8B4E64B3C4}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{AF8A8DBA-57A6-4CD2-B4F4-F091AB173279}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{89DD400E-AD6B-4472-8C41-4EFD6B7C11DF}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="1000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
 							</ChildrenList>
 						</MusicPlaylistContainer>
 					</ChildrenList>
@@ -12241,7 +12273,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3497A94-FD36-46E7-B32B-9200EDCE2B05}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8EA3A0E1-F8AA-4AA1-8B92-9B8B4E64B3C4}"/>
+									<ObjectRef Name="Music" ID="{1E11374A-F518-491D-A86E-548487A7A3DF}" WorkUnitID="{8EA3A0E1-F8AA-4AA1-8B92-9B8B4E64B3C4}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>

@@ -20,18 +20,15 @@ State	ID	Name	State Group			Notes
 Trigger	ID	Name			Wwise Object Path	Notes
 	733168346	Game_Start			\Default Work Unit\Game_Start	
 
-Effect plug-ins	ID	Name	Type				Notes
-	1706684651	Plate_Medium	Wwise RoomVerb			
-
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	18099641	Connor Guitar Pluck-G	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Connor Guitar Pluck-G_80A622CF.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Connor Guitar Pluck-G		219296
 	425261551	Connor Guitar Pluck-D	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Connor Guitar Pluck-D_88DBC60B.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Connor Guitar Pluck-D		205500
 	545141983	GGJ2025-OpeningTrack-Demo	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\GGJ2025-OpeningTrack-Demo_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Title\GGJ2025-OpeningTrack-Demo\GGJ2025-OpeningTrack-Demo		11956280
-	596373593	Strings	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Title_ Select_Strings D_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Title\GGJ2025-OpeningTrack-Demo\Strings		970360
-	679026114	Strings	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Title_ Select_Strings A_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Title\GGJ2025-OpeningTrack-Demo\Strings		970360
+	596373593	Strings	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Title_ Select_Strings D_289BC6FA.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Title\GGJ2025-OpeningTrack-Demo\Strings		1310880
+	679026114	Strings	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Title_ Select_Strings A_289BC6FA.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Title\GGJ2025-OpeningTrack-Demo\Strings		1310880
 	711218583	Title_ Select_Strings G maj	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Title_ Select_Strings G maj_DC557B79.wem		\Interactive Music Hierarchy\Default Work Unit\Stingers\Title_ Select_Strings G maj\Title_ Select_Strings G maj		1826976
 	923698779	Connor Guitar Pluck-C	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Connor Guitar Pluck-C_AAF36A5A.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Connor Guitar Pluck-C		212256
-	962734265	Strings	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Title_ Select_Strings C_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Title\GGJ2025-OpeningTrack-Demo\Strings		970360
+	962734265	Strings	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Title_ Select_Strings C_289BC6FA.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Title\GGJ2025-OpeningTrack-Demo\Strings		1310880
 	1002566941	Connor Guitar Pluck-A	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Connor Guitar Pluck-A_80B71CAD.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Connor Guitar Pluck-A		223600
-	1011547132	Strings	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Title_ Select_Strings G_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Title\GGJ2025-OpeningTrack-Demo\Strings		970360
+	1011547132	Strings	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Title_ Select_Strings G_289BC6FA.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Title\GGJ2025-OpeningTrack-Demo\Strings		1310880
 

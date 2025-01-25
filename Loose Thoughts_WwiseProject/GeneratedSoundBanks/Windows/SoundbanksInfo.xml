@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E3B1F64A-178B-5BCF-8A7D-453F25948858}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A71A6FEA-1EAD-2B2A-6F88-C013F5208DCB}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -49,7 +49,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{DE2223E0-5DDD-AB79-8A40-2411AF8E217E}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{F9F5A7E5-9771-D2E6-6B64-D8F99E66B4BC}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -67,11 +67,11 @@
 				</File>
 				<File Id="596373593" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Title_ Select_Strings D.wav</ShortName>
-					<CachePath>SFX/Title_ Select_Strings D_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/Title_ Select_Strings D_289BC6FA.wem</CachePath>
 				</File>
 				<File Id="679026114" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Title_ Select_Strings A.wav</ShortName>
-					<CachePath>SFX/Title_ Select_Strings A_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/Title_ Select_Strings A_289BC6FA.wem</CachePath>
 				</File>
 				<File Id="711218583" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Title_ Select_Strings G maj.wav</ShortName>
@@ -83,7 +83,7 @@
 				</File>
 				<File Id="962734265" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Title_ Select_Strings C.wav</ShortName>
-					<CachePath>SFX/Title_ Select_Strings C_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/Title_ Select_Strings C_289BC6FA.wem</CachePath>
 				</File>
 				<File Id="1002566941" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Connor Guitar Pluck-A.wav</ShortName>
@@ -91,14 +91,9 @@
 				</File>
 				<File Id="1011547132" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Title_ Select_Strings G.wav</ShortName>
-					<CachePath>SFX/Title_ Select_Strings G_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/Title_ Select_Strings G_289BC6FA.wem</CachePath>
 				</File>
 			</Media>
-			<Plugins>
-				<ShareSets>
-					<Plugin Id="1706684651" Name="Plate_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
-				</ShareSets>
-			</Plugins>
 			<Events>
 				<Event Id="371673518" Name="Menuitem1" DurationType="OneShot" DurationMin="1.2426205" DurationMax="1.2426205">
 					<MediaRefs>
@@ -147,11 +142,6 @@
 								<MediaRef Id="962734265"/>
 								<MediaRef Id="1011547132"/>
 							</MediaRefs>
-							<PluginRefs>
-								<ShareSets>
-									<PluginRef Id="1706684651"/>
-								</ShareSets>
-							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="3991942870" Id="3705726509"/>
@@ -162,11 +152,6 @@
 								<MediaRef Id="962734265"/>
 								<MediaRef Id="1011547132"/>
 							</MediaRefs>
-							<PluginRefs>
-								<ShareSets>
-									<PluginRef Id="1706684651"/>
-								</ShareSets>
-							</PluginRefs>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -193,11 +178,6 @@
 								<MediaRef Id="962734265"/>
 								<MediaRef Id="1011547132"/>
 							</MediaRefs>
-							<PluginRefs>
-								<ShareSets>
-									<PluginRef Id="1706684651"/>
-								</ShareSets>
-							</PluginRefs>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -227,5 +207,5 @@
 			</Triggers>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{59E0B23A-FCB3-3CBC-07F0-612E0B9340F6}</FileHash>
+	<FileHash>{D8B02D82-994D-3D91-A4AF-42E8811B128A}</FileHash>
 </SoundBanksInfo>
