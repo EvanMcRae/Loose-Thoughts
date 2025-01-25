@@ -226,6 +226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7909459866135831325}
   - component: {fileID: 758768569280851647}
+  - component: {fileID: 6440766407906376322}
   m_Layer: 0
   m_Name: randomEnemy
   m_TagString: Untagged
@@ -270,6 +271,19 @@ MonoBehaviour:
   - {fileID: 7896635510054418488}
   - {fileID: 1960182126243420836}
   - {fileID: 2476946517565166958}
+--- !u!114 &6440766407906376322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7075103466334788645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a7a4e0b9832a8489a32ebd49c30697, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1 &8146120549275968757
 GameObject:
   m_ObjectHideFlags: 0

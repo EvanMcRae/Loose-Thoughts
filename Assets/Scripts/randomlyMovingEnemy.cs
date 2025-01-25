@@ -48,6 +48,7 @@ public class randomlyMovingEnemy : Obstacle
                 }
             }
         }
+        base.Update();
     }
 
     void OnTriggerEnter2D(Collider2D collision)

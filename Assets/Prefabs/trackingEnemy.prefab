@@ -53,6 +53,7 @@ MonoBehaviour:
   target: {fileID: 0}
   isRoaming: 1
   startWaitTime: 0
+  roamsRandomly: 0
 --- !u!58 &2298476907248777401
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -172,6 +173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6660806110155397481}
   - component: {fileID: 879712971494431724}
+  - component: {fileID: 1509095300079133558}
   m_Layer: 0
   m_Name: trackingEnemy
   m_TagString: Untagged
@@ -208,3 +210,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLocations: []
+--- !u!114 &1509095300079133558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6563675131645363478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a7a4e0b9832a8489a32ebd49c30697, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5

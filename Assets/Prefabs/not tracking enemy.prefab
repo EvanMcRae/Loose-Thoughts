@@ -162,6 +162,7 @@ MonoBehaviour:
   isRoaming: 1
   startWaitTime: 0
   objectThatHasMovePositions: {fileID: 9164108424144441770}
+  roamsRandomly: 0
 --- !u!1 &9164108424144441770
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,6 +173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3471730673742455748}
   - component: {fileID: 5235048955977560054}
+  - component: {fileID: 5872882465712121613}
   m_Layer: 0
   m_Name: not tracking enemy
   m_TagString: Untagged
@@ -208,3 +210,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLocations: []
+--- !u!114 &5872882465712121613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9164108424144441770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a7a4e0b9832a8489a32ebd49c30697, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5

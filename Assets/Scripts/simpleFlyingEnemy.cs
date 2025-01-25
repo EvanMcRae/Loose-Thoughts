@@ -92,7 +92,7 @@ public class simpleFlyingEnemy : Obstacle
         //        StartCoroutine(DestroyEnemy());
 
         //}
-
+        base.Update();
     }
 
 
