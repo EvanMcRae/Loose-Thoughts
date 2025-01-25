@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    
+    public float speed = 5f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public virtual void Start()
@@ -13,6 +13,8 @@ public class Obstacle : MonoBehaviour
     // Update is called once per frame
     public virtual void Update()
     {
-        
+        //
+        transform.position -= Vector3.up * ZoneTracker.main.levelSpeed * Time.deltaTime;
+
     }
 }
