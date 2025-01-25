@@ -24,12 +24,12 @@ public class BackgroundObject : MonoBehaviour
         
 
         //Delete if it has not been seen for 2 seconds and is below the camera (it always moves down so no chance its seen again)
-        if(killHeight > transform.position.y)
+        if(killHeight > transform.position.x)
         {
             Destroy(gameObject);
         }
 
-        transform.position -= Vector3.up * ZoneTracker.main.levelSpeed * Time.deltaTime;
+        transform.position -= Vector3.right * ZoneTracker.main.levelSpeed * Time.deltaTime;
     }
 }
 
