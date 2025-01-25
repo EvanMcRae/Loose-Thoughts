@@ -725,7 +725,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnedObstacles: []
-  FullsizeObstaclePool: []
+  FullsizeObstaclePool:
+  - prefab: {fileID: 6324564502087543378, guid: 0be3410ec4b242f4d9acb1dff35ba26e, type: 3}
+    chance: 1
   levelSpeed: 1
   bgObjects:
   - prefab: {fileID: 7231720069550683088, guid: 1c1e9473166f79449b52731811ad1cf7, type: 3}
@@ -1039,6 +1041,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5928425248190129654, guid: 452090926e2a9a24d9133b25147bf930, type: 3}
+      propertyPath: handleMovement
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7075103466334788645, guid: 452090926e2a9a24d9133b25147bf930, type: 3}
       propertyPath: m_Name
       value: randomEnemy

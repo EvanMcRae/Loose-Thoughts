@@ -4,6 +4,8 @@ public class Obstacle : MonoBehaviour
 {
     public float speed = 5f;
 
+    public bool handleMovement = true;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public virtual void Start()
     {
@@ -14,7 +16,8 @@ public class Obstacle : MonoBehaviour
     public virtual void Update()
     {
         //
-        transform.position -= Vector3.right * ZoneTracker.main.levelSpeed * Time.deltaTime;
+        if(handleMovement)
+            transform.position -= Vector3.right * ZoneTracker.main.levelSpeed * Time.deltaTime;
 
     }
 }
