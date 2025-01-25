@@ -14,7 +14,7 @@ public class Obstacle : MonoBehaviour
     public virtual void Update()
     {
         //
-        transform.position -= Vector3.up * ZoneTracker.main.levelSpeed * Time.deltaTime;
+        transform.position -= Vector3.right * ZoneTracker.main.levelSpeed * Time.deltaTime;
 
     }
 }

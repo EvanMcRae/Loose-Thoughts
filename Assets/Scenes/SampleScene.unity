@@ -725,6 +725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnedObstacles: []
+  FullsizeObstaclePool: []
   levelSpeed: 1
   bgObjects:
   - prefab: {fileID: 7231720069550683088, guid: 1c1e9473166f79449b52731811ad1cf7, type: 3}
@@ -733,8 +734,8 @@ MonoBehaviour:
   - prefab: {fileID: 7231720069550683088, guid: 1c1e9473166f79449b52731811ad1cf7, type: 3}
     backgroundLayer: 2
     chance: 2
-  BackgroundObjectFrequency: 5
-  obstacleSpawnHeight: 5
+  BackgroundObjectFrequency: 2
+  obstacleSpawnHeight: 4
   bgContainer: {fileID: 263748647}
 --- !u!1001 &1661852597
 PrefabInstance:

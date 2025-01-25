@@ -6,6 +6,9 @@ public class ZoneTracker : MonoBehaviour
 
     public List<Obstacle> spawnedObstacles = new List<Obstacle>();
 
+
+    public List<PremadeObstacle> FullsizeObstaclePool = new List<PremadeObstacle>();
+
     //Basically the fixed base speed of the player moving forwards
     //Used to scroll backgrounds and obstacles
     public float levelSpeed = 1;
@@ -37,6 +40,14 @@ public class ZoneTracker : MonoBehaviour
     //anxiety
 
 
+    public float lastObstacleEndPos
+    {
+        get
+        {
+            return spawnedObstacles[^1].transform.position.x + 1;
+        }
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -47,11 +58,24 @@ public class ZoneTracker : MonoBehaviour
     void Update()
     {
         MakeBackgroundElements();
+        ObstacleUpdate();
+    }
+
+
+    void ObstacleUpdate()
+    {
+
     }
 
     void MakeBackgroundElements()
     {
-        if(Random.Range(0f, 1f) < Time.deltaTime * BackgroundObjectFrequency)
+        //if(Random.Range(0f, 1f) < Time.deltaTime * BackgroundObjectFrequency)
+        //{
+        //    SpawnBackgroundObject();
+        //}
+
+        //Redone to allow for spawning more than one in a frame (will probably not actually change anything)
+        for(float i = Time.deltaTime * BackgroundObjectFrequency - Random.Range(0f, 1f); i > 0; i--)
         {
             SpawnBackgroundObject();
         }
@@ -65,9 +89,12 @@ public class ZoneTracker : MonoBehaviour
 
     public float GetBackgroundLayerStartOffset(float layer)
     {
-        
-        return 0;
+        //float slope = Mathf.Atan(34 * Mathf.Deg2Rad); //Gotten based off of Camera FOV
+        float slope = Mathf.Tan(Camera.main.fieldOfView/2 * Mathf.Deg2Rad); //Gotten based off of Camera FOV
+
+        return slope * 2 * GetBackgroundLayer(layer) * Camera.main.aspect;
     }
+
 
     void SpawnBackgroundObject()
     {
@@ -99,9 +126,13 @@ public class ZoneTracker : MonoBehaviour
         }
 
         //Need to better scale this range
-        float xPos = Random.Range(-5f, 5f);
+        //float xPos = Random.Range(-5f, 5f);
+        float playAreaWidth = GetBackgroundLayerStartOffset(chosenObject.backgroundLayer) / Camera.main.aspect;
+        float yPos = Random.Range(-playAreaWidth, playAreaWidth);
 
-        Instantiate(chosenObject.prefab, new Vector3(xPos, obstacleSpawnHeight + GetBackgroundLayerStartOffset(chosenObject.backgroundLayer), GetBackgroundLayer(chosenObject.backgroundLayer)), new Quaternion(), bgContainer.transform);
+        GameObject spawnedObj = Instantiate(chosenObject.prefab, new Vector3( obstacleSpawnHeight + GetBackgroundLayerStartOffset(chosenObject.backgroundLayer), yPos, GetBackgroundLayer(chosenObject.backgroundLayer)), new Quaternion(), bgContainer.transform);
+        BackgroundObject bgObj = spawnedObj.GetComponent<BackgroundObject>();
+        bgObj.bgLayer = chosenObject.backgroundLayer;
     }
 }
 
