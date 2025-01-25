@@ -14,6 +14,11 @@ public class ZoneTracker : MonoBehaviour
     //Basically the fixed base speed of the player moving forwards
     //Used to scroll backgrounds and obstacles
     public float levelSpeed = 1;
+    //tracks the fast forward state initiated by the player, how levelSpeed should be modified
+    private float levelSpeedMod = 1;
+    //possible values to mod the levelSpeed by
+    private float fastMod = 1.2f;
+    private float slowMod = .8f;
 
     public static ZoneTracker main;
 
@@ -57,6 +62,7 @@ public class ZoneTracker : MonoBehaviour
     void Start()
     {
         main = this;
+        levelSpeedMod = levelSpeed;
     }
 
     // Update is called once per frame
@@ -185,6 +191,19 @@ public class ZoneTracker : MonoBehaviour
         GameObject spawnedObj = Instantiate(chosenObject.prefab, new Vector3( obstacleSpawnHeight + GetBackgroundLayerStartOffset(chosenObject.backgroundLayer), yPos, GetBackgroundLayer(chosenObject.backgroundLayer)), new Quaternion(), bgContainer.transform);
         BackgroundObject bgObj = spawnedObj.GetComponent<BackgroundObject>();
         bgObj.bgLayer = chosenObject.backgroundLayer;
+    }
+
+    //modified speed based on current fast forward value
+    public void modSpeed(char horizontalDirection){
+        if(horizontalDirection == 'F'){
+            levelSpeedMod = levelSpeed * fastMod;
+        }
+        else if (horizontalDirection == 'S'){
+            levelSpeedMod = levelSpeed * slowMod;
+        }
+        else{
+            levelSpeedMod = levelSpeed;
+        }
     }
 }
 

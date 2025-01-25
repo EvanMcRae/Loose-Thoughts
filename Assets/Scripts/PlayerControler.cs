@@ -12,6 +12,8 @@ public class PlayerControler : MonoBehaviour
     //bounds for where player can move (most likely camera)
     private float xMin, xMax;
     private float yMin, yMax;
+
+    private ZoneTracker zoneTracker;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,11 +32,14 @@ public class PlayerControler : MonoBehaviour
         
         xMin = -camWidtht + spriteSize; // left bound
         xMax = camWidtht - spriteSize; // right bound 
+
+
+        zoneTracker = FindFirstObjectByType<ZoneTracker>();
     }
 
     void FixedUpdate()
     {
-        //float horizontal = Input.GetAxis("Horizontal");
+        float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
         //lock player to camera's bounds
@@ -59,6 +64,29 @@ public class PlayerControler : MonoBehaviour
             rb.AddForceY(vertical * speed);
         }
         
-        
+        speedChange(horizontal);
+
+        //if pushed to the left of the screen, die
+        if(transform.position.x == xMin){
+            die();
+        }
+    }
+
+    void speedChange(float horizontal){
+        if(zoneTracker != null){
+            if (horizontal < 0f){
+                zoneTracker.modSpeed('S');
+            }
+            else if(horizontal > 0f){
+                zoneTracker.modSpeed('F');
+            }
+            else{
+                zoneTracker.modSpeed('N');
+            }
+        }
+    }
+
+    public void die(){
+
     }
 }
