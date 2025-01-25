@@ -18,7 +18,6 @@ public class setMovingEnemy : Obstacle
 
     public float verticalSpeed;
     public float maxRotation;
-    float x = 0;
     private float startSpeed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     new void Start()
@@ -39,6 +38,7 @@ public class setMovingEnemy : Obstacle
         //}
         if (canMove)
         {
+            print("can move");
             Vector2 targetDirection = objectThatHasMovePositions.GetComponent<movePositions>().targetLocations[targetIndex].position - transform.position;
 
             float RotateSpeed = speed * Time.deltaTime;
@@ -58,8 +58,10 @@ public class setMovingEnemy : Obstacle
                 else
                 {
                     speed = 0;
+
                     transform.rotation = Quaternion.Euler(0f, 0f, maxRotation * Mathf.Sin(Time.time * startSpeed));
                     waitTime -= Time.deltaTime;
+
                 }
             }
         }
