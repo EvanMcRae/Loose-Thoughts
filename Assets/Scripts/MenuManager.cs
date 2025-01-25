@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -5,19 +6,11 @@ public class MenuManager : MonoBehaviour
 {
     public GameObject startButton;
     public GameObject selected;
-    public static MenuManager instance;
+    public static bool busy = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // Menu singleton
-        if (instance != this && instance != null)
-        {
-            Destroy(instance);
-        }
-        instance = this;
-        DontDestroyOnLoad(this);
-
         EventSystem.current.SetSelectedGameObject(startButton);
         selected = startButton;
     }
@@ -32,5 +25,56 @@ public class MenuManager : MonoBehaviour
             else
                 selected = EventSystem.current.currentSelectedGameObject;
         }
+    }
+
+    public void StartGame()
+    {
+        if (!busy)
+        {
+            Crossfade.current.StartFadeWithAction(Play);
+            busy = true;
+        }
+    }
+
+    public void Play()
+    {
+        // TODO LOAD SCENE HERE!!
+        Debug.Log("start game");
+        busy = false;
+    }
+
+    public void Settings()
+    {
+        // TODO
+        Debug.Log("open settings");
+    }
+
+    public void Credits()
+    {
+        // TODO
+        Debug.Log("open credits");
+    }
+
+    public void QuitGame()
+    {
+        if (!busy)
+        {
+            Crossfade.current.StartFadeWithAction(ExitGame);
+        }
+        busy = true;
+    }
+
+    void ExitGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
+    }
+
+    void OnApplicationQuit()
+    {
+        // SettingsManager.SaveSettings();
     }
 }
