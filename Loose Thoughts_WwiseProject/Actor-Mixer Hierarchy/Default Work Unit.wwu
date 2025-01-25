@@ -1,6 +1,229 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{3822598C-1B6F-4F5F-8111-27C36F5A9990}" SchemaVersion="119">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{3822598C-1B6F-4F5F-8111-27C36F5A9990}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{3822598C-1B6F-4F5F-8111-27C36F5A9990}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="UI" ID="{E809085B-C165-440E-BE78-219199851F6A}" ShortID="729719514">
+					<PropertyList>
+						<Property Name="MakeUpGain" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3497A94-FD36-46E7-B32B-9200EDCE2B05}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8EA3A0E1-F8AA-4AA1-8B92-9B8B4E64B3C4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Connor Guitar Pluck-A" ID="{EB573B2D-59EF-4AEC-8ACB-5D88A324C5E3}" ShortID="177239371">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3497A94-FD36-46E7-B32B-9200EDCE2B05}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8EA3A0E1-F8AA-4AA1-8B92-9B8B4E64B3C4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Connor Guitar Pluck-A" ID="{B4BC49F4-058D-4E27-B339-639A9D706946}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.883629572773062"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.128800242810989"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.39583518953304"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Connor Guitar Pluck-A.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1002566941"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Connor Guitar Pluck-A" ID="{B4BC49F4-058D-4E27-B339-639A9D706946}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Connor Guitar Pluck-C" ID="{8B722167-72C9-4D99-A146-AF4C03AADE83}" ShortID="347161596">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3497A94-FD36-46E7-B32B-9200EDCE2B05}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8EA3A0E1-F8AA-4AA1-8B92-9B8B4E64B3C4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Connor Guitar Pluck-C" ID="{DB99726A-2D68-4FF3-8349-D0417E22ADED}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.813987167138241"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.20272510184015"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Connor Guitar Pluck-C.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="923698779"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Connor Guitar Pluck-C" ID="{DB99726A-2D68-4FF3-8349-D0417E22ADED}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Connor Guitar Pluck-D" ID="{5F35CA6D-B6F5-41C7-A2EB-764A81BF2ECB}" ShortID="687986332">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3497A94-FD36-46E7-B32B-9200EDCE2B05}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8EA3A0E1-F8AA-4AA1-8B92-9B8B4E64B3C4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Connor Guitar Pluck-D" ID="{5884F5C5-3FEE-4F30-A628-C5C4EC17BFF0}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.752402022756004"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.16443170188429"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Connor Guitar Pluck-D.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="425261551"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Connor Guitar Pluck-D" ID="{5884F5C5-3FEE-4F30-A628-C5C4EC17BFF0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Connor Guitar Pluck-E" ID="{D6CCDE01-3A13-4897-8161-E9A14AEB25D9}" ShortID="642218334">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3497A94-FD36-46E7-B32B-9200EDCE2B05}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8EA3A0E1-F8AA-4AA1-8B92-9B8B4E64B3C4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Connor Guitar Pluck-E" ID="{5FB1D364-5022-4E2D-A9D8-E333226DD18D}">
+									<Language>SFX</Language>
+									<AudioFile>Connor Guitar Pluck-E.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="632957369"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Connor Guitar Pluck-E" ID="{5FB1D364-5022-4E2D-A9D8-E333226DD18D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Connor Guitar Pluck-G" ID="{CE2FCA36-5DF0-4BB8-AD9F-959817998B06}" ShortID="259149904">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3497A94-FD36-46E7-B32B-9200EDCE2B05}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8EA3A0E1-F8AA-4AA1-8B92-9B8B4E64B3C4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Connor Guitar Pluck-G" ID="{B5D42D10-70E5-466D-AC78-A91BFF90CB4C}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.725264884714948"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.381972839283206"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.62459334176148"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Connor Guitar Pluck-G.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="18099641"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Connor Guitar Pluck-G" ID="{B5D42D10-70E5-466D-AC78-A91BFF90CB4C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Ambience" ID="{55EEE614-6173-400A-AEC4-FCA7C5F094B5}" ShortID="216317867">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3497A94-FD36-46E7-B32B-9200EDCE2B05}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8EA3A0E1-F8AA-4AA1-8B92-9B8B4E64B3C4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Bubbles" ID="{FDCF8AC6-1422-4BC1-AE1A-A0FA091EA760}" ShortID="826632246">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3497A94-FD36-46E7-B32B-9200EDCE2B05}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8EA3A0E1-F8AA-4AA1-8B92-9B8B4E64B3C4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Background Pop" ID="{55ED2E67-0B23-4221-A057-E8E21FF65FDD}" ShortID="705942926">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3497A94-FD36-46E7-B32B-9200EDCE2B05}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8EA3A0E1-F8AA-4AA1-8B92-9B8B4E64B3C4}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

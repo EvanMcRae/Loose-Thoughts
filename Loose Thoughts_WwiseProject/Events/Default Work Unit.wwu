@@ -1,6 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}" SchemaVersion="119">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="UI" ID="{2369ED13-B457-43CA-82D3-3B7DB98E131C}" ShortID="974886477">
+					<ChildrenList>
+						<Event Name="Menuitem1" ID="{1F727CD9-3BC2-4DDA-A8B2-5A4BB548BBC5}">
+							<ChildrenList>
+								<Action Name="" ID="{6F269258-1AA5-4B65-B0DE-20F48F050A91}" ShortID="1004932323">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Connor Guitar Pluck-G" ID="{CE2FCA36-5DF0-4BB8-AD9F-959817998B06}" WorkUnitID="{3822598C-1B6F-4F5F-8111-27C36F5A9990}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AEC17BE1-6C5F-41A8-8B9D-17CB74C58DD3}" ShortID="331186854">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="U1" ID="{151E60F8-70C3-414A-8FE1-E5301DEB37B3}" WorkUnitID="{E3400DA3-3A67-4B8E-AE38-9D694EEED8EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Menuitem2" ID="{FB0E9C69-E020-4E69-959F-A1527AFA3A4B}">
+							<ChildrenList>
+								<Action Name="" ID="{E524E3F6-FB87-4991-9002-5F10923C6B78}" ShortID="861476470">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Connor Guitar Pluck-D" ID="{5F35CA6D-B6F5-41C7-A2EB-764A81BF2ECB}" WorkUnitID="{3822598C-1B6F-4F5F-8111-27C36F5A9990}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6440D002-37C2-4B39-A881-285D8438B639}" ShortID="939197443">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="U2" ID="{D03485B7-1810-4508-BF66-1AC85279D6E5}" WorkUnitID="{E3400DA3-3A67-4B8E-AE38-9D694EEED8EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Menuitem3" ID="{51BF5F4F-E766-446B-B518-101B37079EAF}">
+							<ChildrenList>
+								<Action Name="" ID="{3B1CB41C-C344-42CA-9305-92E91828EA22}" ShortID="850114687">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Connor Guitar Pluck-C" ID="{8B722167-72C9-4D99-A146-AF4C03AADE83}" WorkUnitID="{3822598C-1B6F-4F5F-8111-27C36F5A9990}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{DB57E337-CD0C-4840-9DE0-8EFF9E740E66}" ShortID="805099636">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="U3" ID="{58C7DE4A-9978-49D0-933B-7D4CF96BBD09}" WorkUnitID="{E3400DA3-3A67-4B8E-AE38-9D694EEED8EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Menuitem4" ID="{35C9532E-6C35-4B28-B3EA-A2A2BC9826DD}">
+							<ChildrenList>
+								<Action Name="" ID="{3E7A1C0F-0045-4DA3-84CE-70AB198380A8}" ShortID="77671094">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Connor Guitar Pluck-A" ID="{EB573B2D-59EF-4AEC-8ACB-5D88A324C5E3}" WorkUnitID="{3822598C-1B6F-4F5F-8111-27C36F5A9990}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{83440324-96E9-4AE8-8FDE-1D851CF729EC}" ShortID="982379194">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="U4" ID="{E476DE96-CC28-455C-B166-D2644DE54443}" WorkUnitID="{E3400DA3-3A67-4B8E-AE38-9D694EEED8EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Start_Game" ID="{5E037172-1E5B-419C-B65C-CDAD05724E8D}">
+							<ChildrenList>
+								<Action Name="" ID="{9311C8AE-57DB-42E2-B4B5-F6C6E7659FA9}" ShortID="539290402">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Game_Start" ID="{F9866FE5-32DA-4406-90C8-2076813CDECB}" WorkUnitID="{26C59C16-AE1D-4ED1-B88D-9BAB2B4B85B9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{39F41DE5-2329-4F2D-8F30-2AB83841DA72}" ShortID="19818179">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Gameplay" ID="{A977CE01-52BC-4F7A-9A9C-9B11A9541CCD}" WorkUnitID="{DE946377-8BDB-4C86-9274-C8B82FE7A1C0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{75361D8B-D9A6-45FD-8C0C-D4F6F57244FC}" ShortID="999997589">
+					<ChildrenList>
+						<Event Name="stop_music" ID="{0070EBE0-3A57-4C86-B688-58DD1855327E}">
+							<ChildrenList>
+								<Action Name="" ID="{1D4A1763-6691-4449-8829-4480CBF8BF32}" ShortID="171835936">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{7ABB7A3D-015A-4CFB-BBC9-59B2A2F4D777}" WorkUnitID="{DF5606BA-BE2A-47F1-8475-ED5D6F8DB6A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="play_music" ID="{98883931-5EE3-4DC0-9943-3150D7A46196}">
+							<ChildrenList>
+								<Action Name="" ID="{0F5E5BF9-8AFD-4332-895B-7D53F9B27773}" ShortID="321566444">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{7ABB7A3D-015A-4CFB-BBC9-59B2A2F4D777}" WorkUnitID="{DF5606BA-BE2A-47F1-8475-ED5D6F8DB6A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="pause" ID="{7BEA60C8-0EA4-4DB6-9216-8469C9432BC8}"/>
+						<Event Name="resume" ID="{3BE74B7F-4FC7-469A-AB24-90C48FA80413}"/>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

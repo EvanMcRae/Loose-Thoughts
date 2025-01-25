@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{E3400DA3-3A67-4B8E-AE38-9D694EEED8EB}" SchemaVersion="119">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{E3400DA3-3A67-4B8E-AE38-9D694EEED8EB}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{E3400DA3-3A67-4B8E-AE38-9D694EEED8EB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="UI" ID="{AE304033-0F7E-43DC-8F17-B1A3DFF3DC44}" ShortID="252026542">
+					<ChildrenList>
+						<SwitchGroup Name="UISelection" ID="{1F26EE6B-6AE3-4EC4-BB54-A54C79ED1E7B}">
+							<ChildrenList>
+								<Switch Name="U1" ID="{151E60F8-70C3-414A-8FE1-E5301DEB37B3}"/>
+								<Switch Name="U2" ID="{D03485B7-1810-4508-BF66-1AC85279D6E5}"/>
+								<Switch Name="U3" ID="{58C7DE4A-9978-49D0-933B-7D4CF96BBD09}"/>
+								<Switch Name="U4" ID="{E476DE96-CC28-455C-B166-D2644DE54443}"/>
+								<Switch Name="Play" ID="{1CAC5C57-6016-4D5C-8467-79BD8128D008}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

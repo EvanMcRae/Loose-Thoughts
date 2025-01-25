@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{3FC333BC-C70B-4113-99C0-F9906804F449}" SchemaVersion="119">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{3FC333BC-C70B-4113-99C0-F9906804F449}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{3FC333BC-C70B-4113-99C0-F9906804F449}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="TitleScreen" ID="{AF90927B-EFBA-40A5-A22F-00C69C98861A}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Menuitem1" ID="{1F727CD9-3BC2-4DDA-A8B2-5A4BB548BBC5}" WorkUnitID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Start_Game" ID="{5E037172-1E5B-419C-B65C-CDAD05724E8D}" WorkUnitID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_music" ID="{98883931-5EE3-4DC0-9943-3150D7A46196}" WorkUnitID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Menuitem2" ID="{FB0E9C69-E020-4E69-959F-A1527AFA3A4B}" WorkUnitID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="stop_music" ID="{0070EBE0-3A57-4C86-B688-58DD1855327E}" WorkUnitID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Menuitem3" ID="{51BF5F4F-E766-446B-B518-101B37079EAF}" WorkUnitID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Menuitem4" ID="{35C9532E-6C35-4B28-B3EA-A2A2BC9826DD}" WorkUnitID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Gameplay" ID="{A977CE01-52BC-4F7A-9A9C-9B11A9541CCD}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="U3" ID="{58C7DE4A-9978-49D0-933B-7D4CF96BBD09}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
