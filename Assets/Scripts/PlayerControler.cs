@@ -18,7 +18,8 @@ public class PlayerControler : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        var spriteSize = GetComponent<SpriteRenderer>().bounds.size.x * .5f;
+        var spriteSize = GetComponent<BoxCollider2D>().size.x * .5f;
+        //GetComponent<SpriteRenderer>().bounds.size.x * .5f;
 
         var cam = Camera.main;// Camera component to get their size, if this change in runtime make sure to update values
         var camHeight = (transform.position.z - cam.transform.position.z) * Mathf.Tan(cam.fieldOfView * 0.5f * Mathf.Deg2Rad);
@@ -27,8 +28,8 @@ public class PlayerControler : MonoBehaviour
         //var camHeight = cam.orthographicSize;
         //var camWidtht = cam.orthographicSize * cam.aspect;
 
-        yMin = -camHeight + spriteSize; // lower bound
-        yMax = camHeight - spriteSize; // upper bound
+        yMin = -camHeight + spriteSize - GetComponent<BoxCollider2D>().offset.y * .5f; // lower bound
+        yMax = camHeight - spriteSize - GetComponent<BoxCollider2D>().offset.y * .5f; // upper bound
         
         xMin = -camWidtht + spriteSize; // left bound
         xMax = camWidtht - spriteSize; // right bound 
