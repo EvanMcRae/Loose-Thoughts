@@ -58,6 +58,13 @@ namespace AK
 
     } // namespace SWITCHES
 
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID MASTERVOLUME = 2918011349U;
+        static const AkUniqueID MUSICVOLUME = 2346531308U;
+        static const AkUniqueID SOUNDVOLUME = 3873835272U;
+    } // namespace GAME_PARAMETERS
+
     namespace TRIGGERS
     {
         static const AkUniqueID GAME_START = 733168346U;
@@ -72,6 +79,8 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID SFX = 393239870U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES
