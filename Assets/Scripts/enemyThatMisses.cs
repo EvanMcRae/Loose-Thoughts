@@ -67,6 +67,7 @@ public class enemyThatMisses : Obstacle
                 }
                 else
                 {
+
                     waitTime -= Time.deltaTime;
                 }
             }

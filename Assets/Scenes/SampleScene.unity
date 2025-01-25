@@ -1006,6 +1006,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: setPatternEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 8753197558162797832, guid: 91a246480cc3b4248bfc2eb198932535, type: 3}
+      propertyPath: amplitude
+      value: 4.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 8753197558162797832, guid: 91a246480cc3b4248bfc2eb198932535, type: 3}
+      propertyPath: frequency
+      value: 6.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 8753197558162797832, guid: 91a246480cc3b4248bfc2eb198932535, type: 3}
+      propertyPath: maxRotation
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8753197558162797832, guid: 91a246480cc3b4248bfc2eb198932535, type: 3}
+      propertyPath: startWaitTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8753197558162797832, guid: 91a246480cc3b4248bfc2eb198932535, type: 3}
+      propertyPath: verticalSpeed
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

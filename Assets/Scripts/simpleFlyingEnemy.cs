@@ -70,6 +70,7 @@ public class simpleFlyingEnemy : Obstacle
                 }
                 else
                 {
+
                     waitTime -= Time.deltaTime;
                 }
             }
@@ -92,7 +93,6 @@ public class simpleFlyingEnemy : Obstacle
         //        StartCoroutine(DestroyEnemy());
 
         //}
-        base.Update();
     }
 
 

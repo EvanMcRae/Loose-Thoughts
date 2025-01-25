@@ -44,11 +44,11 @@ public class randomlyMovingEnemy : Obstacle
                 }
                 else
                 {
+
                     waitTime -= Time.deltaTime;
                 }
             }
         }
-        base.Update();
     }
 
     void OnTriggerEnter2D(Collider2D collision)
