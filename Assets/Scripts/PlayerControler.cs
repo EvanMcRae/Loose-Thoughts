@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerControler : MonoBehaviour
 {
@@ -87,7 +88,20 @@ public class PlayerControler : MonoBehaviour
         }
     }
 
-    public void die(){
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        die();
+    }
 
+    public void die(){
+        Time.timeScale = 0;
+
+        ReloadScene();
+    }
+
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene("SampleScene");
+        Time.timeScale = 1;
     }
 }
