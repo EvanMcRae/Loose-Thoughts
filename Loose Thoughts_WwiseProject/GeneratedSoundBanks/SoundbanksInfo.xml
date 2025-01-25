@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>..</ProjectRoot>
+		<SourceFilesRoot>../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{5B52E234-43B3-82A6-8784-7401D1C9A9D8}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+			<StateGroups>
+				<StateGroup Id="3991942870" Name="Music">
+					<States>
+						<State Id="89505537" Name="Gameplay"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="3705726509" Name="Title"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="2454203527" Name="UISelection">
+					<Switches>
+						<Switch Id="1256202815" Name="Play"/>
+						<Switch Id="1551306218" Name="U4"/>
+						<Switch Id="1551306220" Name="U2"/>
+						<Switch Id="1551306221" Name="U3"/>
+						<Switch Id="1551306223" Name="U1"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{DE2223E0-5DDD-AB79-8A40-2411AF8E217E}">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<Media>
+				<File Id="18099641" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Connor Guitar Pluck-G.wav</ShortName>
+					<CachePath>SFX/Connor Guitar Pluck-G_80A622CF.wem</CachePath>
+				</File>
+				<File Id="425261551" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Connor Guitar Pluck-D.wav</ShortName>
+					<CachePath>SFX/Connor Guitar Pluck-D_88DBC60B.wem</CachePath>
+				</File>
+				<File Id="545141983" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GGJ2025-OpeningTrack-Demo.wav</ShortName>
+					<CachePath>SFX/GGJ2025-OpeningTrack-Demo_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="596373593" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Title_ Select_Strings D.wav</ShortName>
+					<CachePath>SFX/Title_ Select_Strings D_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="679026114" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Title_ Select_Strings A.wav</ShortName>
+					<CachePath>SFX/Title_ Select_Strings A_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="711218583" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Title_ Select_Strings G maj.wav</ShortName>
+					<CachePath>SFX/Title_ Select_Strings G maj_DC557B79.wem</CachePath>
+				</File>
+				<File Id="923698779" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Connor Guitar Pluck-C.wav</ShortName>
+					<CachePath>SFX/Connor Guitar Pluck-C_AAF36A5A.wem</CachePath>
+				</File>
+				<File Id="962734265" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Title_ Select_Strings C.wav</ShortName>
+					<CachePath>SFX/Title_ Select_Strings C_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="1002566941" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Connor Guitar Pluck-A.wav</ShortName>
+					<CachePath>SFX/Connor Guitar Pluck-A_80B71CAD.wem</CachePath>
+				</File>
+				<File Id="1011547132" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Title_ Select_Strings G.wav</ShortName>
+					<CachePath>SFX/Title_ Select_Strings G_FBC78EF0.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="1706684651" Name="Plate_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+			</Plugins>
+			<Events>
+				<Event Id="371673518" Name="Menuitem1" DurationType="OneShot" DurationMin="1.2426205" DurationMax="1.2426205">
+					<MediaRefs>
+						<MediaRef Id="18099641"/>
+					</MediaRefs>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="2454203527" Id="1551306223" Name="U1"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="371673517" Name="Menuitem2" DurationType="OneShot" DurationMin="1.1644317" DurationMax="1.1644317">
+					<MediaRefs>
+						<MediaRef Id="425261551"/>
+					</MediaRefs>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="2454203527" Id="1551306220" Name="U2"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="371673516" Name="Menuitem3" DurationType="OneShot" DurationMin="1.202725" DurationMax="1.202725">
+					<MediaRefs>
+						<MediaRef Id="923698779"/>
+					</MediaRefs>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="2454203527" Id="1551306221" Name="U3"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="371673515" Name="Menuitem4" DurationType="OneShot" DurationMin="1.2670349" DurationMax="1.2670349">
+					<MediaRefs>
+						<MediaRef Id="1002566941"/>
+					</MediaRefs>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="2454203527" Id="1551306218" Name="U4"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="3092587493" Name="pause" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2932040671" Name="play_music" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="711218583"/>
+					</MediaRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3991942870" Id="3705726509"/>
+							<MediaRefs>
+								<MediaRef Id="545141983"/>
+								<MediaRef Id="596373593"/>
+								<MediaRef Id="679026114"/>
+								<MediaRef Id="962734265"/>
+								<MediaRef Id="1011547132"/>
+							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="1706684651"/>
+								</ShareSets>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3991942870" Id="3705726509"/>
+							<MediaRefs>
+								<MediaRef Id="545141983"/>
+								<MediaRef Id="596373593"/>
+								<MediaRef Id="679026114"/>
+								<MediaRef Id="962734265"/>
+								<MediaRef Id="1011547132"/>
+							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="1706684651"/>
+								</ShareSets>
+							</PluginRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="953277036" Name="resume" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1114964412" Name="Start_Game" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3991942870" Id="89505537" Name="Gameplay"/>
+					</ActionSetState>
+					<ActionTrigger>
+						<ActionTriggerEntry Id="733168346" Name="Game_Start"/>
+					</ActionTrigger>
+				</Event>
+				<Event Id="2837384057" Name="stop_music" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<MediaRefs>
+						<MediaRef Id="711218583"/>
+					</MediaRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3991942870" Id="3705726509"/>
+							<MediaRefs>
+								<MediaRef Id="545141983"/>
+								<MediaRef Id="596373593"/>
+								<MediaRef Id="679026114"/>
+								<MediaRef Id="962734265"/>
+								<MediaRef Id="1011547132"/>
+							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="1706684651"/>
+								</ShareSets>
+							</PluginRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</Events>
+			<StateGroups>
+				<StateGroup Id="3991942870" Name="Music">
+					<States>
+						<State Id="89505537" Name="Gameplay"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="3705726509" Name="Title"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="2454203527" Name="UISelection">
+					<Switches>
+						<Switch Id="1256202815" Name="Play"/>
+						<Switch Id="1551306218" Name="U4"/>
+						<Switch Id="1551306220" Name="U2"/>
+						<Switch Id="1551306221" Name="U3"/>
+						<Switch Id="1551306223" Name="U1"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+			<Triggers>
+				<Trigger Id="733168346" Name="Game_Start"/>
+			</Triggers>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{8C07B1D0-9364-F0BD-1CBE-10B0E23F882D}</FileHash>
+</SoundBanksInfo>
