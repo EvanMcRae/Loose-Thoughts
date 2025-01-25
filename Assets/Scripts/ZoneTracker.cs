@@ -51,7 +51,13 @@ public class ZoneTracker : MonoBehaviour
 
     void MakeBackgroundElements()
     {
-        if(Random.Range(0f, 1f) < Time.deltaTime * BackgroundObjectFrequency)
+        //if(Random.Range(0f, 1f) < Time.deltaTime * BackgroundObjectFrequency)
+        //{
+        //    SpawnBackgroundObject();
+        //}
+
+        //Redone to allow for spawning more than one in a frame (will probably not actually change anything)
+        for(float i = Time.deltaTime * BackgroundObjectFrequency - Random.Range(0f, 1f); i > 0; i--)
         {
             SpawnBackgroundObject();
         }
@@ -65,9 +71,12 @@ public class ZoneTracker : MonoBehaviour
 
     public float GetBackgroundLayerStartOffset(float layer)
     {
-        
-        return 0;
+        //float slope = Mathf.Atan(34 * Mathf.Deg2Rad); //Gotten based off of Camera FOV
+        float slope = Mathf.Tan(Camera.main.fieldOfView/2 * Mathf.Deg2Rad); //Gotten based off of Camera FOV
+
+        return slope * 2 * GetBackgroundLayer(layer);
     }
+
 
     void SpawnBackgroundObject()
     {
@@ -99,9 +108,14 @@ public class ZoneTracker : MonoBehaviour
         }
 
         //Need to better scale this range
-        float xPos = Random.Range(-5f, 5f);
+        //float xPos = Random.Range(-5f, 5f);
+        float playAreaWidth = GetBackgroundLayerStartOffset(chosenObject.backgroundLayer) * Camera.main.aspect;
+        float xPos = Random.Range(-playAreaWidth, playAreaWidth);
 
-        Instantiate(chosenObject.prefab, new Vector3(xPos, obstacleSpawnHeight + GetBackgroundLayerStartOffset(chosenObject.backgroundLayer), GetBackgroundLayer(chosenObject.backgroundLayer)), new Quaternion(), bgContainer.transform);
+        GameObject spawnedObj = Instantiate(chosenObject.prefab, new Vector3(xPos, obstacleSpawnHeight + GetBackgroundLayerStartOffset(chosenObject.backgroundLayer), GetBackgroundLayer(chosenObject.backgroundLayer)), new Quaternion(), bgContainer.transform);
+        BackgroundObject bgObj = spawnedObj.GetComponent<BackgroundObject>();
+
+        bgObj.bgLayer = chosenObject.backgroundLayer;
     }
 }
 
