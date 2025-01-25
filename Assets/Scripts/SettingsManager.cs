@@ -13,7 +13,7 @@ public class SettingsManager : MonoBehaviour
     [SerializeField] private Slider masterSlider, musicSlider, soundSlider, qualitySlider;
     [SerializeField] private TextMeshProUGUI masterValue, musicValue, soundValue, qualityValue;
     [SerializeField] private Toggle fullScreenToggle, vSyncToggle;
-    // [SerializeField] private AK.Wwise.Event MenuAdjust, MenuAdjustStop, MenuClick;
+    [SerializeField] private AK.Wwise.Event MenuAdjust, MenuAdjustStop, MenuClick;
 
     void Awake()
     {
@@ -67,15 +67,15 @@ public class SettingsManager : MonoBehaviour
     public void StartAdjust()
     {
         if (MenuButton.pleaseNoSound) return;
-        // MenuClick.Post(gameObject);
-        // MenuAdjust.Post(gameObject);
+        MenuClick.Post(gameObject);
+        MenuAdjust.Post(gameObject);
     }
 
     public void StopAdjust()
     {
         if (MenuButton.pleaseNoSound) return;
-        // MenuAdjustStop.Post(gameObject);
-        // MenuClick.Post(gameObject);
+        MenuAdjustStop.Post(gameObject);
+        MenuClick.Post(gameObject);
     }
 
     public void UpdateMusicVolume(bool user)
@@ -115,8 +115,8 @@ public class SettingsManager : MonoBehaviour
         if (user)
         {
             currentSettings.fullScreen = fullScreenToggle.isOn;
-            // if (!MenuButton.pleaseNoSound)
-                // MenuClick?.Post(gameObject);
+            if (!MenuButton.pleaseNoSound)
+                MenuClick?.Post(gameObject);
         }
         else
             fullScreenToggle.isOn = currentSettings.fullScreen;
@@ -141,8 +141,8 @@ public class SettingsManager : MonoBehaviour
         if (user)
         {
             currentSettings.vSync = vSyncToggle.isOn;
-            // if (!MenuButton.pleaseNoSound)
-            //     MenuClick?.Post(gameObject);
+            if (!MenuButton.pleaseNoSound)
+                MenuClick?.Post(gameObject);
         }
         else
             vSyncToggle.isOn = currentSettings.vSync;

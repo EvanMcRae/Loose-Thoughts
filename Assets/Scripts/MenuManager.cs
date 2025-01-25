@@ -8,7 +8,7 @@ public class MenuManager : MonoBehaviour
     public GameObject startButton;
     public GameObject settingsButton, settingsExit, settingsPanel;
     public GameObject creditsButton, creditsExit, creditsPanel;
-    public GameObject selected, prevSelected;
+    private GameObject selected;
     public static bool busy = false, firstopen = false, panelJustClosed = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
