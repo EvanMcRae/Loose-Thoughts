@@ -7,8 +7,10 @@ public class ZoneTracker : MonoBehaviour
     public List<Obstacle> spawnedObstacles = new List<Obstacle>();
 
 
-    public List<PremadeObstacle> FullsizeObstaclePool = new List<PremadeObstacle>();
+    public List<ObstacleSpawnData> FullsizeObstaclePool = new List<ObstacleSpawnData>();
 
+
+    List<PremadeObstacle> placedFullSizeObstacles = new List<PremadeObstacle>();
     //Basically the fixed base speed of the player moving forwards
     //Used to scroll backgrounds and obstacles
     public float levelSpeed = 1;
@@ -44,7 +46,10 @@ public class ZoneTracker : MonoBehaviour
     {
         get
         {
-            return spawnedObstacles[^1].transform.position.x + 1;
+            if (placedFullSizeObstacles.Count > 0)
+                return placedFullSizeObstacles[^1].transform.position.x + placedFullSizeObstacles[^1].size / 2;
+            else
+                return obstacleSpawnHeight;
         }
     }
 
@@ -64,7 +69,54 @@ public class ZoneTracker : MonoBehaviour
 
     void ObstacleUpdate()
     {
+        if(placedFullSizeObstacles.Count == 0 || lastObstacleEndPos < obstacleSpawnHeight + 1)
+        {
+            if (FullsizeObstaclePool.Count == 0)
+            {
+                Debug.LogError("There are no obstacles in the pool");
+                return;
+            }
 
+            GameObject obsToSpawn = GetRandomFullSizeObstacle();
+            float width = obsToSpawn.GetComponent<PremadeObstacle>().size;
+
+            GameObject addedObj = Instantiate(obsToSpawn, new Vector3(lastObstacleEndPos + width / 2, 0, 0), new Quaternion());
+            placedFullSizeObstacles.Add(addedObj.GetComponent<PremadeObstacle>());
+
+
+            if(placedFullSizeObstacles[0].transform.position.x + placedFullSizeObstacles[0].size < -obstacleSpawnHeight)
+            {
+                Destroy(placedFullSizeObstacles[0].gameObject);
+                placedFullSizeObstacles.RemoveAt(0);
+            }
+
+        }
+    }
+
+    GameObject GetRandomFullSizeObstacle()
+    {
+        float MaxChance = 0;
+
+        for (int i = 0; i < FullsizeObstaclePool.Count; i++)
+        {
+            MaxChance += FullsizeObstaclePool[i].chance;
+        }
+
+        float randVal = Random.Range(0, MaxChance);
+        float partialChanceRange = 0;
+
+        ObstacleSpawnData chosenObject = FullsizeObstaclePool[0];
+
+        for (int i = 0; i < FullsizeObstaclePool.Count; i++)
+        {
+            if (FullsizeObstaclePool[i].chance + partialChanceRange >= randVal && randVal > partialChanceRange)
+            {
+                chosenObject = FullsizeObstaclePool[i];
+            }
+            partialChanceRange += FullsizeObstaclePool[i].chance;
+        }
+
+        return chosenObject.prefab;
     }
 
     void MakeBackgroundElements()
@@ -92,7 +144,7 @@ public class ZoneTracker : MonoBehaviour
         //float slope = Mathf.Atan(34 * Mathf.Deg2Rad); //Gotten based off of Camera FOV
         float slope = Mathf.Tan(Camera.main.fieldOfView/2 * Mathf.Deg2Rad); //Gotten based off of Camera FOV
 
-        return slope * 2 * GetBackgroundLayer(layer) * Camera.main.aspect;
+        return slope * 2 * (GetBackgroundLayer(layer) + 5) * Camera.main.aspect;
     }
 
 
@@ -141,6 +193,13 @@ public class BGObjectSpawnInfo
 {
     public GameObject prefab;
     public int backgroundLayer;
+    public float chance;
+}
+
+[System.Serializable]
+public class ObstacleSpawnData
+{
+    public GameObject prefab;
     public float chance;
 }
 
