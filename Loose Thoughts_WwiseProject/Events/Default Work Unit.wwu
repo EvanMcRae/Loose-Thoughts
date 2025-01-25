@@ -142,8 +142,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="pause" ID="{7BEA60C8-0EA4-4DB6-9216-8469C9432BC8}"/>
-						<Event Name="resume" ID="{3BE74B7F-4FC7-469A-AB24-90C48FA80413}"/>
+						<Event Name="pause" ID="{7BEA60C8-0EA4-4DB6-9216-8469C9432BC8}">
+							<ChildrenList>
+								<Action Name="" ID="{2DE4B80C-7929-4F1E-A615-C1E28F016C9E}" ShortID="26202131">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="8"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="resume" ID="{3BE74B7F-4FC7-469A-AB24-90C48FA80413}">
+							<ChildrenList>
+								<Action Name="" ID="{6BF2991D-EC5C-405C-8CA9-755A1B23A852}" ShortID="83351311">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="10"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
