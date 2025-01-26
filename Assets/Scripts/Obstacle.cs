@@ -3,13 +3,14 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     public float speed = 5f;
-
+    public Vector3 targetPlayer;
     public bool handleMovement = true;
+    public float currentDistanceBehindPlayer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public virtual void Start()
     {
-        
+        targetPlayer = GameObject.FindWithTag("Player").transform.position;
     }
 
     // Update is called once per frame
@@ -20,5 +21,8 @@ public class Obstacle : MonoBehaviour
         if (handleMovement)
             transform.position -= Vector3.right * ZoneTracker.main.levelSpeed * Time.deltaTime;
 
+        targetPlayer = GameObject.FindWithTag("Player").transform.position;
+        currentDistanceBehindPlayer = Vector2.Distance(transform.position, targetPlayer);
+        AkSoundEngine.SetRTPCValue("emotionDistance", currentDistanceBehindPlayer, gameObject);
     }
 }

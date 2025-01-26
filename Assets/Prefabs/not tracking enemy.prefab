@@ -94,7 +94,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -159,7 +159,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  targetPlayer: {x: 0, y: 0, z: 0}
   handleMovement: 1
+  currentDistanceBehindPlayer: 0
   cc: {fileID: 6212324496023939962}
   player: {fileID: 0}
   isRoaming: 1
@@ -304,4 +306,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  targetPlayer: {x: 0, y: 0, z: 0}
   handleMovement: 1
+  currentDistanceBehindPlayer: 0
