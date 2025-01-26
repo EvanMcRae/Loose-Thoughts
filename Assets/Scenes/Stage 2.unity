@@ -861,7 +861,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1401697874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1011,9 +1011,10 @@ MonoBehaviour:
   ZoneStartTime: 0
   xMidDeadzonePercent: 0.55
   bgColors:
-  - {r: 0.38039213, g: 0.8997731, b: 0.9882353, a: 0.6313726}
-  - {r: 0.52122396, g: 1, b: 0.5137255, a: 0.59607846}
-  - {r: 0.96862745, g: 0.6117647, b: 0.8834588, a: 0.5568628}
+  - {r: 0.99371064, g: 0.9749412, b: 0.57810205, a: 0.41960785}
+  - {r: 1, g: 0.9840033, b: 0.71383643, a: 0.42352942}
+  - {r: 1, g: 0.91109866, b: 0.54509807, a: 0.48235294}
+  - {r: 1, g: 0.9570364, b: 0.48113197, a: 0.39215687}
   currentScene: Stage 2
   nextScene: Stage 3
   finishStarted: 0
@@ -1194,7 +1195,7 @@ Animator:
   m_GameObject: {fileID: 1753609286}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9f23d1a974491404eb1e3d47769be1c4, type: 2}
+  m_Controller: {fileID: 9100000, guid: d3125affa9d51d747ae44eccf53e9e90, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
