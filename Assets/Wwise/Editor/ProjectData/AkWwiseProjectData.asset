@@ -148,8 +148,120 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 80af74e9e6a31440a44699de10b7d3b7
     GuidInternal: 
-    m_lastTime: -8584636895049273064
+    m_lastTime: -8584636854879405234
     List:
+    - name: Enemy
+      guid: d564c1a73e4e6849be2e9c9e18582268
+      id: 2299321487
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 80af74e9e6a31440a44699de10b7d3b7
+      - ElementName: Gameplay
+        ObjectType: 4
+        guid: f48060d332bc73418ca22a278c7954ca
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: d564c1a73e4e6849be2e9c9e18582268
+      Path: Events\Default Work Unit\Gameplay\Enemy
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Enemy1
+      guid: 2180e366e517234b86bd7c61efcdb1bd
+      id: 1312765228
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 80af74e9e6a31440a44699de10b7d3b7
+      - ElementName: Gameplay
+        ObjectType: 4
+        guid: f48060d332bc73418ca22a278c7954ca
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: d564c1a73e4e6849be2e9c9e18582268
+      - ElementName: Enemy1
+        ObjectType: 3
+        guid: 2180e366e517234b86bd7c61efcdb1bd
+      Path: Events\Default Work Unit\Gameplay\Enemy\Enemy1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Enemy2
+      guid: adb54d379670774f8cb9710c0aebcd00
+      id: 1312765231
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 80af74e9e6a31440a44699de10b7d3b7
+      - ElementName: Gameplay
+        ObjectType: 4
+        guid: f48060d332bc73418ca22a278c7954ca
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: d564c1a73e4e6849be2e9c9e18582268
+      - ElementName: Enemy2
+        ObjectType: 3
+        guid: adb54d379670774f8cb9710c0aebcd00
+      Path: Events\Default Work Unit\Gameplay\Enemy\Enemy2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Enemy3
+      guid: cdcb8c8aa0ca9f40b13a5afac24ed200
+      id: 1312765230
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 80af74e9e6a31440a44699de10b7d3b7
+      - ElementName: Gameplay
+        ObjectType: 4
+        guid: f48060d332bc73418ca22a278c7954ca
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: d564c1a73e4e6849be2e9c9e18582268
+      - ElementName: Enemy3
+        ObjectType: 3
+        guid: cdcb8c8aa0ca9f40b13a5afac24ed200
+      Path: Events\Default Work Unit\Gameplay\Enemy\Enemy3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Enemy4
+      guid: bcff598cca10454399105c84be18c0f0
+      id: 1312765225
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 80af74e9e6a31440a44699de10b7d3b7
+      - ElementName: Gameplay
+        ObjectType: 4
+        guid: f48060d332bc73418ca22a278c7954ca
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: d564c1a73e4e6849be2e9c9e18582268
+      - ElementName: Enemy4
+        ObjectType: 3
+        guid: bcff598cca10454399105c84be18c0f0
+      Path: Events\Default Work Unit\Gameplay\Enemy\Enemy4
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Gameplay
       guid: f48060d332bc73418ca22a278c7954ca
       id: 89505537
@@ -364,6 +476,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Music_Title
+      guid: 87e8e04f7661304ca7aca0e025faccc6
+      id: 3657496341
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 80af74e9e6a31440a44699de10b7d3b7
+      - ElementName: Music
+        ObjectType: 4
+        guid: 8b1d3675a6d9fd458c0cd4f6f57244fc
+      - ElementName: Music_Title
+        ObjectType: 3
+        guid: 87e8e04f7661304ca7aca0e025faccc6
+      Path: Events\Default Work Unit\Music\Music_Title
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: pause
       guid: c860ea7ba40eb64d92168469c9432bc8
       id: 3092587493
@@ -404,9 +536,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: PlayerDeadWIP
+    - name: PlayerDead
       guid: 0f303def1bb02c488ec5e05d66c4053a
-      id: 3516097432
+      id: 2356585300
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -417,13 +549,13 @@ MonoBehaviour:
       - ElementName: Gameplay
         ObjectType: 4
         guid: f48060d332bc73418ca22a278c7954ca
-      - ElementName: PlayerDeadWIP
+      - ElementName: PlayerDead
         ObjectType: 3
         guid: 0f303def1bb02c488ec5e05d66c4053a
-      Path: Events\Default Work Unit\Gameplay\PlayerDeadWIP
+      Path: Events\Default Work Unit\Gameplay\PlayerDead
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: PlayerMoveLoop
       guid: f4607c771143a5418e2408cd740203da
       id: 3150453395
@@ -504,6 +636,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_Enemy
+      guid: 6b3a1492083e3946b6309a88d80514f4
+      id: 117244396
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 80af74e9e6a31440a44699de10b7d3b7
+      - ElementName: Gameplay
+        ObjectType: 4
+        guid: f48060d332bc73418ca22a278c7954ca
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: d564c1a73e4e6849be2e9c9e18582268
+      - ElementName: Stop_Enemy
+        ObjectType: 3
+        guid: 6b3a1492083e3946b6309a88d80514f4
+      Path: Events\Default Work Unit\Gameplay\Enemy\Stop_Enemy
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: stop_music
       guid: e0eb7000573a864cb68858dd1855327e
       id: 2837384057
@@ -553,7 +708,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 07d0d8fc5cd42546b1a29ffe069fe58e
     GuidInternal: 
-    m_lastTime: -8584636895049263016
+    m_lastTime: -8584636854879306484
     List:
     - name: emotionDistance
       guid: 1aaa8b6d497ce94bbbf5b17ab6e3a690
@@ -743,8 +898,90 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: a30d40e3673a8e4bae389d694eeed8eb
     GuidInternal: 
-    m_lastTime: -8584636935602570242
+    m_lastTime: -8584636854872724860
     List:
+    - name: Enemy
+      guid: a81c824468fbed48a6d840ce07ac8c38
+      id: 2299321487
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a30d40e3673a8e4bae389d694eeed8eb
+      - ElementName: Enemy
+        ObjectType: 11
+        guid: a81c824468fbed48a6d840ce07ac8c38
+      Path: Switches\Default Work Unit\Enemy
+      values:
+      - name: Enemy_1
+        guid: d8299bb4a380454cb3e34391b9e7fb3d
+        id: 1870714583
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a30d40e3673a8e4bae389d694eeed8eb
+        - ElementName: Enemy
+          ObjectType: 11
+          guid: a81c824468fbed48a6d840ce07ac8c38
+        - ElementName: Enemy_1
+          ObjectType: 10
+          guid: d8299bb4a380454cb3e34391b9e7fb3d
+      - name: Enemy_2
+        guid: bd35b8e1b4c90d43a85f0fe5fbec51a4
+        id: 1870714580
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a30d40e3673a8e4bae389d694eeed8eb
+        - ElementName: Enemy
+          ObjectType: 11
+          guid: a81c824468fbed48a6d840ce07ac8c38
+        - ElementName: Enemy_2
+          ObjectType: 10
+          guid: bd35b8e1b4c90d43a85f0fe5fbec51a4
+      - name: Enemy_3
+        guid: 83d3dab0b8edf84f840dd9ad28c5c5e8
+        id: 1870714581
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a30d40e3673a8e4bae389d694eeed8eb
+        - ElementName: Enemy
+          ObjectType: 11
+          guid: a81c824468fbed48a6d840ce07ac8c38
+        - ElementName: Enemy_3
+          ObjectType: 10
+          guid: 83d3dab0b8edf84f840dd9ad28c5c5e8
+      - name: Enemy_4
+        guid: cbbb20a0f4e0d046a9157befbdb074f0
+        id: 1870714578
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a30d40e3673a8e4bae389d694eeed8eb
+        - ElementName: Enemy
+          ObjectType: 11
+          guid: a81c824468fbed48a6d840ce07ac8c38
+        - ElementName: Enemy_4
+          ObjectType: 10
+          guid: cbbb20a0f4e0d046a9157befbdb074f0
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: Level_Music
       guid: 6f3da1365c85ae44830d9467e82140f2
       id: 1244594577
@@ -985,7 +1222,7 @@ MonoBehaviour:
         guid: e56f86f9da32064490c82076813cdecb
       Path: Triggers\Default Work Unit\Game_Start
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000001000000011000000120000001300000014000000150000001600000017000000180000002c000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000100000001100000012000000130000001400000015000000160000001700000018000000200000002c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

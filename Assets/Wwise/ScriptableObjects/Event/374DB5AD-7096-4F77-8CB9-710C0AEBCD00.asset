@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6a5c5452bc3d0f44991423c8f4eaa28, type: 3}
-  m_Name: EF3D300F-B01B-482C-8EC5-E05D66C4053A
+  m_Name: 374DB5AD-7096-4F77-8CB9-710C0AEBCD00
   m_EditorClassIdentifier: 
-  objectName: PlayerDead
-  id: 2356585300
-  guid: EF3D300F-B01B-482C-8EC5-E05D66C4053A
+  objectName: Enemy2
+  id: 1312765231
+  guid: 374DB5AD-7096-4F77-8CB9-710C0AEBCD00

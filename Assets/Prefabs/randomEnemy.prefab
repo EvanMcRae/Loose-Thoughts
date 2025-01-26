@@ -187,6 +187,10 @@ MonoBehaviour:
   targetPlayer: {x: 0, y: 0, z: 0}
   handleMovement: 1
   currentDistanceBehindPlayer: 0
+  spawnSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   canMove: 0
   startWaitTime: 0
   objectThatHasMovePositions: {fileID: 7075103466334788645}
@@ -370,6 +374,10 @@ MonoBehaviour:
   targetPlayer: {x: 0, y: 0, z: 0}
   handleMovement: 1
   currentDistanceBehindPlayer: 0
+  spawnSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: adbf1408d3902954280a6485bd4c2d63, type: 2}
 --- !u!1 &8146120549275968757
 GameObject:
   m_ObjectHideFlags: 0

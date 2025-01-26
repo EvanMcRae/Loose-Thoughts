@@ -6,11 +6,13 @@ public class Obstacle : MonoBehaviour
     public Vector3 targetPlayer;
     public bool handleMovement = true;
     public float currentDistanceBehindPlayer;
+    public AK.Wwise.Event spawnSound;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public virtual void Start()
     {
         targetPlayer = GameObject.FindWithTag("Player").transform.position;
+        spawnSound?.Post(gameObject);
     }
 
     // Update is called once per frame

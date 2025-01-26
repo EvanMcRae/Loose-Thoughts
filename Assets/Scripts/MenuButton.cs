@@ -40,7 +40,7 @@ public class MenuButton : MonoBehaviour, IPointerMoveHandler
 
     public void OnPointerMove(PointerEventData eventData)
     {
-        if (eventData.hovered.Contains(gameObject) && EventSystem.current.currentSelectedGameObject != gameObject)
+        if (eventData.hovered.Contains(gameObject) && EventSystem.current?.currentSelectedGameObject != gameObject)
         {
             EventSystem.current.SetSelectedGameObject(gameObject);
         }

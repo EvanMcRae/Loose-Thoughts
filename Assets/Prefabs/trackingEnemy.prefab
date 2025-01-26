@@ -50,7 +50,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  targetPlayer: {x: 0, y: 0, z: 0}
   handleMovement: 1
+  currentDistanceBehindPlayer: 0
+  spawnSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   objectThatHasMovePositions: {fileID: 6563675131645363478}
   cc: {fileID: 2298476907248777401}
   target: {fileID: 0}
@@ -305,4 +311,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  targetPlayer: {x: 0, y: 0, z: 0}
   handleMovement: 1
+  currentDistanceBehindPlayer: 0
+  spawnSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 81e8673c3fa7a6749a412fad53431e0d, type: 2}
