@@ -1762,7 +1762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1705055798969219868, guid: b3255eb65dec3c249a2ebbe7b3a1d594, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UpdateVSync
+      value: UpdateQuality
       objectReference: {fileID: 0}
     - target: {fileID: 1705055798969219868, guid: b3255eb65dec3c249a2ebbe7b3a1d594, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
