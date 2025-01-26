@@ -233,7 +233,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 2cdfc67d6e61a314f8ebd8a0fc23845d, type: 2}
-  size: 10
+  size: 3
 --- !u!1001 &9154677419677967952
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -361,6 +361,10 @@ PrefabInstance:
     - target: {fileID: 8324404427889982239, guid: 91a246480cc3b4248bfc2eb198932535, type: 3}
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8753197558162797832, guid: 91a246480cc3b4248bfc2eb198932535, type: 3}
+      propertyPath: speed
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 8753197558162797832, guid: 91a246480cc3b4248bfc2eb198932535, type: 3}
       propertyPath: handleMovement
