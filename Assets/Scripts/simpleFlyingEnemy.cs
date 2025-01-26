@@ -28,6 +28,7 @@ public class simpleFlyingEnemy : Obstacle
 
    // public Transform homeBase;
     public float distanceBehindPlayer;
+    public float currentDistanceBehindPlayer;
     // Start is called before the first frame update
     new void Start()
     {
@@ -53,6 +54,7 @@ public class simpleFlyingEnemy : Obstacle
             x = transform.position.x;
             //  transform.position = new Vector3(x, .3f * Mathf.Sin(Time.time * verticalSpeed), 0f);
             print((target.position.x - this.transform.position.x));
+            currentDistanceBehindPlayer = (target.position.x - this.transform.position.x);
             if ((target.position.x - this.transform.position.x) > distanceBehindPlayer)
             {
                 print("too far behind player");
