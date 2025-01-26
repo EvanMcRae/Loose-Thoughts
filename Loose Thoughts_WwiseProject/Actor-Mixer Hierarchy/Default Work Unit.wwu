@@ -881,8 +881,23 @@
 							<ChildrenList>
 								<Sound Name="Enemy Aggro" ID="{DBE019C7-AD9B-4BD3-8546-2BF05AEB91EC}" ShortID="408025880">
 									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1069,8 +1084,23 @@
 								</Sound>
 								<Sound Name="Enemy Aggro_01" ID="{19389F22-A5AC-4310-BD24-3E360793331B}" ShortID="486295079">
 									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1257,8 +1287,23 @@
 								</Sound>
 								<Sound Name="Enemy Aggro_02" ID="{4EC5F749-B430-49D8-A69A-63D357246371}" ShortID="326781944">
 									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1445,8 +1490,23 @@
 								</Sound>
 								<Sound Name="Enemy Aggro_03" ID="{8E064CBA-A0DF-4137-BA9E-20DE980BD546}" ShortID="954022599">
 									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
