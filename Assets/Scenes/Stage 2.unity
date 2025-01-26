@@ -943,6 +943,8 @@ MonoBehaviour:
     chance: 0.25
   - prefab: {fileID: 3820286869311881535, guid: 2d5cc6f3d1294d545b69dad743c29efc, type: 3}
     chance: 0
+  - prefab: {fileID: 5102247510170080051, guid: f4c296b0a859a674d9ef64faf8fb3879, type: 3}
+    chance: 1
   levelSpeed: 1
   bgObjects:
   - prefab: {fileID: 7231720069550683088, guid: 4b7e3cfabc83ce14ebb48736e0e82077, type: 3}
