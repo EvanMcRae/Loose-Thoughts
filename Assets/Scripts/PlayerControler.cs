@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using Mono.Cecil.Cil;
 
 public class PlayerControler : MonoBehaviour
 {
@@ -13,11 +14,12 @@ public class PlayerControler : MonoBehaviour
     //bounds for where player can move (most likely camera)
     private float xMin, xMax;
     private float yMin, yMax;
+    private bool sound = false;
 
     private ZoneTracker zoneTracker;
 
     bool died = false;
-    public AK.Wwise.Event stopMusic, playerDead;
+    public AK.Wwise.Event stopMusic, playerDead, move, stopMove;
     public GameObject WwiseGlobal;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -49,6 +51,21 @@ public class PlayerControler : MonoBehaviour
 
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
+
+        if (vertical != 0)
+        {
+            if (!sound)
+            {
+                sound = true;
+                move?.Post(WwiseGlobal);
+            }
+            
+        }
+        else if (sound)
+        {
+            sound = false;
+            stopMove?.Post(WwiseGlobal);
+        }
 
         //lock player to camera's bounds
         var xValidPosition = Mathf.Clamp(transform.position.x, xMin, xMax);
