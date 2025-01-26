@@ -362,6 +362,10 @@ PrefabInstance:
       propertyPath: handleMovement
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9117204103710451025, guid: 91a246480cc3b4248bfc2eb198932535, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9185307692152827428, guid: 91a246480cc3b4248bfc2eb198932535, type: 3}
       propertyPath: handleMovement
       value: 0
