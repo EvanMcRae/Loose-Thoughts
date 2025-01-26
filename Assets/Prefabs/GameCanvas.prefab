@@ -1045,6 +1045,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2436131086954267836, guid: 812117495129cf24a91e6d1ab7cd5bda, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8728738234468120936}
+    - target: {fileID: 2436131086954267836, guid: 812117495129cf24a91e6d1ab7cd5bda, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateMusicVolume
+      objectReference: {fileID: 0}
     - target: {fileID: 2481940984726898122, guid: 812117495129cf24a91e6d1ab7cd5bda, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -1369,6 +1377,14 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6526143286237306886, guid: 812117495129cf24a91e6d1ab7cd5bda, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8728738234468120936}
+    - target: {fileID: 6526143286237306886, guid: 812117495129cf24a91e6d1ab7cd5bda, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateFullScreen
+      objectReference: {fileID: 0}
     - target: {fileID: 6527160961428576276, guid: 812117495129cf24a91e6d1ab7cd5bda, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -1440,6 +1456,14 @@ PrefabInstance:
     - target: {fileID: 6853905175847941828, guid: 812117495129cf24a91e6d1ab7cd5bda, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -490
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948133117721763531, guid: 812117495129cf24a91e6d1ab7cd5bda, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8728738234468120936}
+    - target: {fileID: 6948133117721763531, guid: 812117495129cf24a91e6d1ab7cd5bda, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateQuality
       objectReference: {fileID: 0}
     - target: {fileID: 7002928599846932032, guid: 812117495129cf24a91e6d1ab7cd5bda, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1533,6 +1557,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PauseMenu, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 8447895092017021571, guid: 812117495129cf24a91e6d1ab7cd5bda, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8728738234468120936}
+    - target: {fileID: 8447895092017021571, guid: 812117495129cf24a91e6d1ab7cd5bda, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateMasterVolume
+      objectReference: {fileID: 0}
     - target: {fileID: 8730390031750496484, guid: 812117495129cf24a91e6d1ab7cd5bda, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -1548,6 +1580,22 @@ PrefabInstance:
     - target: {fileID: 8730390031750496484, guid: 812117495129cf24a91e6d1ab7cd5bda, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8801817127558193375, guid: 812117495129cf24a91e6d1ab7cd5bda, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8728738234468120936}
+    - target: {fileID: 8801817127558193375, guid: 812117495129cf24a91e6d1ab7cd5bda, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateVSync
+      objectReference: {fileID: 0}
+    - target: {fileID: 9009444790785357101, guid: 812117495129cf24a91e6d1ab7cd5bda, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8728738234468120936}
+    - target: {fileID: 9009444790785357101, guid: 812117495129cf24a91e6d1ab7cd5bda, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateSoundVolume
       objectReference: {fileID: 0}
     - target: {fileID: 9131252961531556955, guid: 812117495129cf24a91e6d1ab7cd5bda, type: 3}
       propertyPath: m_AnchorMax.y
