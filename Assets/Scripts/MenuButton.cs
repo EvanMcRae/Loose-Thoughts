@@ -18,7 +18,7 @@ public class MenuButton : MonoBehaviour, IPointerMoveHandler
             noSound = false;
             return;
         }
-        if (MenuManager.firstopen && !MenuManager.busy)
+        if (Crossfade.over && !MenuManager.busy)
         {
             MenuNav?.Post(WwiseGlobal);
         }

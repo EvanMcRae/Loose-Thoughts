@@ -68,6 +68,8 @@ public class ZoneTracker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (PauseMenu.paused) return;
+
         MakeBackgroundElements();
         ObstacleUpdate();
     }

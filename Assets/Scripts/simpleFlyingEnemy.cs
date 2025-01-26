@@ -35,6 +35,8 @@ public class simpleFlyingEnemy : Obstacle
     // Update is called once per frame
    new void Update()
     {
+        if (PauseMenu.paused) return;
+
         //target = Player.instance.transform;
 
         // ignore collision with player depending on several factors

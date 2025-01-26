@@ -26,7 +26,9 @@ public class ScrollingBackground : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        foreach(SpriteRenderer tile in tiles)
+        if (PauseMenu.paused) return;
+
+        foreach (SpriteRenderer tile in tiles)
         {
             tile.transform.position -= Vector3.right * ZoneTracker.main.levelSpeed * Time.deltaTime;
             tile.sprite = sprite;

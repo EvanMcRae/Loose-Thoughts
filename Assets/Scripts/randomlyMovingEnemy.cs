@@ -26,6 +26,8 @@ public class randomlyMovingEnemy : Obstacle
     // Update is called once per frame
     new void Update()
     {
+        if (PauseMenu.paused) return;
+
         if (canMove)
         {
             Vector2 targetDirection = objectThatHasMovePositions.GetComponent<movePositions>().targetLocations[targetIndex].position - transform.position;

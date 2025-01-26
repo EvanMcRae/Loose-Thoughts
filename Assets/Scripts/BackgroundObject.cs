@@ -21,10 +21,10 @@ public class BackgroundObject : MonoBehaviour
     // Update is called once per frame
     public virtual void Update()
     {
-        
+        if (PauseMenu.paused) return;
 
         //Delete if it has not been seen for 2 seconds and is below the camera (it always moves down so no chance its seen again)
-        if(killHeight > transform.position.x)
+        if (killHeight > transform.position.x)
         {
             Destroy(gameObject);
         }

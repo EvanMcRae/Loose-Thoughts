@@ -38,8 +38,28 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: e1a0a38eaaf8a14a8b929b8b4e64b3c4
     GuidInternal: 
-    m_lastTime: -8584637589537469882
+    m_lastTime: -8584636988974380974
     List:
+    - name: Gameplay_Reverb
+      guid: 041e1d4c667bb84e8f4dfc936319342e
+      id: 1396213152
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e1a0a38eaaf8a14a8b929b8b4e64b3c4
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: cbe8d87d62523a4ab5cab88f6f5d449c
+      - ElementName: Gameplay_Reverb
+        ObjectType: 1
+        guid: 041e1d4c667bb84e8f4dfc936319342e
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Gameplay_Reverb
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -128,7 +148,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 80af74e9e6a31440a44699de10b7d3b7
     GuidInternal: 
-    m_lastTime: -8584637404095033673
+    m_lastTime: -8584636988978199268
     List:
     - name: Gameplay
       guid: f48060d332bc73418ca22a278c7954ca
@@ -364,9 +384,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: PlayerMoveWIP
+    - name: PlayerMoveLoop
       guid: f4607c771143a5418e2408cd740203da
-      id: 1557439607
+      id: 3150453395
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -377,10 +397,30 @@ MonoBehaviour:
       - ElementName: Gameplay
         ObjectType: 4
         guid: f48060d332bc73418ca22a278c7954ca
-      - ElementName: PlayerMoveWIP
+      - ElementName: PlayerMoveLoop
         ObjectType: 3
         guid: f4607c771143a5418e2408cd740203da
-      Path: Events\Default Work Unit\Gameplay\PlayerMoveWIP
+      Path: Events\Default Work Unit\Gameplay\PlayerMoveLoop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayerMoveStop
+      guid: e581b460e5de2b44b91a105debec550f
+      id: 4168883761
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 80af74e9e6a31440a44699de10b7d3b7
+      - ElementName: Gameplay
+        ObjectType: 4
+        guid: f48060d332bc73418ca22a278c7954ca
+      - ElementName: PlayerMoveStop
+        ObjectType: 3
+        guid: e581b460e5de2b44b91a105debec550f
+      Path: Events\Default Work Unit\Gameplay\PlayerMoveStop
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -851,7 +891,7 @@ MonoBehaviour:
         guid: e56f86f9da32064490c82076813cdecb
       Path: Triggers\Default Work Unit\Game_Start
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000001000000011000000120000001400000015000000160000002c000000
+  ExpandedWaapiItemIds: 0500000006000000080000000a0000000b0000000c0000000d0000000e0000001000000011000000120000001400000015000000160000002c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

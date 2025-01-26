@@ -37,7 +37,8 @@ public class enemyThatMisses : Obstacle
     // Update is called once per frame
     new void Update()
     {
-        
+        if (PauseMenu.paused) return;
+
         if (playerIsInRange && !isRoaming)
         {
             transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6a5c5452bc3d0f44991423c8f4eaa28, type: 3}
+  m_Name: 0070EBE0-3A57-4C86-B688-58DD1855327E
+  m_EditorClassIdentifier: 
+  objectName: stop_music
+  id: 2837384057
+  guid: 0070EBE0-3A57-4C86-B688-58DD1855327E

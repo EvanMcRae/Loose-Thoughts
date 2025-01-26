@@ -9,7 +9,7 @@ public class MenuManager : MonoBehaviour
     public GameObject settingsButton, settingsExit, settingsPanel;
     public GameObject creditsButton, creditsExit, creditsPanel;
     private GameObject selected;
-    public static bool busy = false, firstopen = false, panelJustClosed = true;
+    public static bool busy = false, panelJustClosed = true;
     [SerializeField] private AK.Wwise.Event StartSound;
     public GameObject WwiseGlobal;
 
@@ -19,12 +19,6 @@ public class MenuManager : MonoBehaviour
     {
         EventSystem.current.SetSelectedGameObject(startButton);
         selected = startButton;
-        Crossfade.current.EndFadeAction(FirstOpen);
-    }
-
-    void FirstOpen()
-    {
-        firstopen = true;
     }
 
     // Update is called once per frame

@@ -32,6 +32,7 @@ public class setMovingEnemy : Obstacle
     // Update is called once per frame
     new void Update()
     {
+        if (PauseMenu.paused) return;
         //if (canMove && !firstWalked)
         //{
         //    firstWalked = true;

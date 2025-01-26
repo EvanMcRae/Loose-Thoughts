@@ -15,8 +15,9 @@ public class Obstacle : MonoBehaviour
     // Update is called once per frame
     public virtual void Update()
     {
+        if (PauseMenu.paused) return;
         //
-        if(handleMovement)
+        if (handleMovement)
             transform.position -= Vector3.right * ZoneTracker.main.levelSpeed * Time.deltaTime;
 
     }

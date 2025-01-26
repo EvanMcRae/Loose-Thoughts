@@ -41,6 +41,8 @@ public class PlayerControler : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (PauseMenu.paused) return;
+
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
