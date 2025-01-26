@@ -237,15 +237,63 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Music_Title" ID="{4FE0E887-6176-4C30-A7AC-A0E025FACCC6}">
+							<ChildrenList>
+								<Action Name="" ID="{39D1756A-7C8E-4940-AC13-AFFB4AB571BE}" ShortID="563252371">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Title" ID="{9C3F13FF-9816-4B63-8621-B61B5B1926B2}" WorkUnitID="{DE946377-8BDB-4C86-9274-C8B82FE7A1C0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Gameplay" ID="{D36080F4-BC32-4173-8CA2-2A278C7954CA}" ShortID="659088836">
 					<ChildrenList>
-						<Event Name="PlayerDeadWIP" ID="{EF3D300F-B01B-482C-8EC5-E05D66C4053A}">
+						<Event Name="PlayerDead" ID="{EF3D300F-B01B-482C-8EC5-E05D66C4053A}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="10"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{38032EE4-AD8B-401B-B246-4139AB3BF992}" ShortID="358610824">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.25"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{7ABB7A3D-015A-4CFB-BBC9-59B2A2F4D777}" WorkUnitID="{DF5606BA-BE2A-47F1-8475-ED5D6F8DB6A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AA09C125-CFCF-443B-9036-69C9BE32E27F}" ShortID="209458178">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GGJ2025-FailureTheme-Final" ID="{103CAEDB-F81D-4002-8211-923E0D1A25CA}" WorkUnitID="{DF5606BA-BE2A-47F1-8475-ED5D6F8DB6A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{1D918D74-EE6F-4172-9DF4-09A9E9374524}" ShortID="163549416">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="4"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{7ABB7A3D-015A-4CFB-BBC9-59B2A2F4D777}" WorkUnitID="{DF5606BA-BE2A-47F1-8475-ED5D6F8DB6A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
 						</Event>
 						<Event Name="PlayerMoveLoop" ID="{777C60F4-4311-41A5-8E24-08CD740203DA}">
 							<PropertyList>
@@ -280,6 +328,108 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="Enemy" ID="{A7C164D5-4E3E-4968-BE2E-9C9E18582268}" ShortID="707637877">
+							<ChildrenList>
+								<Event Name="Enemy1" ID="{66E38021-17E5-4B23-86BD-7C61EFCDB1BD}">
+									<ChildrenList>
+										<Action Name="" ID="{C1679FBB-AA58-49C8-8F3C-0E27A8890913}" ShortID="862930647">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="23"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Enemy_1" ID="{B49B29D8-80A3-4C45-B3E3-4391B9E7FB3D}" WorkUnitID="{E3400DA3-3A67-4B8E-AE38-9D694EEED8EB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{E6309880-0D92-4936-9674-766150727259}" ShortID="20925102">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Enemy Aggro" ID="{78DD6B42-B3DA-4096-8224-287878DD3602}" WorkUnitID="{3822598C-1B6F-4F5F-8111-27C36F5A9990}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Enemy2" ID="{374DB5AD-7096-4F77-8CB9-710C0AEBCD00}">
+									<ChildrenList>
+										<Action Name="" ID="{3AF66564-4DCC-443F-87FF-23515B6111D6}" ShortID="850285407">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="23"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Enemy_2" ID="{E1B835BD-C9B4-430D-A85F-0FE5FBEC51A4}" WorkUnitID="{E3400DA3-3A67-4B8E-AE38-9D694EEED8EB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{695811F4-556A-4B43-9C2C-6FB25548B229}" ShortID="574451636">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Enemy Aggro" ID="{78DD6B42-B3DA-4096-8224-287878DD3602}" WorkUnitID="{3822598C-1B6F-4F5F-8111-27C36F5A9990}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Enemy3" ID="{8A8CCBCD-CAA0-409F-B13A-5AFAC24ED200}">
+									<ChildrenList>
+										<Action Name="" ID="{8AB2E498-0F83-481C-9ACE-831791D4355E}" ShortID="194193058">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="23"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Enemy_3" ID="{B0DAD383-EDB8-4FF8-840D-D9AD28C5C5E8}" WorkUnitID="{E3400DA3-3A67-4B8E-AE38-9D694EEED8EB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{E56CD1BD-9BC5-43FF-9175-3BC18B0D4D31}" ShortID="9111484">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Enemy Aggro" ID="{78DD6B42-B3DA-4096-8224-287878DD3602}" WorkUnitID="{3822598C-1B6F-4F5F-8111-27C36F5A9990}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Enemy4" ID="{8C59FFBC-10CA-4345-9910-5C84BE18C0F0}">
+									<ChildrenList>
+										<Action Name="" ID="{5244C670-70AD-4E8D-9611-1D11739DCEEE}" ShortID="365489012">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="23"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Enemy_4" ID="{A020BBCB-E0F4-46D0-A915-7BEFBDB074F0}" WorkUnitID="{E3400DA3-3A67-4B8E-AE38-9D694EEED8EB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{5D62ACFD-C355-4895-808F-729495462724}" ShortID="681075791">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Enemy Aggro" ID="{78DD6B42-B3DA-4096-8224-287878DD3602}" WorkUnitID="{3822598C-1B6F-4F5F-8111-27C36F5A9990}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_Enemy" ID="{92143A6B-3E08-4639-B630-9A88D80514F4}">
+									<ChildrenList>
+										<Action Name="" ID="{9637FB6C-0E63-484E-BB4B-C832C87FF9BC}" ShortID="787440977">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Enemy Aggro" ID="{78DD6B42-B3DA-4096-8224-287878DD3602}" WorkUnitID="{3822598C-1B6F-4F5F-8111-27C36F5A9990}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

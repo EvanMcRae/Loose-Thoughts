@@ -57,14 +57,15 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="emotionDistance" ID="{6D8BAA1A-7C49-4BE9-BBF5-B17AB6E3A690}"/>
-							<Value>50</Value>
+							<Value>1.13488372093023</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Title" ID="{9C3F13FF-9816-4B63-8621-B61B5B1926B2}"/>
+						<CurrentStateRef Name="Gameplay" ID="{A977CE01-52BC-4F7A-9A9C-9B11A9541CCD}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="L1" ID="{604064F4-08A3-4CD4-99F1-7EF07BD916FC}"/>
+						<CurrentSwitchRef Name="L2" ID="{F20DBC2D-A510-4BE4-9068-6A9996F1DFDA}"/>
+						<CurrentSwitchRef Name="Enemy_1" ID="{B49B29D8-80A3-4C45-B3E3-4391B9E7FB3D}"/>
 						<CurrentSwitchRef Name="U2" ID="{D03485B7-1810-4508-BF66-1AC85279D6E5}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

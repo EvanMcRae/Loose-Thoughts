@@ -12,7 +12,12 @@
 				</Folder>
 				<Folder Name="Gameplay" ID="{227BBCCD-5FF8-453D-9F90-D5548902752F}" ShortID="310245171">
 					<ChildrenList>
-						<GameParameter Name="emotionDistance" ID="{6D8BAA1A-7C49-4BE9-BBF5-B17AB6E3A690}"/>
+						<GameParameter Name="emotionDistance" ID="{6D8BAA1A-7C49-4BE9-BBF5-B17AB6E3A690}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="10"/>
+								<Property Name="Max" Type="Real64" Value="10"/>
+							</PropertyList>
+						</GameParameter>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

@@ -13,6 +13,10 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ENEMY1 = 1312765228U;
+        static const AkUniqueID ENEMY2 = 1312765231U;
+        static const AkUniqueID ENEMY3 = 1312765230U;
+        static const AkUniqueID ENEMY4 = 1312765225U;
         static const AkUniqueID LEVEL_1 = 1290008369U;
         static const AkUniqueID LEVEL_2 = 1290008370U;
         static const AkUniqueID LEVEL_3 = 1290008371U;
@@ -22,13 +26,15 @@ namespace AK
         static const AkUniqueID MENUITEM2 = 371673517U;
         static const AkUniqueID MENUITEM3 = 371673516U;
         static const AkUniqueID MENUITEM4 = 371673515U;
+        static const AkUniqueID MUSIC_TITLE = 3657496341U;
         static const AkUniqueID PAUSE = 3092587493U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
-        static const AkUniqueID PLAYERDEADWIP = 3516097432U;
+        static const AkUniqueID PLAYERDEAD = 2356585300U;
         static const AkUniqueID PLAYERMOVELOOP = 3150453395U;
         static const AkUniqueID PLAYERMOVESTOP = 4168883761U;
         static const AkUniqueID RESUME = 953277036U;
         static const AkUniqueID START_GAME = 1114964412U;
+        static const AkUniqueID STOP_ENEMY = 117244396U;
         static const AkUniqueID STOP_MUSIC = 2837384057U;
     } // namespace EVENTS
 
@@ -50,6 +56,19 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace ENEMY
+        {
+            static const AkUniqueID GROUP = 2299321487U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID ENEMY_1 = 1870714583U;
+                static const AkUniqueID ENEMY_2 = 1870714580U;
+                static const AkUniqueID ENEMY_3 = 1870714581U;
+                static const AkUniqueID ENEMY_4 = 1870714578U;
+            } // namespace SWITCH
+        } // namespace ENEMY
+
         namespace LEVEL_MUSIC
         {
             static const AkUniqueID GROUP = 1244594577U;
