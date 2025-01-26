@@ -120,7 +120,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: ef54bd667708df4fb01d30d7f1556ffa
     GuidInternal: 
-    m_lastTime: -8584636935602620269
+    m_lastTime: -8584636910521608970
     List:
     - name: Main
       guid: 486c0285e4f65b4582c3b1a13233b682
@@ -148,7 +148,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 80af74e9e6a31440a44699de10b7d3b7
     GuidInternal: 
-    m_lastTime: -8584636935610098759
+    m_lastTime: -8584636910524079507
     List:
     - name: Gameplay
       guid: f48060d332bc73418ca22a278c7954ca
@@ -227,6 +227,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Menu_Back
+      guid: 91653091c0468c4d93c0626c53ffc900
+      id: 3063554414
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 80af74e9e6a31440a44699de10b7d3b7
+      - ElementName: UI
+        ObjectType: 4
+        guid: 13ed692357b4ca4382d33b7db98e131c
+      - ElementName: Menu_Back
+        ObjectType: 3
+        guid: 91653091c0468c4d93c0626c53ffc900
+      Path: Events\Default Work Unit\UI\Menu_Back
+      maxAttenuation: 0
+      maxDuration: 1.2258592
+      minDuration: 1.2258592
+    - name: Menu_Toggle
+      guid: 2c7140441986714dbcab78689c6d7fd3
+      id: 3546091535
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 80af74e9e6a31440a44699de10b7d3b7
+      - ElementName: UI
+        ObjectType: 4
+        guid: 13ed692357b4ca4382d33b7db98e131c
+      - ElementName: Menu_Toggle
+        ObjectType: 3
+        guid: 2c7140441986714dbcab78689c6d7fd3
+      Path: Events\Default Work Unit\UI\Menu_Toggle
+      maxAttenuation: 0
+      maxDuration: 0.11111111
+      minDuration: 0.11111111
     - name: Menuitem1
       guid: d97c721fc23bda4da8b25a4bb548bbc5
       id: 371673518
@@ -513,8 +553,39 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 07d0d8fc5cd42546b1a29ffe069fe58e
     GuidInternal: 
-    m_lastTime: -8584636935610088767
+    m_lastTime: -8584636910524010220
     List:
+    - name: emotionDistance
+      guid: 1aaa8b6d497ce94bbbf5b17ab6e3a690
+      id: 4287271261
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 07d0d8fc5cd42546b1a29ffe069fe58e
+      - ElementName: Gameplay
+        ObjectType: 4
+        guid: cdbc7b22f85f3d459f90d5548902752f
+      - ElementName: emotionDistance
+        ObjectType: 13
+        guid: 1aaa8b6d497ce94bbbf5b17ab6e3a690
+      Path: Game Parameters\Default Work Unit\Gameplay\emotionDistance
+    - name: Gameplay
+      guid: cdbc7b22f85f3d459f90d5548902752f
+      id: 89505537
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 07d0d8fc5cd42546b1a29ffe069fe58e
+      - ElementName: Gameplay
+        ObjectType: 4
+        guid: cdbc7b22f85f3d459f90d5548902752f
+      Path: Game Parameters\Default Work Unit\Gameplay
     - name: masterVolume
       guid: d0049763a356774690f97c1adc0f9a3e
       id: 2918011349
@@ -525,10 +596,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 07d0d8fc5cd42546b1a29ffe069fe58e
+      - ElementName: Sound
+        ObjectType: 4
+        guid: 68932e3de3051e459ca36cc3cb3d4642
       - ElementName: masterVolume
         ObjectType: 13
         guid: d0049763a356774690f97c1adc0f9a3e
-      Path: Game Parameters\Default Work Unit\masterVolume
+      Path: Game Parameters\Default Work Unit\Sound\masterVolume
     - name: musicVolume
       guid: 61f5f6c9a63e7d4197d1a96acaf864aa
       id: 2346531308
@@ -539,10 +613,27 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 07d0d8fc5cd42546b1a29ffe069fe58e
+      - ElementName: Sound
+        ObjectType: 4
+        guid: 68932e3de3051e459ca36cc3cb3d4642
       - ElementName: musicVolume
         ObjectType: 13
         guid: 61f5f6c9a63e7d4197d1a96acaf864aa
-      Path: Game Parameters\Default Work Unit\musicVolume
+      Path: Game Parameters\Default Work Unit\Sound\musicVolume
+    - name: Sound
+      guid: 68932e3de3051e459ca36cc3cb3d4642
+      id: 623086306
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 07d0d8fc5cd42546b1a29ffe069fe58e
+      - ElementName: Sound
+        ObjectType: 4
+        guid: 68932e3de3051e459ca36cc3cb3d4642
+      Path: Game Parameters\Default Work Unit\Sound
     - name: soundVolume
       guid: 7be8d1485181934ba9d232726e90694c
       id: 3873835272
@@ -553,10 +644,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 07d0d8fc5cd42546b1a29ffe069fe58e
+      - ElementName: Sound
+        ObjectType: 4
+        guid: 68932e3de3051e459ca36cc3cb3d4642
       - ElementName: soundVolume
         ObjectType: 13
         guid: 7be8d1485181934ba9d232726e90694c
-      Path: Game Parameters\Default Work Unit\soundVolume
+      Path: Game Parameters\Default Work Unit\Sound\soundVolume
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -891,7 +985,7 @@ MonoBehaviour:
         guid: e56f86f9da32064490c82076813cdecb
       Path: Triggers\Default Work Unit\Game_Start
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000007000000080000000a0000000b0000000c0000000d0000000e00000010000000110000001200000014000000150000001600000017000000180000002c000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000001000000011000000120000001300000014000000150000001600000017000000180000002c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

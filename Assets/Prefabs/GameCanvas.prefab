@@ -301,7 +301,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2581671611438742236}
-  - component: {fileID: 3461271448884957270}
   - component: {fileID: 8185239063777397179}
   - component: {fileID: 6423721603069976657}
   - component: {fileID: 3592029406781154215}
@@ -329,31 +328,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3116880287143642303}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3461271448884957270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4052904900499826282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68d5d19ecda5f3447a1980c8e4c8231a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: 90650b91dcadd924f93e7d75c4ccd827, type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  engineLogging: 0
 --- !u!114 &8185239063777397179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,6 +526,14 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 2e3b6e36bcd3fcf40a67a24906100ba3, type: 2}
+  menuClick:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d60d84badc573fe449572053b2cce523, type: 2}
+  menuBack:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ffed2eca66e32284b97899448c5e3e82, type: 2}
   WwiseGlobal: {fileID: 4052904900499826282}
   blurVolume: {fileID: 2151493010068594135}
   settingsButton: {fileID: 7494289741668775145}
@@ -582,7 +564,7 @@ MonoBehaviour:
   MenuAdjust:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: d60d84badc573fe449572053b2cce523, type: 2}
   MenuAdjustStop:
     idInternal: 0
     valueGuidInternal: 
@@ -590,7 +572,7 @@ MonoBehaviour:
   MenuClick:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: d60d84badc573fe449572053b2cce523, type: 2}
 --- !u!1 &7138156359932997834
 GameObject:
   m_ObjectHideFlags: 0
@@ -1925,7 +1907,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5750553417158992481, guid: 403331d7bda37be48b46e16c37b00f86, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5750553417158992481, guid: 403331d7bda37be48b46e16c37b00f86, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1942,6 +1924,10 @@ PrefabInstance:
     - target: {fileID: 5750553417158992481, guid: 403331d7bda37be48b46e16c37b00f86, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PauseMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750553417158992481, guid: 403331d7bda37be48b46e16c37b00f86, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5750553417158992481, guid: 403331d7bda37be48b46e16c37b00f86, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName

@@ -2353,7 +2353,7 @@ MonoBehaviour:
   MenuAdjust:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: d60d84badc573fe449572053b2cce523, type: 2}
   MenuAdjustStop:
     idInternal: 0
     valueGuidInternal: 
@@ -2361,7 +2361,7 @@ MonoBehaviour:
   MenuClick:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: d60d84badc573fe449572053b2cce523, type: 2}
 --- !u!4 &1317406056
 Transform:
   m_ObjectHideFlags: 0
@@ -2895,6 +2895,14 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: e2163c18a314d6c4a8530855ec1b5a4f, type: 2}
+  menuBack:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ffed2eca66e32284b97899448c5e3e82, type: 2}
+  menuClick:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d60d84badc573fe449572053b2cce523, type: 2}
   WwiseGlobal: {fileID: 1328019576}
 --- !u!114 &1782760785
 MonoBehaviour:

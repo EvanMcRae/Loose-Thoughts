@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject menuContainer, unpauseButton;
-    public static bool paused = false, busy = false;
-    public AK.Wwise.Event pause, unpause, stop;
+    public static bool paused = false, busy = false, inSettings = false;
+    public AK.Wwise.Event pause, unpause, stop, menuClick, menuBack;
     public GameObject WwiseGlobal, blurVolume;
     public GameObject settingsButton, settingsExit, settingsPanel;
     private GameObject selected;
@@ -25,7 +25,10 @@ public class PauseMenu : MonoBehaviour
         {
             if (paused)
             {
-                UnPause();
+                if (inSettings)
+                    ExitSettings();
+                else
+                    UnPause();
             }
             else
             {
@@ -51,12 +54,16 @@ public class PauseMenu : MonoBehaviour
         MenuManager.panelJustClosed = false;
     }
 
-    public void UnPause()
+    public void UnPause(bool user = false)
     {
         if (busy)
             stop?.Post(WwiseGlobal);
         else
+        {
+            if (user)
+                menuClick?.Post(WwiseGlobal);
             unpause?.Post(WwiseGlobal);
+        }
         blurVolume.GetComponent<Volume>().weight = 0;
         Time.timeScale = 1;
         menuContainer.SetActive(false);
@@ -76,6 +83,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Return()
     {
+        menuClick?.Post(WwiseGlobal);
         Crossfade.current.StartFadeWithAction(GoToMenu);
         menuContainer.SetActive(false);
         busy = true;
@@ -91,12 +99,16 @@ public class PauseMenu : MonoBehaviour
     public void Settings()
     {
         if (busy) return;
+        inSettings = true;
+        menuClick?.Post(WwiseGlobal);
         settingsPanel.SetActive(true);
         EventSystem.current.SetSelectedGameObject(settingsExit);
     }
 
     public void ExitSettings()
     {
+        menuBack?.Post(WwiseGlobal);
+        inSettings = false;
         SettingsManager.SaveSettings();
         settingsPanel.SetActive(false);
         MenuManager.panelJustClosed = true;

@@ -68,7 +68,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{6161F7CB-5D53-18DD-6D59-7D94C50BC689}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{2C6065AB-8F76-4CF5-00C3-9DA2A895E42E}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -78,23 +78,23 @@
 				</File>
 				<File Id="30987435" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Title_toggle.wav</ShortName>
-					<CachePath>SFX/Title_toggle_A83F0BDB.wem</CachePath>
+					<CachePath>SFX/Title_toggle_A1DBC4EF.wem</CachePath>
 				</File>
 				<File Id="105311199" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bubble move.wav</ShortName>
-					<CachePath>SFX/Bubble move_B9D1D9D3.wem</CachePath>
+					<CachePath>SFX/Bubble move_110D6F1B.wem</CachePath>
 				</File>
 				<File Id="290546571" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bubble move.wav</ShortName>
-					<CachePath>SFX/Bubble move_FA96B4EA.wem</CachePath>
+					<CachePath>SFX/Bubble move_72342E0B.wem</CachePath>
 				</File>
 				<File Id="308358527" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bubble move.wav</ShortName>
-					<CachePath>SFX/Bubble move_6B55FF38.wem</CachePath>
+					<CachePath>SFX/Bubble move_BD89B9D3.wem</CachePath>
 				</File>
 				<File Id="406215122" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bubble move.wav</ShortName>
-					<CachePath>SFX/Bubble move_CDD0011D.wem</CachePath>
+					<CachePath>SFX/Bubble move_1DFDB6BE.wem</CachePath>
 				</File>
 				<File Id="425261551" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Connor Guitar Pluck-D.wav</ShortName>
@@ -114,7 +114,7 @@
 				</File>
 				<File Id="632957369" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Connor Guitar Pluck-E.wav</ShortName>
-					<CachePath>SFX/Connor Guitar Pluck-E_48CA0ED2.wem</CachePath>
+					<CachePath>SFX/Connor Guitar Pluck-E_C7276CC0.wem</CachePath>
 				</File>
 				<File Id="679026114" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Title_ Select_Strings A.wav</ShortName>
@@ -126,7 +126,7 @@
 				</File>
 				<File Id="854918030" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bubble move.wav</ShortName>
-					<CachePath>SFX/Bubble move_821D8C70.wem</CachePath>
+					<CachePath>SFX/Bubble move_6E0CF564.wem</CachePath>
 				</File>
 				<File Id="923698779" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Connor Guitar Pluck-C.wav</ShortName>
@@ -409,5 +409,5 @@
 			</Triggers>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B8CD3630-8584-8F87-DDCE-87A69F479C00}</FileHash>
+	<FileHash>{2CE897E9-566A-CA9F-63D7-5E3AC3F43428}</FileHash>
 </SoundBanksInfo>
