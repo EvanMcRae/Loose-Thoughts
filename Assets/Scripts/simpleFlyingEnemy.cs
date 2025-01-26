@@ -119,6 +119,7 @@ public class simpleFlyingEnemy : Obstacle
         if (collision.gameObject.tag == "Player")
         {
             playerIsInRange = true;
+            target = collision.transform;
             isRoaming = false;
             cc.radius += 7;
             //print(isHunterMode);

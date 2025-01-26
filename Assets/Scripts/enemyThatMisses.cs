@@ -96,7 +96,7 @@ public class enemyThatMisses : Obstacle
         {
             playerIsInRange = true;
             isRoaming = false;
-            target = player.transform.position;
+            target = collision.transform.position;
             cc.radius += 7;
         }
 
