@@ -99,7 +99,8 @@ public class PlayerControler : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        die();
+        if (collision.gameObject.layer == 3)
+            die();
     }
 
     public void die(){

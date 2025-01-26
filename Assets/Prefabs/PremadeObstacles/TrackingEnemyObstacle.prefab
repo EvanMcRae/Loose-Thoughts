@@ -108,7 +108,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  targetPlayer: {x: 0, y: 0, z: 0}
   handleMovement: 1
+  currentDistanceBehindPlayer: 0
   size: 10
 --- !u!1 &5389763919252959406
 GameObject:
@@ -252,6 +254,10 @@ PrefabInstance:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4722166534358750008, guid: ed5f999d4d2680943aba9eaf333617c7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6563675131645363478, guid: ed5f999d4d2680943aba9eaf333617c7, type: 3}
       propertyPath: m_Name
       value: trackingEnemy (1)
