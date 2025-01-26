@@ -47,6 +47,9 @@ public class ZoneTracker : MonoBehaviour
 
     public bool finishStarted = false;
 
+    public AK.Wwise.Event stopMusic;
+    public GameObject WwiseGlobal;
+
     //Set Order of zones:
     //They will have a transition picture between them
     //Should order be random or pre-determined?
@@ -108,6 +111,10 @@ public class ZoneTracker : MonoBehaviour
         }
 
         if(Crossfade.changeFinished)
+            if (nextScene == "OutroCutscene")
+            {
+                stopMusic?.Post(WwiseGlobal);
+            }
             SceneManager.LoadScene(nextScene);
 
 

@@ -967,6 +967,11 @@ MonoBehaviour:
   currentScene: Stage 2
   nextScene: Stage 3
   finishStarted: 0
+  stopMusic:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2e3b6e36bcd3fcf40a67a24906100ba3, type: 2}
+  WwiseGlobal: {fileID: 1401141369584940651}
 --- !u!1001 &1661852597
 PrefabInstance:
   m_ObjectHideFlags: 0
