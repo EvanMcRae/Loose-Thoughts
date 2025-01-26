@@ -12,7 +12,9 @@ public class ScrollingBackground : MonoBehaviour
     List<SpriteRenderer> tiles = new List<SpriteRenderer>();
 
     float cameraDistBounds;
-    
+
+    public int renderLayer = 0;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -43,6 +45,7 @@ public class ScrollingBackground : MonoBehaviour
                 xPos = tiles[^1].transform.position.x + scale;
             GameObject addedObj = Instantiate(backgroundTile, new Vector3(xPos, 0, transform.position.z), new Quaternion(), transform);
             tiles.Add(addedObj.GetComponent<SpriteRenderer>());
+            tiles[^1].sortingOrder = renderLayer;
         }
     }
 }
