@@ -113,6 +113,14 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 8d52bfa8f77db7b47920ce86674c82d8, type: 2}
+  move:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8155b98aa71ad4848ba8fe3e2d2463a5, type: 2}
+  stopMove:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: cc3b87029dac3f246ae7cc7188ae8046, type: 2}
   WwiseGlobal: {fileID: 0}
 --- !u!50 &224807343035149764
 Rigidbody2D:
