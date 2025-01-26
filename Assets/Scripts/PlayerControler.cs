@@ -103,7 +103,7 @@ public class PlayerControler : MonoBehaviour
 
     public void ReloadScene()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(ZoneTracker.main.currentScene);
         Time.timeScale = 1;
     }
 }

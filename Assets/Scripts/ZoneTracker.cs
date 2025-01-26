@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class ZoneTracker : MonoBehaviour
 {
@@ -40,6 +41,11 @@ public class ZoneTracker : MonoBehaviour
     public float xMidDeadzonePercent = .80f;
 
     public List<Color> bgColors = new List<Color>();
+
+    public string currentScene;
+    public string nextScene;
+
+    public bool finishStarted = false;
 
     //Set Order of zones:
     //They will have a transition picture between them
@@ -94,7 +100,18 @@ public class ZoneTracker : MonoBehaviour
 
     public void FinishZone()
     {
-        Debug.Log("BeatZone!!");
+        if (!finishStarted)
+        {
+            Debug.Log("BeatZone!!");
+            Crossfade.current.StartFade();
+            finishStarted = true;
+        }
+
+        if(Crossfade.over)
+            SceneManager.LoadScene(nextScene);
+
+
+
     }
 
     void ObstacleUpdate()
