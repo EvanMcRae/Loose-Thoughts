@@ -1006,8 +1006,10 @@ MonoBehaviour:
     chance: 0
   - prefab: {fileID: 5102247510170080051, guid: 862227727b132cf47a18dd70c94b0185, type: 3}
     chance: 0.75
-  - prefab: {fileID: 3820286869311881535, guid: 2d5cc6f3d1294d545b69dad743c29efc, type: 3}
-    chance: 0
+  - prefab: {fileID: 6324564502087543378, guid: 50c7af04145c169448cc8ae6a42a0b0f, type: 3}
+    chance: 1
+  - prefab: {fileID: 4051002595551581943, guid: 497fa4d48e498b24d9581dd3fc5dcbf6, type: 3}
+    chance: 1
   levelSpeed: 1
   bgObjects:
   - prefab: {fileID: 7231720069550683088, guid: 4b7e3cfabc83ce14ebb48736e0e82077, type: 3}
