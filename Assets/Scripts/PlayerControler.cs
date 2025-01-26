@@ -77,7 +77,7 @@ public class PlayerControler : MonoBehaviour
             die();
         }
 
-        if (died && Crossfade.over)
+        if (died && Crossfade.changeFinished)
             ReloadScene();
     }
 

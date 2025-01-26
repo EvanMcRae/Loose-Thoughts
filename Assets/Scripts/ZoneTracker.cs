@@ -107,7 +107,7 @@ public class ZoneTracker : MonoBehaviour
             finishStarted = true;
         }
 
-        if(Crossfade.over)
+        if(Crossfade.changeFinished)
             SceneManager.LoadScene(nextScene);
 
 
