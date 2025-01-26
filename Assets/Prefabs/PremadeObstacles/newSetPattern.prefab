@@ -222,7 +222,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  targetPlayer: {x: 0, y: 0, z: 0}
   handleMovement: 1
+  currentDistanceBehindPlayer: 0
   size: 10
 --- !u!1001 &9154677419677967952
 PrefabInstance:
@@ -315,6 +317,10 @@ PrefabInstance:
     - target: {fileID: 6038589073875890296, guid: 91a246480cc3b4248bfc2eb198932535, type: 3}
       propertyPath: 'targetLocations.Array.data[3]'
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324404427889982239, guid: 91a246480cc3b4248bfc2eb198932535, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8324404427889982239, guid: 91a246480cc3b4248bfc2eb198932535, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x

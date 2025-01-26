@@ -311,6 +311,10 @@ PrefabInstance:
       value: setPatternEnemy (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8324404427889982239, guid: 91a246480cc3b4248bfc2eb198932535, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324404427889982239, guid: 91a246480cc3b4248bfc2eb198932535, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
       value: 0.5
       objectReference: {fileID: 0}
