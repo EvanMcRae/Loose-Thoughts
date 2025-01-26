@@ -264,9 +264,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'carson becker
-
-    luke schultz'
+  m_text: carson becker
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 921193ee3e9cf74478f4037f0ce4673b, type: 2}
   m_sharedMaterial: {fileID: -8619200430199837882, guid: 921193ee3e9cf74478f4037f0ce4673b, type: 2}
@@ -1988,9 +1986,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'sophiecomic font by sophieeeee
-
-'
+  m_text: sophiecomic font by sophieeeee
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 921193ee3e9cf74478f4037f0ce4673b, type: 2}
   m_sharedMaterial: {fileID: -8619200430199837882, guid: 921193ee3e9cf74478f4037f0ce4673b, type: 2}
