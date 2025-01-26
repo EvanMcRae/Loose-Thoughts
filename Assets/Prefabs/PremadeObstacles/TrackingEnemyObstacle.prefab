@@ -208,6 +208,10 @@ PrefabInstance:
       propertyPath: 'targetLocations.Array.data[3]'
       value: 
       objectReference: {fileID: 2852866111274428636}
+    - target: {fileID: 1482583570598398568, guid: ed5f999d4d2680943aba9eaf333617c7, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1509095300079133558, guid: ed5f999d4d2680943aba9eaf333617c7, type: 3}
       propertyPath: handleMovement
       value: 0
@@ -216,6 +220,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3964456937835837535, guid: ed5f999d4d2680943aba9eaf333617c7, type: 3}
+      propertyPath: homeBase
+      value: 
+      objectReference: {fileID: 5727005901577181641}
     - target: {fileID: 3964456937835837535, guid: ed5f999d4d2680943aba9eaf333617c7, type: 3}
       propertyPath: maxRotation
       value: 15
@@ -231,6 +239,14 @@ PrefabInstance:
     - target: {fileID: 3964456937835837535, guid: ed5f999d4d2680943aba9eaf333617c7, type: 3}
       propertyPath: handleMovement
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964456937835837535, guid: ed5f999d4d2680943aba9eaf333617c7, type: 3}
+      propertyPath: distanceBehindPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964456937835837535, guid: ed5f999d4d2680943aba9eaf333617c7, type: 3}
+      propertyPath: distanceFromHomeBase
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4722166534358750008, guid: ed5f999d4d2680943aba9eaf333617c7, type: 3}
       propertyPath: m_Icon

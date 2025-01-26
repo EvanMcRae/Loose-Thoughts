@@ -23,13 +23,18 @@ public class simpleFlyingEnemy : Obstacle
     public bool roamsRandomly = false;
     public float maxRotation;
     private float startSpeed;
+
+    protected bool facingRight = true;
+
+   // public Transform homeBase;
+    public float distanceBehindPlayer;
     // Start is called before the first frame update
     new void Start()
     {
         // targetVector = new Vector2(target.position.x, target.position.y, -8f)
         rb = GetComponent<Rigidbody2D>();
         startSpeed = speed;
-
+        target = GameObject.FindWithTag("Player").transform;
     }
 
     // Update is called once per frame
@@ -47,6 +52,12 @@ public class simpleFlyingEnemy : Obstacle
             transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
             x = transform.position.x;
             //  transform.position = new Vector3(x, .3f * Mathf.Sin(Time.time * verticalSpeed), 0f);
+            print((target.position.x - this.transform.position.x));
+            if ((target.position.x - this.transform.position.x) > distanceBehindPlayer)
+            {
+                print("too far behind player");
+                speed = 0;
+            }
         }
         else if (isRoaming)
         {
@@ -81,14 +92,14 @@ public class simpleFlyingEnemy : Obstacle
             }
         }
 
-        //if (target.position.x > this.transform.position.x && !facingRight)
-        //{
-        //    Flip();
-        //}
-        //else if (target.position.x < this.transform.position.x && facingRight)
-        //{
-        //    Flip();
-        //}
+        if (target.position.x > this.transform.position.x && !facingRight)
+        {
+            Flip();
+        }
+        else if (target.position.x < this.transform.position.x && facingRight)
+        {
+            Flip();
+        }
 
         //if (life <= 0)
         //{
@@ -98,6 +109,17 @@ public class simpleFlyingEnemy : Obstacle
         //        StartCoroutine(DestroyEnemy());
 
         //}
+    }
+
+    public void Flip()
+    {
+        // Switch the way the player is labelled as facing.
+        facingRight = !facingRight;
+
+        // Multiply the player's x local scale by -1.
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
     }
 
 
