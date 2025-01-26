@@ -791,6 +791,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: trackingEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6563675131645363478, guid: ed5f999d4d2680943aba9eaf333617c7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6660806110155397481, guid: ed5f999d4d2680943aba9eaf333617c7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 34.54
@@ -1071,6 +1075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: not tracking enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 9164108424144441770, guid: 3c071f5313c888742b2a6bb95f30cebf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1150,6 +1158,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: setPatternEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5766418668938882536, guid: 91a246480cc3b4248bfc2eb198932535, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8753197558162797832, guid: 91a246480cc3b4248bfc2eb198932535, type: 3}
       propertyPath: amplitude
       value: 4.57
@@ -1198,6 +1210,10 @@ PrefabInstance:
     - target: {fileID: 7075103466334788645, guid: 452090926e2a9a24d9133b25147bf930, type: 3}
       propertyPath: m_Name
       value: randomEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7075103466334788645, guid: 452090926e2a9a24d9133b25147bf930, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7909459866135831325, guid: 452090926e2a9a24d9133b25147bf930, type: 3}
       propertyPath: m_LocalPosition.x

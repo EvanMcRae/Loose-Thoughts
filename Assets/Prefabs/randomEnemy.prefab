@@ -182,9 +182,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  handleMovement: 1
   canMove: 0
   startWaitTime: 0
   objectThatHasMovePositions: {fileID: 7075103466334788645}
+  maxRotation: 0
 --- !u!1 &3963093878756776900
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,6 +286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  handleMovement: 1
 --- !u!1 &8146120549275968757
 GameObject:
   m_ObjectHideFlags: 0
