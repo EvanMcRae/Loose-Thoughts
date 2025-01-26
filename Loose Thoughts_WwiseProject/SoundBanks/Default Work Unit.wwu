@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Default Work Unit" ID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}" WorkUnitID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{DF5606BA-BE2A-47F1-8475-ED5D6F8DB6A5}" WorkUnitID="{DF5606BA-BE2A-47F1-8475-ED5D6F8DB6A5}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{8EA3A0E1-F8AA-4AA1-8B92-9B8B4E64B3C4}" WorkUnitID="{8EA3A0E1-F8AA-4AA1-8B92-9B8B4E64B3C4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{3822598C-1B6F-4F5F-8111-27C36F5A9990}" WorkUnitID="{3822598C-1B6F-4F5F-8111-27C36F5A9990}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
