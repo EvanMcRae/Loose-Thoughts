@@ -13,6 +13,14 @@
 						<Property Name="QFactorBand2" Type="Real32" Value="16.7"/>
 					</PropertyList>
 				</Effect>
+				<Effect Name="Guitar_Dist" ID="{17CD0666-CD6A-4090-BF62-5CB9DE91D35D}" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+					<PropertyList>
+						<Property Name="DistortionDrive" Type="Real32" Value="29"/>
+						<Property Name="DistortionTone" Type="Real32" Value="100"/>
+						<Property Name="DistortionType" Type="int32" Value="1"/>
+						<Property Name="WetDryMix" Type="Real32" Value="49"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

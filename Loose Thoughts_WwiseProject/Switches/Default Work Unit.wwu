@@ -26,6 +26,14 @@
 						</SwitchGroup>
 					</ChildrenList>
 				</Folder>
+				<SwitchGroup Name="Enemy" ID="{44821CA8-FB68-48ED-A6D8-40CE07AC8C38}">
+					<ChildrenList>
+						<Switch Name="Enemy_1" ID="{B49B29D8-80A3-4C45-B3E3-4391B9E7FB3D}"/>
+						<Switch Name="Enemy_2" ID="{E1B835BD-C9B4-430D-A85F-0FE5FBEC51A4}"/>
+						<Switch Name="Enemy_3" ID="{B0DAD383-EDB8-4FF8-840D-D9AD28C5C5E8}"/>
+						<Switch Name="Enemy_4" ID="{A020BBCB-E0F4-46D0-A915-7BEFBDB074F0}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

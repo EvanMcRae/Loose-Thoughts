@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{1F0C62BD-34F1-8CB1-A72C-6211C099171A}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{59DF1354-2DA6-7422-959B-CB2BBC79C036}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -58,6 +58,14 @@
 						<Switch Id="1702304827" Name="L2"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="2299321487" Name="Enemy">
+					<Switches>
+						<Switch Id="1870714578" Name="Enemy_4"/>
+						<Switch Id="1870714580" Name="Enemy_2"/>
+						<Switch Id="1870714581" Name="Enemy_3"/>
+						<Switch Id="1870714583" Name="Enemy_1"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="2454203527" Name="UISelection">
 					<Switches>
 						<Switch Id="1551306218" Name="U4"/>
@@ -68,7 +76,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{2C6065AB-8F76-4CF5-00C3-9DA2A895E42E}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{AD9FE028-F871-D9D5-1327-7864FB36CB52}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -78,31 +86,31 @@
 				</File>
 				<File Id="30987435" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Title_toggle.wav</ShortName>
-					<CachePath>SFX/Title_toggle_A1DBC4EF.wem</CachePath>
+					<CachePath>SFX/Title_toggle_A83F0BDB.wem</CachePath>
 				</File>
 				<File Id="105311199" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bubble move.wav</ShortName>
-					<CachePath>SFX/Bubble move_110D6F1B.wem</CachePath>
+					<CachePath>SFX/Bubble move_B9D1D9D3.wem</CachePath>
 				</File>
 				<File Id="290546571" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bubble move.wav</ShortName>
-					<CachePath>SFX/Bubble move_72342E0B.wem</CachePath>
+					<CachePath>SFX/Bubble move_FA96B4EA.wem</CachePath>
+				</File>
+				<File Id="294964103" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GGJ2025-Level2-Final.wav</ShortName>
+					<CachePath>SFX/GGJ2025-Level2-Final_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="308358527" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bubble move.wav</ShortName>
-					<CachePath>SFX/Bubble move_BD89B9D3.wem</CachePath>
+					<CachePath>SFX/Bubble move_6B55FF38.wem</CachePath>
 				</File>
 				<File Id="406215122" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bubble move.wav</ShortName>
-					<CachePath>SFX/Bubble move_1DFDB6BE.wem</CachePath>
+					<CachePath>SFX/Bubble move_CDD0011D.wem</CachePath>
 				</File>
 				<File Id="425261551" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Connor Guitar Pluck-D.wav</ShortName>
 					<CachePath>SFX/Connor Guitar Pluck-D_88DBC60B.wem</CachePath>
-				</File>
-				<File Id="545141983" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>GGJ2025-OpeningTrack-Demo.wav</ShortName>
-					<CachePath>SFX/GGJ2025-OpeningTrack-Demo_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="552693933" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GGJ2025-Level1-Demo.wav</ShortName>
@@ -112,9 +120,17 @@
 					<ShortName>Title_ Select_Strings D.wav</ShortName>
 					<CachePath>SFX/Title_ Select_Strings D_289BC6FA.wem</CachePath>
 				</File>
+				<File Id="602895154" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GGJ2025-OpeningTrackVariation-Final.wav</ShortName>
+					<CachePath>SFX/GGJ2025-OpeningTrackVariation-Final_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="632957369" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Connor Guitar Pluck-E.wav</ShortName>
-					<CachePath>SFX/Connor Guitar Pluck-E_C7276CC0.wem</CachePath>
+					<CachePath>SFX/Connor Guitar Pluck-E_48CA0ED2.wem</CachePath>
+				</File>
+				<File Id="656175336" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GGJ2025-FailureTheme-Final.wav</ShortName>
+					<CachePath>SFX/GGJ2025-FailureTheme-Final_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="679026114" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Title_ Select_Strings A.wav</ShortName>
@@ -126,7 +142,7 @@
 				</File>
 				<File Id="854918030" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bubble move.wav</ShortName>
-					<CachePath>SFX/Bubble move_6E0CF564.wem</CachePath>
+					<CachePath>SFX/Bubble move_821D8C70.wem</CachePath>
 				</File>
 				<File Id="923698779" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Connor Guitar Pluck-C.wav</ShortName>
@@ -144,16 +160,311 @@
 					<ShortName>Title_ Select_Strings G.wav</ShortName>
 					<CachePath>SFX/Title_ Select_Strings G_289BC6FA.wem</CachePath>
 				</File>
+				<File Id="1052124032" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GGJ2025-Level3-Final (2).wav</ShortName>
+					<CachePath>SFX/GGJ2025-Level3-Final (2)_FBC78EF0.wem</CachePath>
+				</File>
 			</Media>
 			<Plugins>
+				<Custom>
+					<Plugin Id="139828956" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
+					<Plugin Id="195075693" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
+					<Plugin Id="386370275" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
+					<Plugin Id="551274794" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
+				</Custom>
 				<ShareSets>
 					<Plugin Id="506891147" Name="Plate_Small" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="1990128658" Name="Room_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="3157003241" Name="test" LibName="Wwise Pitch Shifter" LibId="8912899"/>
+					<Plugin Id="3604890626" Name="High_Pass_60Hz" LibName="Wwise Parametric EQ" LibId="6881283"/>
 					<Plugin Id="3940599314" Name="Mid_redux" LibName="Wwise Parametric EQ" LibId="6881283"/>
 				</ShareSets>
 			</Plugins>
 			<Events>
+				<Event Id="1312765228" Name="Enemy1" DurationType="Unknown">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714581"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="195075693"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714580"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="551274794"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714578"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="139828956"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714583" Default="true"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="386370275"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714581"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="195075693"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714580"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="551274794"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714578"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="139828956"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714583" Default="true"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="386370275"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="2299321487" Id="1870714583" Name="Enemy_1"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="1312765231" Name="Enemy2" DurationType="Unknown">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714581"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="195075693"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714580"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="551274794"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714578"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="139828956"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714583" Default="true"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="386370275"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714581"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="195075693"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714580"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="551274794"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714578"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="139828956"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714583" Default="true"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="386370275"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="2299321487" Id="1870714580" Name="Enemy_2"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="1312765230" Name="Enemy3" DurationType="Unknown">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714581"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="195075693"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714580"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="551274794"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714578"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="139828956"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714583" Default="true"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="386370275"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714581"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="195075693"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714580"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="551274794"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714578"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="139828956"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714583" Default="true"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="386370275"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="2299321487" Id="1870714581" Name="Enemy_3"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="1312765225" Name="Enemy4" DurationType="Unknown">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714581"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="195075693"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714580"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="551274794"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714578"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="139828956"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714583" Default="true"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="386370275"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714581"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="195075693"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714580"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="551274794"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714578"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="139828956"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714583" Default="true"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="386370275"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="2299321487" Id="1870714578" Name="Enemy_4"/>
+					</ActionSetSwitch>
+				</Event>
 				<Event Id="1290008369" Name="Level_1" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetSwitch>
 						<ActionSetSwitchEntry GroupId="1244594577" Id="1702304824" Name="L1"/>
@@ -219,6 +530,11 @@
 						<ActionSetSwitchEntry GroupId="2454203527" Id="1551306218" Name="U4"/>
 					</ActionSetSwitch>
 				</Event>
+				<Event Id="3657496341" Name="Music_Title" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3991942870" Id="3705726509" Name="Title"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="3092587493" Name="pause" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2932040671" Name="play_music" DurationType="Infinite">
 					<MediaRefs>
@@ -228,8 +544,8 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="3991942870" Id="3705726509"/>
 							<MediaRefs>
-								<MediaRef Id="545141983"/>
 								<MediaRef Id="596373593"/>
+								<MediaRef Id="602895154"/>
 								<MediaRef Id="679026114"/>
 								<MediaRef Id="962734265"/>
 								<MediaRef Id="1011547132"/>
@@ -248,14 +564,26 @@
 											<PluginRef Id="1990128658"/>
 										</ShareSets>
 									</PluginRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="1244594577" Id="1702304827"/>
+									<MediaRefs>
+										<MediaRef Id="294964103"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="1244594577" Id="1702304826"/>
+									<MediaRefs>
+										<MediaRef Id="1052124032"/>
+									</MediaRefs>
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="3991942870" Id="3705726509"/>
 							<MediaRefs>
-								<MediaRef Id="545141983"/>
 								<MediaRef Id="596373593"/>
+								<MediaRef Id="602895154"/>
 								<MediaRef Id="679026114"/>
 								<MediaRef Id="962734265"/>
 								<MediaRef Id="1011547132"/>
@@ -275,11 +603,111 @@
 										</ShareSets>
 									</PluginRefs>
 								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="1244594577" Id="1702304827"/>
+									<MediaRefs>
+										<MediaRef Id="294964103"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="1244594577" Id="1702304826"/>
+									<MediaRefs>
+										<MediaRef Id="1052124032"/>
+									</MediaRefs>
+								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="3516097432" Name="PlayerDeadWIP" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2356585300" Name="PlayerDead" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="656175336"/>
+						<MediaRef Id="711218583"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3604890626"/>
+						</ShareSets>
+					</PluginRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3991942870" Id="3705726509"/>
+							<MediaRefs>
+								<MediaRef Id="596373593"/>
+								<MediaRef Id="602895154"/>
+								<MediaRef Id="679026114"/>
+								<MediaRef Id="962734265"/>
+								<MediaRef Id="1011547132"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3991942870" Id="89505537"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="1244594577" Id="1702304824"/>
+									<MediaRefs>
+										<MediaRef Id="552693933"/>
+									</MediaRefs>
+									<PluginRefs>
+										<ShareSets>
+											<PluginRef Id="1990128658"/>
+										</ShareSets>
+									</PluginRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="1244594577" Id="1702304827"/>
+									<MediaRefs>
+										<MediaRef Id="294964103"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="1244594577" Id="1702304826"/>
+									<MediaRefs>
+										<MediaRef Id="1052124032"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3991942870" Id="3705726509"/>
+							<MediaRefs>
+								<MediaRef Id="596373593"/>
+								<MediaRef Id="602895154"/>
+								<MediaRef Id="679026114"/>
+								<MediaRef Id="962734265"/>
+								<MediaRef Id="1011547132"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3991942870" Id="89505537"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="1244594577" Id="1702304824"/>
+									<MediaRefs>
+										<MediaRef Id="552693933"/>
+									</MediaRefs>
+									<PluginRefs>
+										<ShareSets>
+											<PluginRef Id="1990128658"/>
+										</ShareSets>
+									</PluginRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="1244594577" Id="1702304827"/>
+									<MediaRefs>
+										<MediaRef Id="294964103"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="1244594577" Id="1702304826"/>
+									<MediaRefs>
+										<MediaRef Id="1052124032"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="3150453395" Name="PlayerMoveLoop" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="105311199"/>
@@ -325,6 +753,42 @@
 						<ActionTriggerEntry Id="733168346" Name="Game_Start"/>
 					</ActionTrigger>
 				</Event>
+				<Event Id="117244396" Name="Stop_Enemy" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714581"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="195075693"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714580"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="551274794"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714578"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="139828956"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2299321487" Id="1870714583" Default="true"/>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="386370275"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="2837384057" Name="stop_music" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<MediaRefs>
 						<MediaRef Id="711218583"/>
@@ -333,8 +797,8 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="3991942870" Id="3705726509"/>
 							<MediaRefs>
-								<MediaRef Id="545141983"/>
 								<MediaRef Id="596373593"/>
+								<MediaRef Id="602895154"/>
 								<MediaRef Id="679026114"/>
 								<MediaRef Id="962734265"/>
 								<MediaRef Id="1011547132"/>
@@ -353,6 +817,18 @@
 											<PluginRef Id="1990128658"/>
 										</ShareSets>
 									</PluginRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="1244594577" Id="1702304827"/>
+									<MediaRefs>
+										<MediaRef Id="294964103"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="1244594577" Id="1702304826"/>
+									<MediaRefs>
+										<MediaRef Id="1052124032"/>
+									</MediaRefs>
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
@@ -377,6 +853,7 @@
 				<GameParameter Id="2346531308" Name="musicVolume"/>
 				<GameParameter Id="2918011349" Name="masterVolume"/>
 				<GameParameter Id="3873835272" Name="soundVolume"/>
+				<GameParameter Id="4287271261" Name="emotionDistance"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="3991942870" Name="Music">
@@ -395,6 +872,14 @@
 						<Switch Id="1702304827" Name="L2"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="2299321487" Name="Enemy">
+					<Switches>
+						<Switch Id="1870714578" Name="Enemy_4"/>
+						<Switch Id="1870714580" Name="Enemy_2"/>
+						<Switch Id="1870714581" Name="Enemy_3"/>
+						<Switch Id="1870714583" Name="Enemy_1"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="2454203527" Name="UISelection">
 					<Switches>
 						<Switch Id="1551306218" Name="U4"/>
@@ -409,5 +894,5 @@
 			</Triggers>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2CE897E9-566A-CA9F-63D7-5E3AC3F43428}</FileHash>
+	<FileHash>{172C9736-5E29-5CB8-F359-6FB50807C649}</FileHash>
 </SoundBanksInfo>
