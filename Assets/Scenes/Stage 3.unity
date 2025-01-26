@@ -993,11 +993,11 @@ MonoBehaviour:
   spawnedObstacles: []
   FullsizeObstaclePool:
   - prefab: {fileID: 6324564502087543378, guid: 0be3410ec4b242f4d9acb1dff35ba26e, type: 3}
-    chance: 1
+    chance: 0
   - prefab: {fileID: 4051002595551581943, guid: d2bcd648c896e2046b88b73958f679d9, type: 3}
-    chance: 1
+    chance: 0.2
   - prefab: {fileID: 5102247510170080051, guid: 862227727b132cf47a18dd70c94b0185, type: 3}
-    chance: 1
+    chance: 0.5
   - prefab: {fileID: 3820286869311881535, guid: 2d5cc6f3d1294d545b69dad743c29efc, type: 3}
     chance: 1
   levelSpeed: 1
