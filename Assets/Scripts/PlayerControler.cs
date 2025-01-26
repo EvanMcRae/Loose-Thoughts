@@ -1,7 +1,6 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
-using Mono.Cecil.Cil;
 
 public class PlayerControler : MonoBehaviour
 {
