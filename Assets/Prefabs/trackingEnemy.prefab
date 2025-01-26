@@ -48,12 +48,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  handleMovement: 1
   objectThatHasMovePositions: {fileID: 6563675131645363478}
   cc: {fileID: 2298476907248777401}
   target: {fileID: 0}
   isRoaming: 1
   startWaitTime: 0
   roamsRandomly: 0
+  maxRotation: 0
 --- !u!58 &2298476907248777401
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -223,3 +225,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  handleMovement: 1
