@@ -59,6 +59,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1715423336929519513}
     m_Modifications:
     - target: {fileID: 758768569280851647, guid: 452090926e2a9a24d9133b25147bf930, type: 3}
+      propertyPath: targetLocations.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 758768569280851647, guid: 452090926e2a9a24d9133b25147bf930, type: 3}
       propertyPath: 'targetLocations.Array.data[2]'
       value: 
       objectReference: {fileID: 0}
