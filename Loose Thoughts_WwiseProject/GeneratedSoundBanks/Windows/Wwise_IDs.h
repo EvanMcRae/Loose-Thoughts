@@ -16,6 +16,8 @@ namespace AK
         static const AkUniqueID LEVEL_1 = 1290008369U;
         static const AkUniqueID LEVEL_2 = 1290008370U;
         static const AkUniqueID LEVEL_3 = 1290008371U;
+        static const AkUniqueID MENU_BACK = 3063554414U;
+        static const AkUniqueID MENU_TOGGLE = 3546091535U;
         static const AkUniqueID MENUITEM1 = 371673518U;
         static const AkUniqueID MENUITEM2 = 371673517U;
         static const AkUniqueID MENUITEM3 = 371673516U;
@@ -77,6 +79,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID EMOTIONDISTANCE = 4287271261U;
         static const AkUniqueID MASTERVOLUME = 2918011349U;
         static const AkUniqueID MUSICVOLUME = 2346531308U;
         static const AkUniqueID SOUNDVOLUME = 3873835272U;

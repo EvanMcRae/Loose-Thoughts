@@ -3,9 +3,18 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{FCD8D007-D45C-4625-B1A2-9FFE069FE58E}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="masterVolume" ID="{639704D0-56A3-4677-90F9-7C1ADC0F9A3E}"/>
-				<GameParameter Name="soundVolume" ID="{48D1E87B-8151-4B93-A9D2-32726E90694C}"/>
-				<GameParameter Name="musicVolume" ID="{C9F6F561-3EA6-417D-97D1-A96ACAF864AA}"/>
+				<Folder Name="Sound" ID="{3D2E9368-05E3-451E-9CA3-6CC3CB3D4642}" ShortID="366769783">
+					<ChildrenList>
+						<GameParameter Name="masterVolume" ID="{639704D0-56A3-4677-90F9-7C1ADC0F9A3E}"/>
+						<GameParameter Name="soundVolume" ID="{48D1E87B-8151-4B93-A9D2-32726E90694C}"/>
+						<GameParameter Name="musicVolume" ID="{C9F6F561-3EA6-417D-97D1-A96ACAF864AA}"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Gameplay" ID="{227BBCCD-5FF8-453D-9F90-D5548902752F}" ShortID="310245171">
+					<ChildrenList>
+						<GameParameter Name="emotionDistance" ID="{6D8BAA1A-7C49-4BE9-BBF5-B17AB6E3A690}"/>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

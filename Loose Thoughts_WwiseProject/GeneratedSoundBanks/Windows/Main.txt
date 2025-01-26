@@ -10,9 +10,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	1290008371	Level_3			\Default Work Unit\Music\Level_3	
 	2837384057	stop_music			\Default Work Unit\Music\stop_music	
 	2932040671	play_music			\Default Work Unit\Music\play_music	
+	3063554414	Menu_Back			\Default Work Unit\UI\Menu_Back	
 	3092587493	pause			\Default Work Unit\Music\pause	
 	3150453395	PlayerMoveLoop			\Default Work Unit\Gameplay\PlayerMoveLoop	
 	3516097432	PlayerDeadWIP			\Default Work Unit\Gameplay\PlayerDeadWIP	
+	3546091535	Menu_Toggle			\Default Work Unit\UI\Menu_Toggle	
 	4168883761	PlayerMoveStop			\Default Work Unit\Gameplay\PlayerMoveStop	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -32,9 +34,9 @@ State	ID	Name	State Group			Notes
 	3705726509	Title	Music			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
-	2346531308	musicVolume			\Default Work Unit\musicVolume	
-	2918011349	masterVolume			\Default Work Unit\masterVolume	
-	3873835272	soundVolume			\Default Work Unit\soundVolume	
+	2346531308	musicVolume			\Default Work Unit\Sound\musicVolume	
+	2918011349	masterVolume			\Default Work Unit\Sound\masterVolume	
+	3873835272	soundVolume			\Default Work Unit\Sound\soundVolume	
 
 Trigger	ID	Name			Wwise Object Path	Notes
 	733168346	Game_Start			\Default Work Unit\Game_Start	
@@ -54,7 +56,8 @@ Effect plug-ins	ID	Name	Type				Notes
 	3940599314	Mid_redux	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	18099641	Connor Guitar Pluck-G	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Connor Guitar Pluck-G_80A622CF.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Connor Guitar Pluck-G		219296
+	18099641	Connor Guitar Pluck-G	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Connor Guitar Pluck-G_80A622CF.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Menu_Back\Connor Guitar Pluck-G		219296
+	30987435	Title_toggle	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Title_toggle_A83F0BDB.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Title_toggle		19696
 	105311199	Bubble move_01	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Bubble move_B9D1D9D3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Bubble move\Bubble move_01		49488
 	290546571	Bubble move_02	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Bubble move_FA96B4EA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Bubble move\Bubble move_02		46744
 	308358527	Bubble move_03	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Bubble move_6B55FF38.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Bubble move\Bubble move_03		42628
@@ -63,11 +66,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	545141983	GGJ2025-OpeningTrack-Demo	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\GGJ2025-OpeningTrack-Demo_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Title\GGJ2025-OpeningTrack-Demo\GGJ2025-OpeningTrack-Demo		11956280
 	552693933	GGJ2025-Level1-Demo	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\GGJ2025-Level1-Demo_9310DC4B.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Gameplay\Level 1\GGJ2025-Level1-Demo\GGJ2025-Level1-Demo		4198496
 	596373593	Strings	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Title_ Select_Strings D_289BC6FA.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Title\GGJ2025-OpeningTrack-Demo\Strings		1310880
+	632957369	Connor Guitar Pluck-E	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Connor Guitar Pluck-E_48CA0ED2.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Menu_Back\Connor Guitar Pluck-E		230616
 	679026114	Strings	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Title_ Select_Strings A_289BC6FA.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Title\GGJ2025-OpeningTrack-Demo\Strings		1310880
 	711218583	Title_ Select_Strings G maj	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Title_ Select_Strings G maj_DC557B79.wem		\Interactive Music Hierarchy\Default Work Unit\Stingers\Title_ Select_Strings G maj\Title_ Select_Strings G maj		1826976
 	854918030	Bubble move	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Bubble move_821D8C70.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Bubble move\Bubble move		63208
-	923698779	Connor Guitar Pluck-C	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Connor Guitar Pluck-C_AAF36A5A.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Connor Guitar Pluck-C		212256
+	923698779	Connor Guitar Pluck-C	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Connor Guitar Pluck-C_AAF36A5A.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Menu_Back\Connor Guitar Pluck-C		212256
 	962734265	Strings	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Title_ Select_Strings C_289BC6FA.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Title\GGJ2025-OpeningTrack-Demo\Strings		1310880
-	1002566941	Connor Guitar Pluck-A	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Connor Guitar Pluck-A_80B71CAD.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Connor Guitar Pluck-A		223600
+	1002566941	Connor Guitar Pluck-A	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Connor Guitar Pluck-A_80B71CAD.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Menu_Back\Connor Guitar Pluck-A		223600
 	1011547132	Strings	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Title_ Select_Strings G_289BC6FA.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Title\GGJ2025-OpeningTrack-Demo\Strings		1310880
 
