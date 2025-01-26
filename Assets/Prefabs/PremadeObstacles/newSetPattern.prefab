@@ -228,7 +228,7 @@ MonoBehaviour:
   spawnSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 35822c18349e9a44bbeccd2733ff05cf, type: 2}
   size: 10
 --- !u!1001 &9154677419677967952
 PrefabInstance:

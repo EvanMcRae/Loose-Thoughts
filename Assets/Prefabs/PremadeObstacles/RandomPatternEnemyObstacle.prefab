@@ -49,6 +49,10 @@ MonoBehaviour:
   targetPlayer: {x: 0, y: 0, z: 0}
   handleMovement: 1
   currentDistanceBehindPlayer: 0
+  spawnSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: bc2cd51f0360ab14283856e3e4b0c6cd, type: 2}
   size: 10
 --- !u!1001 &5679405361471004980
 PrefabInstance:
