@@ -43,6 +43,10 @@ public class enemyThatMisses : Obstacle
         {
             transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
             x = transform.position.x;
+            if(Vector2.Distance(transform.position, target) < .05f)
+            {
+                target = GameObject.FindWithTag("Player").transform.position;
+            }
         }
         else if (isRoaming)
         {

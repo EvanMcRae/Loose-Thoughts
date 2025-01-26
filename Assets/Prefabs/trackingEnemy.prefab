@@ -58,6 +58,7 @@ MonoBehaviour:
   startWaitTime: 0
   roamsRandomly: 0
   maxRotation: 0
+  distanceBehindPlayer: 1
 --- !u!58 &2298476907248777401
 CircleCollider2D:
   m_ObjectHideFlags: 0

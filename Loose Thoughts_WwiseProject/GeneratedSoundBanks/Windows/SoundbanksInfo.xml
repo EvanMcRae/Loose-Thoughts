@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{02D0ADFA-F53B-4662-6022-431D8B2FD20D}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{1F0C62BD-34F1-8CB1-A72C-6211C099171A}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -39,6 +39,7 @@
 				<GameParameter Id="2346531308" Name="musicVolume"/>
 				<GameParameter Id="2918011349" Name="masterVolume"/>
 				<GameParameter Id="3873835272" Name="soundVolume"/>
+				<GameParameter Id="4287271261" Name="emotionDistance"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="3991942870" Name="Music">
@@ -67,7 +68,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{047FCB5A-94C5-CDD4-25DF-C5D4A4C642CC}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{2C6065AB-8F76-4CF5-00C3-9DA2A895E42E}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -75,21 +76,25 @@
 					<ShortName>Connor Guitar Pluck-G.wav</ShortName>
 					<CachePath>SFX/Connor Guitar Pluck-G_80A622CF.wem</CachePath>
 				</File>
+				<File Id="30987435" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Title_toggle.wav</ShortName>
+					<CachePath>SFX/Title_toggle_A1DBC4EF.wem</CachePath>
+				</File>
 				<File Id="105311199" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bubble move.wav</ShortName>
-					<CachePath>SFX/Bubble move_B9D1D9D3.wem</CachePath>
+					<CachePath>SFX/Bubble move_110D6F1B.wem</CachePath>
 				</File>
 				<File Id="290546571" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bubble move.wav</ShortName>
-					<CachePath>SFX/Bubble move_FA96B4EA.wem</CachePath>
+					<CachePath>SFX/Bubble move_72342E0B.wem</CachePath>
 				</File>
 				<File Id="308358527" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bubble move.wav</ShortName>
-					<CachePath>SFX/Bubble move_6B55FF38.wem</CachePath>
+					<CachePath>SFX/Bubble move_BD89B9D3.wem</CachePath>
 				</File>
 				<File Id="406215122" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bubble move.wav</ShortName>
-					<CachePath>SFX/Bubble move_CDD0011D.wem</CachePath>
+					<CachePath>SFX/Bubble move_1DFDB6BE.wem</CachePath>
 				</File>
 				<File Id="425261551" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Connor Guitar Pluck-D.wav</ShortName>
@@ -107,6 +112,10 @@
 					<ShortName>Title_ Select_Strings D.wav</ShortName>
 					<CachePath>SFX/Title_ Select_Strings D_289BC6FA.wem</CachePath>
 				</File>
+				<File Id="632957369" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Connor Guitar Pluck-E.wav</ShortName>
+					<CachePath>SFX/Connor Guitar Pluck-E_C7276CC0.wem</CachePath>
+				</File>
 				<File Id="679026114" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Title_ Select_Strings A.wav</ShortName>
 					<CachePath>SFX/Title_ Select_Strings A_289BC6FA.wem</CachePath>
@@ -117,7 +126,7 @@
 				</File>
 				<File Id="854918030" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bubble move.wav</ShortName>
-					<CachePath>SFX/Bubble move_821D8C70.wem</CachePath>
+					<CachePath>SFX/Bubble move_6E0CF564.wem</CachePath>
 				</File>
 				<File Id="923698779" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Connor Guitar Pluck-C.wav</ShortName>
@@ -159,6 +168,24 @@
 					<ActionSetSwitch>
 						<ActionSetSwitchEntry GroupId="1244594577" Id="1702304826" Name="L3"/>
 					</ActionSetSwitch>
+				</Event>
+				<Event Id="3063554414" Name="Menu_Back" DurationType="OneShot" DurationMin="1.2258592" DurationMax="1.2258592">
+					<MediaRefs>
+						<MediaRef Id="18099641"/>
+						<MediaRef Id="632957369"/>
+						<MediaRef Id="923698779"/>
+						<MediaRef Id="1002566941"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3546091535" Name="Menu_Toggle" DurationType="OneShot" DurationMin="0.11111111" DurationMax="0.11111111">
+					<MediaRefs>
+						<MediaRef Id="30987435"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="506891147"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 				<Event Id="371673518" Name="Menuitem1" DurationType="OneShot" DurationMin="1.2426205" DurationMax="1.2426205">
 					<MediaRefs>
@@ -382,5 +409,5 @@
 			</Triggers>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{CD05EA29-670A-7FE3-434F-302B118F3074}</FileHash>
+	<FileHash>{2CE897E9-566A-CA9F-63D7-5E3AC3F43428}</FileHash>
 </SoundBanksInfo>

@@ -39,7 +39,7 @@ public class setMovingEnemy : Obstacle
         //}
         if (canMove)
         {
-            print("can move");
+            //print("can move");
             Vector2 targetDirection = objectThatHasMovePositions.GetComponent<movePositions>().targetLocations[targetIndex].position - transform.position;
 
             float RotateSpeed = speed * Time.deltaTime;

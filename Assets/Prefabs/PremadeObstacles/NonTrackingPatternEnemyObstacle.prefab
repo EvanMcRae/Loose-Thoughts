@@ -180,6 +180,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5681971624104464432}
     m_Modifications:
+    - target: {fileID: 678275167276336232, guid: 3c071f5313c888742b2a6bb95f30cebf, type: 3}
+      propertyPath: m_Size.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 678275167276336232, guid: 3c071f5313c888742b2a6bb95f30cebf, type: 3}
+      propertyPath: m_Size.y
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3471730673742455748, guid: 3c071f5313c888742b2a6bb95f30cebf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -264,6 +272,18 @@ PrefabInstance:
       propertyPath: 'targetLocations.Array.data[3]'
       value: 
       objectReference: {fileID: 8691351829506640814}
+    - target: {fileID: 6212324496023939962, guid: 3c071f5313c888742b2a6bb95f30cebf, type: 3}
+      propertyPath: m_Radius
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092185298857688720, guid: 3c071f5313c888742b2a6bb95f30cebf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092185298857688720, guid: 3c071f5313c888742b2a6bb95f30cebf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 9164108424144441770, guid: 3c071f5313c888742b2a6bb95f30cebf, type: 3}
       propertyPath: m_Name
       value: not tracking enemy (1)

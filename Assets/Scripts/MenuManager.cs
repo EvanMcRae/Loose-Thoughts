@@ -10,7 +10,7 @@ public class MenuManager : MonoBehaviour
     public GameObject creditsButton, creditsExit, creditsPanel;
     private GameObject selected;
     public static bool busy = false, panelJustClosed = true;
-    [SerializeField] private AK.Wwise.Event StartSound;
+    [SerializeField] private AK.Wwise.Event StartSound, menuBack, menuClick;
     public GameObject WwiseGlobal;
 
 
@@ -42,6 +42,7 @@ public class MenuManager : MonoBehaviour
     {
         if (!busy)
         {
+            menuClick?.Post(WwiseGlobal);
             Crossfade.current.StartFadeWithAction(Play);
             busy = true;
             StartSound?.Post(WwiseGlobal);
@@ -50,13 +51,14 @@ public class MenuManager : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("IntroCutscene");
         busy = false;
     }
 
     public void Settings()
     {
         if (busy) return;
+        menuClick?.Post(WwiseGlobal);
         settingsPanel.SetActive(true);
         EventSystem.current.SetSelectedGameObject(settingsExit);
     }
@@ -65,6 +67,7 @@ public class MenuManager : MonoBehaviour
     {
         SettingsManager.SaveSettings();
         settingsPanel.SetActive(false);
+        menuBack?.Post(WwiseGlobal);
         panelJustClosed = true;
         EventSystem.current.SetSelectedGameObject(settingsButton);
     }
@@ -72,6 +75,7 @@ public class MenuManager : MonoBehaviour
     public void Credits()
     {
         if (busy) return;
+        menuClick?.Post(WwiseGlobal);
         creditsPanel.SetActive(true);
         EventSystem.current.SetSelectedGameObject(creditsExit);
     }
@@ -79,6 +83,7 @@ public class MenuManager : MonoBehaviour
     public void ExitCredits()
     {
         creditsPanel.SetActive(false);
+        menuBack?.Post(WwiseGlobal);
         EventSystem.current.SetSelectedGameObject(creditsButton);
     }
 
@@ -86,6 +91,7 @@ public class MenuManager : MonoBehaviour
     {
         if (!busy)
         {
+            menuClick?.Post(WwiseGlobal);
             Crossfade.current.StartFadeWithAction(ExitGame);
         }
         busy = true;
