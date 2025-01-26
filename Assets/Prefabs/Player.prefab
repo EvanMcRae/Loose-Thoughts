@@ -105,6 +105,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   rb: {fileID: 224807343035149764}
+  stopMusic:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2e3b6e36bcd3fcf40a67a24906100ba3, type: 2}
+  playerDead:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8d52bfa8f77db7b47920ce86674c82d8, type: 2}
+  WwiseGlobal: {fileID: 0}
 --- !u!50 &224807343035149764
 Rigidbody2D:
   serializedVersion: 5

@@ -17,6 +17,8 @@ public class PlayerControler : MonoBehaviour
     private ZoneTracker zoneTracker;
 
     bool died = false;
+    public AK.Wwise.Event stopMusic, playerDead;
+    public GameObject WwiseGlobal;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -102,7 +104,11 @@ public class PlayerControler : MonoBehaviour
 
     public void die(){
         if (!died)
+        {
             Crossfade.current.StartFade();
+            playerDead?.Post(gameObject);
+            stopMusic?.Post(WwiseGlobal);
+        }
         //Time.timeScale = 0;
         died = true;
 
