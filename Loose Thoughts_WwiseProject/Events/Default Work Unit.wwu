@@ -122,6 +122,7 @@
 								<Action Name="" ID="{1D4A1763-6691-4449-8829-4480CBF8BF32}" ShortID="171835936">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -164,6 +165,54 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Level_1" ID="{C38E0BF6-6E96-4B04-A17B-AFA8EB92B470}">
+							<ChildrenList>
+								<Action Name="" ID="{1641A4EE-BF0E-4932-BB65-B48762F58DF5}" ShortID="604288461">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="L1" ID="{604064F4-08A3-4CD4-99F1-7EF07BD916FC}" WorkUnitID="{E3400DA3-3A67-4B8E-AE38-9D694EEED8EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Level_2" ID="{6EA7D787-4D3E-4A59-A022-127669B03210}">
+							<ChildrenList>
+								<Action Name="" ID="{8A525618-55E6-4828-9307-9B09F1F2D616}" ShortID="727147927">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="L2" ID="{F20DBC2D-A510-4BE4-9068-6A9996F1DFDA}" WorkUnitID="{E3400DA3-3A67-4B8E-AE38-9D694EEED8EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Level_3" ID="{6C49873A-A653-48AE-AA11-1F4D38B09204}">
+							<ChildrenList>
+								<Action Name="" ID="{46F5FC2D-FE18-47AB-A1CB-B076971A0B18}" ShortID="855743258">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="L3" ID="{D4502F20-BF75-4E29-A937-14E4D023FCD0}" WorkUnitID="{E3400DA3-3A67-4B8E-AE38-9D694EEED8EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Gameplay" ID="{D36080F4-BC32-4173-8CA2-2A278C7954CA}" ShortID="659088836">
+					<ChildrenList>
+						<Event Name="PlayerDeadWIP" ID="{EF3D300F-B01B-482C-8EC5-E05D66C4053A}"/>
+						<Event Name="PlayerMoveWIP" ID="{777C60F4-4311-41A5-8E24-08CD740203DA}"/>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

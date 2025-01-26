@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A71A6FEA-1EAD-2B2A-6F88-C013F5208DCB}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{EE0C1433-13A1-168A-4281-7CB824691D3C}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -38,9 +38,15 @@
 				</StateGroup>
 			</StateGroups>
 			<SwitchGroups>
+				<SwitchGroup Id="1244594577" Name="Level_Music">
+					<Switches>
+						<Switch Id="1702304824" Name="L1"/>
+						<Switch Id="1702304826" Name="L3"/>
+						<Switch Id="1702304827" Name="L2"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="2454203527" Name="UISelection">
 					<Switches>
-						<Switch Id="1256202815" Name="Play"/>
 						<Switch Id="1551306218" Name="U4"/>
 						<Switch Id="1551306220" Name="U2"/>
 						<Switch Id="1551306221" Name="U3"/>
@@ -49,7 +55,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{F9F5A7E5-9771-D2E6-6B64-D8F99E66B4BC}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{84D54E9F-AEBF-9C97-339E-4B29FC3D3A6E}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -64,6 +70,10 @@
 				<File Id="545141983" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GGJ2025-OpeningTrack-Demo.wav</ShortName>
 					<CachePath>SFX/GGJ2025-OpeningTrack-Demo_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="552693933" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GGJ2025-Level1-Demo.wav</ShortName>
+					<CachePath>SFX/GGJ2025-Level1-Demo_9310DC4B.wem</CachePath>
 				</File>
 				<File Id="596373593" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Title_ Select_Strings D.wav</ShortName>
@@ -94,7 +104,27 @@
 					<CachePath>SFX/Title_ Select_Strings G_289BC6FA.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="1990128658" Name="Room_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
+				<Event Id="1290008369" Name="Level_1" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="1244594577" Id="1702304824" Name="L1"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="1290008370" Name="Level_2" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="1244594577" Id="1702304827" Name="L2"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="1290008371" Name="Level_3" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry GroupId="1244594577" Id="1702304826" Name="L3"/>
+					</ActionSetSwitch>
+				</Event>
 				<Event Id="371673518" Name="Menuitem1" DurationType="OneShot" DurationMin="1.2426205" DurationMax="1.2426205">
 					<MediaRefs>
 						<MediaRef Id="18099641"/>
@@ -144,6 +174,22 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3991942870" Id="89505537"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="1244594577" Id="1702304824"/>
+									<MediaRefs>
+										<MediaRef Id="552693933"/>
+									</MediaRefs>
+									<PluginRefs>
+										<ShareSets>
+											<PluginRef Id="1990128658"/>
+										</ShareSets>
+									</PluginRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="3991942870" Id="3705726509"/>
 							<MediaRefs>
 								<MediaRef Id="545141983"/>
@@ -153,8 +199,26 @@
 								<MediaRef Id="1011547132"/>
 							</MediaRefs>
 						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3991942870" Id="89505537"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="1244594577" Id="1702304824"/>
+									<MediaRefs>
+										<MediaRef Id="552693933"/>
+									</MediaRefs>
+									<PluginRefs>
+										<ShareSets>
+											<PluginRef Id="1990128658"/>
+										</ShareSets>
+									</PluginRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="3516097432" Name="PlayerDeadWIP" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1557439607" Name="PlayerMoveWIP" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="953277036" Name="resume" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1114964412" Name="Start_Game" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
@@ -179,6 +243,22 @@
 								<MediaRef Id="1011547132"/>
 							</MediaRefs>
 						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3991942870" Id="89505537"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="1244594577" Id="1702304824"/>
+									<MediaRefs>
+										<MediaRef Id="552693933"/>
+									</MediaRefs>
+									<PluginRefs>
+										<ShareSets>
+											<PluginRef Id="1990128658"/>
+										</ShareSets>
+									</PluginRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
 			</Events>
@@ -192,9 +272,15 @@
 				</StateGroup>
 			</StateGroups>
 			<SwitchGroups>
+				<SwitchGroup Id="1244594577" Name="Level_Music">
+					<Switches>
+						<Switch Id="1702304824" Name="L1"/>
+						<Switch Id="1702304826" Name="L3"/>
+						<Switch Id="1702304827" Name="L2"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="2454203527" Name="UISelection">
 					<Switches>
-						<Switch Id="1256202815" Name="Play"/>
 						<Switch Id="1551306218" Name="U4"/>
 						<Switch Id="1551306220" Name="U2"/>
 						<Switch Id="1551306221" Name="U3"/>
@@ -207,5 +293,5 @@
 			</Triggers>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D8B02D82-994D-3D91-A4AF-42E8811B128A}</FileHash>
+	<FileHash>{F74A4581-0223-36F6-EB58-CE85D95794A9}</FileHash>
 </SoundBanksInfo>

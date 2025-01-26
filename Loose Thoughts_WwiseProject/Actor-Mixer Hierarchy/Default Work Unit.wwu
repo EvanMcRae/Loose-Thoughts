@@ -206,30 +206,16 @@
 							<ObjectRef Name="SFX" ID="{7DD8E8CB-5262-4A3A-B5CA-B88F6F5D449C}" WorkUnitID="{8EA3A0E1-F8AA-4AA1-8B92-9B8B4E64B3C4}"/>
 						</Reference>
 					</ReferenceList>
-					<ChildrenList>
-						<ActorMixer Name="Bubbles" ID="{FDCF8AC6-1422-4BC1-AE1A-A0FA091EA760}" ShortID="826632246">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3497A94-FD36-46E7-B32B-9200EDCE2B05}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8EA3A0E1-F8AA-4AA1-8B92-9B8B4E64B3C4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="Background Pop" ID="{55ED2E67-0B23-4221-A057-E8E21FF65FDD}" ShortID="705942926">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3497A94-FD36-46E7-B32B-9200EDCE2B05}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8EA3A0E1-F8AA-4AA1-8B92-9B8B4E64B3C4}"/>
-										</Reference>
-									</ReferenceList>
-								</RandomSequenceContainer>
-							</ChildrenList>
-						</ActorMixer>
-					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Player" ID="{FF7BE7AF-BB21-4754-BF8B-BE9018BD6B61}" ShortID="988451744">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3497A94-FD36-46E7-B32B-9200EDCE2B05}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8EA3A0E1-F8AA-4AA1-8B92-9B8B4E64B3C4}"/>
+						</Reference>
+					</ReferenceList>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

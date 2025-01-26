@@ -11,7 +11,17 @@
 								<Switch Name="U2" ID="{D03485B7-1810-4508-BF66-1AC85279D6E5}"/>
 								<Switch Name="U3" ID="{58C7DE4A-9978-49D0-933B-7D4CF96BBD09}"/>
 								<Switch Name="U4" ID="{E476DE96-CC28-455C-B166-D2644DE54443}"/>
-								<Switch Name="Play" ID="{1CAC5C57-6016-4D5C-8467-79BD8128D008}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{5BF62D48-9214-45EE-9D33-17A5832F54E0}" ShortID="847210176">
+					<ChildrenList>
+						<SwitchGroup Name="Level_Music" ID="{36A13D6F-855C-44AE-830D-9467E82140F2}">
+							<ChildrenList>
+								<Switch Name="L1" ID="{604064F4-08A3-4CD4-99F1-7EF07BD916FC}"/>
+								<Switch Name="L2" ID="{F20DBC2D-A510-4BE4-9068-6A9996F1DFDA}"/>
+								<Switch Name="L3" ID="{D4502F20-BF75-4E29-A937-14E4D023FCD0}"/>
 							</ChildrenList>
 						</SwitchGroup>
 					</ChildrenList>

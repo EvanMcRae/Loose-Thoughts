@@ -49,9 +49,10 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Title" ID="{9C3F13FF-9816-4B63-8621-B61B5B1926B2}"/>
+						<CurrentStateRef Name="Gameplay" ID="{A977CE01-52BC-4F7A-9A9C-9B11A9541CCD}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="L1" ID="{604064F4-08A3-4CD4-99F1-7EF07BD916FC}"/>
 						<CurrentSwitchRef Name="U3" ID="{58C7DE4A-9978-49D0-933B-7D4CF96BBD09}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

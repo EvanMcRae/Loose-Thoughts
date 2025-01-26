@@ -142,6 +142,13 @@
 								<Property Name="WetDryMix" Type="Real32" Value="30"/>
 							</PropertyList>
 						</Effect>
+						<Effect Name="New_Delay" ID="{81838B81-23F0-4C2C-9F25-62F502F9B5CF}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<PropertyList>
+								<Property Name="DelayTime" Type="Real32" Value="0.36"/>
+								<Property Name="Feedback" Type="Real32" Value="19"/>
+								<Property Name="WetDryMix" Type="Real32" Value="28"/>
+							</PropertyList>
+						</Effect>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Peak Limiter" ID="{836AD450-C7A2-4D04-B731-35228C434FD4}" ShortID="766653803">
@@ -1261,13 +1268,14 @@
 										<Property Name="DecayTime" Type="Real32" Value="1.1"/>
 										<Property Name="Density" Type="Real32" Value="100"/>
 										<Property Name="Diffusion" Type="Real32" Value="46"/>
+										<Property Name="DryLevel" Type="Real32" Value="-6.3"/>
 										<Property Name="ERLevel" Type="Real32" Value="-23"/>
 										<Property Name="Filter1Freq" Type="Real32" Value="590"/>
 										<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
 										<Property Name="Filter3Gain" Type="Real32" Value="-4.5"/>
 										<Property Name="HFDamping" Type="Real32" Value="2.7"/>
 										<Property Name="Quality" Type="int32" Value="12"/>
-										<Property Name="ReverbLevel" Type="Real32" Value="-22"/>
+										<Property Name="ReverbLevel" Type="Real32" Value="-18"/>
 										<Property Name="RoomShape" Type="Real32" Value="55"/>
 										<Property Name="RoomSize" Type="Real32" Value="15"/>
 										<Property Name="StereoWidth" Type="Real32" Value="115"/>
