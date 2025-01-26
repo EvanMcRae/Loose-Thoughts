@@ -847,7 +847,7 @@ GameObject:
   - component: {fileID: 1557603595}
   - component: {fileID: 1557603594}
   m_Layer: 0
-  m_Name: Global Volume
+  m_Name: Vignette
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
