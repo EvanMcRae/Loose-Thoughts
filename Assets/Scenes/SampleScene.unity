@@ -941,15 +941,22 @@ MonoBehaviour:
     chance: 1
   levelSpeed: 1
   bgObjects:
-  - prefab: {fileID: 7231720069550683088, guid: 1c1e9473166f79449b52731811ad1cf7, type: 3}
+  - prefab: {fileID: 7231720069550683088, guid: 4b7e3cfabc83ce14ebb48736e0e82077, type: 3}
     backgroundLayer: 1
     chance: 2
-  - prefab: {fileID: 7231720069550683088, guid: 1c1e9473166f79449b52731811ad1cf7, type: 3}
+  - prefab: {fileID: 7231720069550683088, guid: 4b7e3cfabc83ce14ebb48736e0e82077, type: 3}
     backgroundLayer: 2
     chance: 2
-  BackgroundObjectFrequency: 2
+  BackgroundObjectFrequency: 4
   obstacleSpawnHeight: 4
   bgContainer: {fileID: 263748647}
+  ZoneTimeLength: 60
+  ZoneStartTime: 0
+  xMidDeadzonePercent: 0.55
+  bgColors:
+  - {r: 0.41009048, g: 0.4512141, b: 0.91194963, a: 0.6039216}
+  - {r: 0.7916585, g: 0.41176477, b: 0.9137255, a: 0.6117647}
+  - {r: 0.43117356, g: 0.8113208, b: 0.5498722, a: 0.61960787}
 --- !u!1001 &1661852597
 PrefabInstance:
   m_ObjectHideFlags: 0

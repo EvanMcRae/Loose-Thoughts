@@ -37,6 +37,10 @@ public class ZoneTracker : MonoBehaviour
     public float ZoneTimeLength = 60;
     public float ZoneStartTime = 0;
 
+    public float xMidDeadzonePercent = .80f;
+
+    public List<Color> bgColors = new List<Color>();
+
     //Set Order of zones:
     //They will have a transition picture between them
     //Should order be random or pre-determined?
@@ -155,7 +159,7 @@ public class ZoneTracker : MonoBehaviour
         //}
 
         //Redone to allow for spawning more than one in a frame (will probably not actually change anything)
-        for(float i = Time.deltaTime * BackgroundObjectFrequency - Random.Range(0f, 1f); i > 0; i--)
+        for(float i = Time.deltaTime * BackgroundObjectFrequency * levelSpeed - Random.Range(0f, 1f); i > 0; i--)
         {
             SpawnBackgroundObject();
         }
@@ -210,9 +214,20 @@ public class ZoneTracker : MonoBehaviour
         float playAreaWidth = GetBackgroundLayerStartOffset(chosenObject.backgroundLayer) / Camera.main.aspect;
         float yPos = Random.Range(-playAreaWidth, playAreaWidth);
 
+        if(xMidDeadzonePercent > 0)
+        {
+            yPos = Random.Range(playAreaWidth * xMidDeadzonePercent, playAreaWidth);
+            yPos *= Random.Range(0, 2) % 2 == 0 ? 1 : -1;
+        }
+
         GameObject spawnedObj = Instantiate(chosenObject.prefab, new Vector3( obstacleSpawnHeight + GetBackgroundLayerStartOffset(chosenObject.backgroundLayer), yPos, GetBackgroundLayer(chosenObject.backgroundLayer)), new Quaternion(), bgContainer.transform);
         BackgroundObject bgObj = spawnedObj.GetComponent<BackgroundObject>();
         bgObj.bgLayer = chosenObject.backgroundLayer;
+
+        if(bgColors.Count > 0)
+        {
+            bgObj.rend.color = bgColors[Random.Range(0, bgColors.Count)];
+        }
     }
 
     //modified speed based on current fast forward value
