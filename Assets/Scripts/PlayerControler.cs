@@ -15,6 +15,8 @@ public class PlayerControler : MonoBehaviour
     private float yMin, yMax;
 
     private ZoneTracker zoneTracker;
+
+    bool died = false;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -74,6 +76,9 @@ public class PlayerControler : MonoBehaviour
         if(transform.position.x == xMin){
             die();
         }
+
+        if (died && Crossfade.over)
+            ReloadScene();
     }
 
     void speedChange(float horizontal){
@@ -96,9 +101,12 @@ public class PlayerControler : MonoBehaviour
     }
 
     public void die(){
-        Time.timeScale = 0;
+        if (!died)
+            Crossfade.current.StartFade();
+        //Time.timeScale = 0;
+        died = true;
 
-        ReloadScene();
+        //ReloadScene();
     }
 
     public void ReloadScene()
