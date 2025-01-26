@@ -191,6 +191,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  killSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   canMove: 0
   startWaitTime: 0
   objectThatHasMovePositions: {fileID: 7075103466334788645}
@@ -378,6 +382,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: adbf1408d3902954280a6485bd4c2d63, type: 2}
+  killSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2cdfc67d6e61a314f8ebd8a0fc23845d, type: 2}
 --- !u!1 &8146120549275968757
 GameObject:
   m_ObjectHideFlags: 0

@@ -166,6 +166,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  killSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   cc: {fileID: 6212324496023939962}
   player: {fileID: 0}
   isRoaming: 1
@@ -317,3 +321,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 35822c18349e9a44bbeccd2733ff05cf, type: 2}
+  killSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2cdfc67d6e61a314f8ebd8a0fc23845d, type: 2}

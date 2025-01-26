@@ -135,6 +135,11 @@ public class PlayerControler : MonoBehaviour
 
     public void ReloadScene()
     {
+        var obstacles = FindObjectsByType<Obstacle>(FindObjectsSortMode.None);
+        foreach (Obstacle f in obstacles)
+        {
+            f.KillSound();
+        }
         SceneManager.LoadScene(ZoneTracker.main.currentScene);
         Time.timeScale = 1;
     }

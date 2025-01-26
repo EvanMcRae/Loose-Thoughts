@@ -146,6 +146,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: adbf1408d3902954280a6485bd4c2d63, type: 2}
+  killSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2cdfc67d6e61a314f8ebd8a0fc23845d, type: 2}
   size: 10
 --- !u!1 &4656713679674743032
 GameObject:

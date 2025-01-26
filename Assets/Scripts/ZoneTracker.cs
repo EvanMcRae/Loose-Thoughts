@@ -135,6 +135,7 @@ public class ZoneTracker : MonoBehaviour
 
             if(placedFullSizeObstacles.Count > 0 && placedFullSizeObstacles[0].transform.position.x + placedFullSizeObstacles[0].size < -obstacleSpawnHeight)
             {
+                placedFullSizeObstacles[0].GetComponentInChildren<Obstacle>().KillSound();
                 Destroy(placedFullSizeObstacles[0].gameObject);
                 placedFullSizeObstacles.RemoveAt(0);
             }

@@ -6,7 +6,7 @@ public class Obstacle : MonoBehaviour
     public Vector3 targetPlayer;
     public bool handleMovement = true;
     public float currentDistanceBehindPlayer;
-    public AK.Wwise.Event spawnSound;
+    public AK.Wwise.Event spawnSound, killSound;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public virtual void Start()
@@ -26,5 +26,10 @@ public class Obstacle : MonoBehaviour
         targetPlayer = GameObject.FindWithTag("Player").transform.position;
         currentDistanceBehindPlayer = Vector2.Distance(transform.position, targetPlayer);
         AkSoundEngine.SetRTPCValue("emotionDistance", currentDistanceBehindPlayer, gameObject);
+    }
+
+    public void KillSound()
+    {
+        killSound?.Post(gameObject);
     }
 }
