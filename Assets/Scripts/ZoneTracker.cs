@@ -34,6 +34,9 @@ public class ZoneTracker : MonoBehaviour
 
     public GameObject bgContainer;
 
+    public float ZoneTimeLength = 60;
+    public float ZoneStartTime = 0;
+
     //Set Order of zones:
     //They will have a transition picture between them
     //Should order be random or pre-determined?
@@ -63,6 +66,12 @@ public class ZoneTracker : MonoBehaviour
     {
         main = this;
         levelSpeedMod = levelSpeed;
+        StartZone();
+    }
+
+    public void StartZone()
+    {
+        ZoneStartTime = Time.time;
     }
 
     // Update is called once per frame
@@ -71,13 +80,22 @@ public class ZoneTracker : MonoBehaviour
         if (PauseMenu.paused) return;
 
         MakeBackgroundElements();
+
+        
         ObstacleUpdate();
+        
+        if(ZoneTimeLength + ZoneStartTime <= Time.time && placedFullSizeObstacles.Count == 0)
+            FinishZone();
     }
 
+    public void FinishZone()
+    {
+        Debug.Log("BeatZone!!");
+    }
 
     void ObstacleUpdate()
     {
-        if(placedFullSizeObstacles.Count == 0 || lastObstacleEndPos < obstacleSpawnHeight + 1)
+        if((placedFullSizeObstacles.Count == 0 || lastObstacleEndPos < obstacleSpawnHeight + 1))
         {
             if (FullsizeObstaclePool.Count == 0)
             {
@@ -85,14 +103,16 @@ public class ZoneTracker : MonoBehaviour
                 return;
             }
 
-            GameObject obsToSpawn = GetRandomFullSizeObstacle();
-            float width = obsToSpawn.GetComponent<PremadeObstacle>().size;
+            if (ZoneTimeLength + ZoneStartTime > Time.time)
+            {
+                GameObject obsToSpawn = GetRandomFullSizeObstacle();
+                float width = obsToSpawn.GetComponent<PremadeObstacle>().size;
 
-            GameObject addedObj = Instantiate(obsToSpawn, new Vector3(lastObstacleEndPos + width / 2, 0, 0), new Quaternion());
-            placedFullSizeObstacles.Add(addedObj.GetComponent<PremadeObstacle>());
+                GameObject addedObj = Instantiate(obsToSpawn, new Vector3(lastObstacleEndPos + width / 2, 0, 0), new Quaternion());
+                placedFullSizeObstacles.Add(addedObj.GetComponent<PremadeObstacle>());
+            }   
 
-
-            if(placedFullSizeObstacles[0].transform.position.x + placedFullSizeObstacles[0].size < -obstacleSpawnHeight)
+            if(placedFullSizeObstacles.Count > 0 && placedFullSizeObstacles[0].transform.position.x + placedFullSizeObstacles[0].size < -obstacleSpawnHeight)
             {
                 Destroy(placedFullSizeObstacles[0].gameObject);
                 placedFullSizeObstacles.RemoveAt(0);
