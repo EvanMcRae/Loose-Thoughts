@@ -1059,13 +1059,13 @@
 																				<SegmentShape>Log1</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>4</XPos>
-																				<YPos>76</YPos>
+																				<XPos>1.13488</XPos>
+																				<YPos>100</YPos>
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
 																				<XPos>10</XPos>
-																				<YPos>85</YPos>
+																				<YPos>100</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
@@ -1262,13 +1262,13 @@
 																				<SegmentShape>Log1</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>5</XPos>
-																				<YPos>76</YPos>
+																				<XPos>1.13023</XPos>
+																				<YPos>100</YPos>
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
 																				<XPos>10</XPos>
-																				<YPos>85</YPos>
+																				<YPos>100</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
@@ -1465,13 +1465,13 @@
 																				<SegmentShape>Log1</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>5</XPos>
-																				<YPos>76</YPos>
+																				<XPos>1.09302</XPos>
+																				<YPos>100</YPos>
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
 																				<XPos>10</XPos>
-																				<YPos>85</YPos>
+																				<YPos>100</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
@@ -1666,13 +1666,13 @@
 																				<SegmentShape>Log1</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>5</XPos>
-																				<YPos>76</YPos>
+																				<XPos>1.13023</XPos>
+																				<YPos>100</YPos>
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
 																				<XPos>10</XPos>
-																				<YPos>85</YPos>
+																				<YPos>100</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>

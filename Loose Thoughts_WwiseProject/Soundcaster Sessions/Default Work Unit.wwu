@@ -57,7 +57,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="emotionDistance" ID="{6D8BAA1A-7C49-4BE9-BBF5-B17AB6E3A690}"/>
-							<Value>1.13488372093023</Value>
+							<Value>0.102325581395349</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
