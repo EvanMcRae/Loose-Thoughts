@@ -10,6 +10,9 @@ public class MenuManager : MonoBehaviour
     public GameObject creditsButton, creditsExit, creditsPanel;
     private GameObject selected;
     public static bool busy = false, firstopen = false, panelJustClosed = true;
+    [SerializeField] private AK.Wwise.Event StartSound;
+    public GameObject WwiseGlobal;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -47,6 +50,7 @@ public class MenuManager : MonoBehaviour
         {
             Crossfade.current.StartFadeWithAction(Play);
             busy = true;
+            StartSound?.Post(WwiseGlobal);
         }
     }
 

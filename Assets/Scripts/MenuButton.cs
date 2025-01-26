@@ -5,8 +5,10 @@ using UnityEngine.UI;
 public class MenuButton : MonoBehaviour, IPointerMoveHandler
 {
     public GameObject marker;
+    public GameObject WwiseGlobal;
     [SerializeField] private AK.Wwise.Event MenuNav;
     private bool selected;
+
     public static bool noSound = false, pleaseNoSound = false;
 
     public void OnButtonSelect()
@@ -18,7 +20,7 @@ public class MenuButton : MonoBehaviour, IPointerMoveHandler
         }
         if (MenuManager.firstopen && !MenuManager.busy)
         {
-            MenuNav?.Post(gameObject);
+            MenuNav?.Post(WwiseGlobal);
         }
         selected = true;
         marker.SetActive(true);
