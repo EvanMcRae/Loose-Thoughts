@@ -4,6 +4,10 @@
 		<WorkUnit Name="Default Work Unit" ID="{DF5606BA-BE2A-47F1-8475-ED5D6F8DB6A5}" PersistMode="Standalone">
 			<ChildrenList>
 				<MusicSwitchContainer Name="Music" ID="{7ABB7A3D-015A-4CFB-BBC9-59B2A2F4D777}" ShortID="618681656">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="11"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3497A94-FD36-46E7-B32B-9200EDCE2B05}"/>
@@ -12261,11 +12265,16 @@
 															<Modifier Name="" ID="{854DC8D4-3CCC-4FE7-8C9A-1493C64858E8}">
 																<PropertyList>
 																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="20"/>
+																	<Property Name="Max" Type="Real64" Value="8"/>
 																</PropertyList>
 															</Modifier>
 														</ModifierInfo>
 													</ModifierList>
+												</Property>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>11</Value>
+													</ValueList>
 												</Property>
 												<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>

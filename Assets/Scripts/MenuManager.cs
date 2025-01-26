@@ -50,7 +50,7 @@ public class MenuManager : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("IntroCutscene");
         busy = false;
     }
 

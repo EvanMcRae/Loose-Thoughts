@@ -4,6 +4,10 @@
 		<WorkUnit Name="Default Work Unit" ID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}" PersistMode="Standalone">
 			<ChildrenList>
 				<Folder Name="UI" ID="{2369ED13-B457-43CA-82D3-3B7DB98E131C}" ShortID="974886477">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Event Name="Menuitem1" ID="{1F727CD9-3BC2-4DDA-A8B2-5A4BB548BBC5}">
 							<ChildrenList>
@@ -113,9 +117,35 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Menu_Back" ID="{91306591-46C0-4D8C-93C0-626C53FFC900}">
+							<ChildrenList>
+								<Action Name="" ID="{0E4F1928-D4C7-4AAF-9258-C0F0E5101E1E}" ShortID="706042801">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Menu_Back" ID="{EC8BD5ED-691E-48B9-A291-6858E91E1E8E}" WorkUnitID="{3822598C-1B6F-4F5F-8111-27C36F5A9990}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Menu_Toggle" ID="{4440712C-8619-4D71-BCAB-78689C6D7FD3}">
+							<ChildrenList>
+								<Action Name="" ID="{86F82F0C-3102-4CA3-A3C1-58AC0CCC1D5D}" ShortID="562592947">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Title_toggle" ID="{D6225ACC-5D1C-48A3-A534-FEBC1F5D0F7B}" WorkUnitID="{3822598C-1B6F-4F5F-8111-27C36F5A9990}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{75361D8B-D9A6-45FD-8C0C-D4F6F57244FC}" ShortID="999997589">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="11"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Event Name="stop_music" ID="{0070EBE0-3A57-4C86-B688-58DD1855327E}">
 							<ChildrenList>
@@ -211,8 +241,17 @@
 				</Folder>
 				<Folder Name="Gameplay" ID="{D36080F4-BC32-4173-8CA2-2A278C7954CA}" ShortID="659088836">
 					<ChildrenList>
-						<Event Name="PlayerDeadWIP" ID="{EF3D300F-B01B-482C-8EC5-E05D66C4053A}"/>
+						<Event Name="PlayerDeadWIP" ID="{EF3D300F-B01B-482C-8EC5-E05D66C4053A}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Event>
 						<Event Name="PlayerMoveLoop" ID="{777C60F4-4311-41A5-8E24-08CD740203DA}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
 							<ChildrenList>
 								<Action Name="" ID="{1FE479D6-25A7-4C55-BBEA-BFCDEB50486E}" ShortID="23883727">
 									<ReferenceList>
@@ -224,6 +263,10 @@
 							</ChildrenList>
 						</Event>
 						<Event Name="PlayerMoveStop" ID="{60B481E5-DEE5-442B-B91A-105DEBEC550F}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
 							<ChildrenList>
 								<Action Name="" ID="{4979DB35-CBC3-49A8-B2CB-A6520C89850B}" ShortID="181176783">
 									<PropertyList>

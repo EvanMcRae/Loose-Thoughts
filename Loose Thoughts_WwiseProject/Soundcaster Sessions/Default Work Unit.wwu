@@ -22,12 +22,20 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Menu_Toggle" ID="{4440712C-8619-4D71-BCAB-78689C6D7FD3}" WorkUnitID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="stop_music" ID="{0070EBE0-3A57-4C86-B688-58DD1855327E}" WorkUnitID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}"/>
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Menuitem3" ID="{51BF5F4F-E766-446B-B518-101B37079EAF}" WorkUnitID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}"/>
 							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Menu_Back" ID="{91306591-46C0-4D8C-93C0-626C53FFC900}" WorkUnitID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}"/>
+							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Menuitem4" ID="{35C9532E-6C35-4B28-B3EA-A2A2BC9826DD}" WorkUnitID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}"/>
@@ -47,13 +55,17 @@
 							<GameParameterRef Name="soundVolume" ID="{48D1E87B-8151-4B93-A9D2-32726E90694C}"/>
 							<Value>50</Value>
 						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="emotionDistance" ID="{6D8BAA1A-7C49-4BE9-BBF5-B17AB6E3A690}"/>
+							<Value>50</Value>
+						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Gameplay" ID="{A977CE01-52BC-4F7A-9A9C-9B11A9541CCD}"/>
+						<CurrentStateRef Name="Title" ID="{9C3F13FF-9816-4B63-8621-B61B5B1926B2}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="L1" ID="{604064F4-08A3-4CD4-99F1-7EF07BD916FC}"/>
-						<CurrentSwitchRef Name="U1" ID="{151E60F8-70C3-414A-8FE1-E5301DEB37B3}"/>
+						<CurrentSwitchRef Name="U2" ID="{D03485B7-1810-4508-BF66-1AC85279D6E5}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Gameplay" ID="{6E8B4D05-A276-466F-9FB0-210EB5461127}">
@@ -87,7 +99,10 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Gameplay" ID="{A977CE01-52BC-4F7A-9A9C-9B11A9541CCD}"/>
 					</CurrentStateList>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="L1" ID="{604064F4-08A3-4CD4-99F1-7EF07BD916FC}"/>
+						<CurrentSwitchRef Name="U1" ID="{151E60F8-70C3-414A-8FE1-E5301DEB37B3}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>

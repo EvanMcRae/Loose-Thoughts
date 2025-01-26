@@ -1,0 +1,73 @@
+Event	ID	Name			Wwise Object Path	Notes
+	371673515	Menuitem4			\Default Work Unit\UI\Menuitem4	
+	371673516	Menuitem3			\Default Work Unit\UI\Menuitem3	
+	371673517	Menuitem2			\Default Work Unit\UI\Menuitem2	
+	371673518	Menuitem1			\Default Work Unit\UI\Menuitem1	
+	953277036	resume			\Default Work Unit\Music\resume	
+	1114964412	Start_Game			\Default Work Unit\UI\Start_Game	
+	1290008369	Level_1			\Default Work Unit\Music\Level_1	
+	1290008370	Level_2			\Default Work Unit\Music\Level_2	
+	1290008371	Level_3			\Default Work Unit\Music\Level_3	
+	2837384057	stop_music			\Default Work Unit\Music\stop_music	
+	2932040671	play_music			\Default Work Unit\Music\play_music	
+	3092587493	pause			\Default Work Unit\Music\pause	
+	3150453395	PlayerMoveLoop			\Default Work Unit\Gameplay\PlayerMoveLoop	
+	3516097432	PlayerDeadWIP			\Default Work Unit\Gameplay\PlayerDeadWIP	
+	4168883761	PlayerMoveStop			\Default Work Unit\Gameplay\PlayerMoveStop	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1244594577	Level_Music			\Default Work Unit\Music\Level_Music	
+
+Switch	ID	Name	Switch Group			Notes
+	1702304824	L1	Level_Music			
+	1702304826	L3	Level_Music			
+	1702304827	L2	Level_Music			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3991942870	Music			\Default Work Unit\Music	
+
+State	ID	Name	State Group			Notes
+	89505537	Gameplay	Music			
+	748895195	None	Music			
+	3705726509	Title	Music			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2346531308	musicVolume			\Default Work Unit\musicVolume	
+	2918011349	masterVolume			\Default Work Unit\masterVolume	
+	3873835272	soundVolume			\Default Work Unit\soundVolume	
+
+Trigger	ID	Name			Wwise Object Path	Notes
+	733168346	Game_Start			\Default Work Unit\Game_Start	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	1396213152	Gameplay_Reverb			\Default Work Unit\Master Audio Bus\SFX\Gameplay_Reverb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	506891147	Plate_Small	Wwise RoomVerb			
+	1990128658	Room_Medium	Wwise RoomVerb			
+	3157003241	test	Wwise Pitch Shifter			
+	3940599314	Mid_redux	Wwise Parametric EQ			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	18099641	Connor Guitar Pluck-G	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Connor Guitar Pluck-G_80A622CF.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Connor Guitar Pluck-G		219296
+	105311199	Bubble move_01	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Bubble move_B9D1D9D3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Bubble move\Bubble move_01		49488
+	290546571	Bubble move_02	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Bubble move_FA96B4EA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Bubble move\Bubble move_02		46744
+	308358527	Bubble move_03	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Bubble move_6B55FF38.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Bubble move\Bubble move_03		42628
+	406215122	Bubble move_05	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Bubble move_CDD0011D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Bubble move\Bubble move_05		40772
+	425261551	Connor Guitar Pluck-D	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Connor Guitar Pluck-D_88DBC60B.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Connor Guitar Pluck-D		205500
+	545141983	GGJ2025-OpeningTrack-Demo	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\GGJ2025-OpeningTrack-Demo_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Title\GGJ2025-OpeningTrack-Demo\GGJ2025-OpeningTrack-Demo		11956280
+	552693933	GGJ2025-Level1-Demo	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\GGJ2025-Level1-Demo_9310DC4B.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Gameplay\Level 1\GGJ2025-Level1-Demo\GGJ2025-Level1-Demo		4198496
+	596373593	Strings	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Title_ Select_Strings D_289BC6FA.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Title\GGJ2025-OpeningTrack-Demo\Strings		1310880
+	679026114	Strings	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Title_ Select_Strings A_289BC6FA.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Title\GGJ2025-OpeningTrack-Demo\Strings		1310880
+	711218583	Title_ Select_Strings G maj	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Title_ Select_Strings G maj_DC557B79.wem		\Interactive Music Hierarchy\Default Work Unit\Stingers\Title_ Select_Strings G maj\Title_ Select_Strings G maj		1826976
+	854918030	Bubble move	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Bubble move_821D8C70.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Bubble move\Bubble move		63208
+	923698779	Connor Guitar Pluck-C	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Connor Guitar Pluck-C_AAF36A5A.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Connor Guitar Pluck-C		212256
+	962734265	Strings	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Title_ Select_Strings C_289BC6FA.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Title\GGJ2025-OpeningTrack-Demo\Strings		1310880
+	1002566941	Connor Guitar Pluck-A	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Connor Guitar Pluck-A_80B71CAD.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Connor Guitar Pluck-A		223600
+	1011547132	Strings	Y:\Desktop\Github\GGJ2025\Loose-Thoughts\Loose Thoughts_WwiseProject\.cache\Windows\SFX\Title_ Select_Strings G_289BC6FA.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Title\GGJ2025-OpeningTrack-Demo\Strings		1310880
+
