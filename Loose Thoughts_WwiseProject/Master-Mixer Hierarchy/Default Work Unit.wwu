@@ -53,6 +53,25 @@
 							</ObjectLists>
 						</Bus>
 						<Bus Name="SFX" ID="{7DD8E8CB-5262-4A3A-B5CA-B88F6F5D449C}">
+							<ChildrenList>
+								<AuxBus Name="Gameplay_Reverb" ID="{4C1D1E04-7B66-4EB8-8F4D-FC936319342E}">
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{13D79EC1-2886-4BBA-ADA3-2AA70F8C951F}" ShortID="804499597">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<ObjectRef Name="Plate_Small" ID="{5681977F-CD7F-4D09-AA58-118BEFA48C8C}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</AuxBus>
+							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
 									<Reference>

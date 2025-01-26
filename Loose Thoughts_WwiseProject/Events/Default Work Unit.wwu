@@ -212,7 +212,31 @@
 				<Folder Name="Gameplay" ID="{D36080F4-BC32-4173-8CA2-2A278C7954CA}" ShortID="659088836">
 					<ChildrenList>
 						<Event Name="PlayerDeadWIP" ID="{EF3D300F-B01B-482C-8EC5-E05D66C4053A}"/>
-						<Event Name="PlayerMoveWIP" ID="{777C60F4-4311-41A5-8E24-08CD740203DA}"/>
+						<Event Name="PlayerMoveLoop" ID="{777C60F4-4311-41A5-8E24-08CD740203DA}">
+							<ChildrenList>
+								<Action Name="" ID="{1FE479D6-25A7-4C55-BBEA-BFCDEB50486E}" ShortID="23883727">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bubble move" ID="{5139FE42-11CE-47A7-8AAE-FA27FEE7F2C7}" WorkUnitID="{3822598C-1B6F-4F5F-8111-27C36F5A9990}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayerMoveStop" ID="{60B481E5-DEE5-442B-B91A-105DEBEC550F}">
+							<ChildrenList>
+								<Action Name="" ID="{4979DB35-CBC3-49A8-B2CB-A6520C89850B}" ShortID="181176783">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bubble move" ID="{5139FE42-11CE-47A7-8AAE-FA27FEE7F2C7}" WorkUnitID="{3822598C-1B6F-4F5F-8111-27C36F5A9990}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

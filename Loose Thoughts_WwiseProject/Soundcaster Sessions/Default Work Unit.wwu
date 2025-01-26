@@ -53,8 +53,41 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="L1" ID="{604064F4-08A3-4CD4-99F1-7EF07BD916FC}"/>
-						<CurrentSwitchRef Name="U3" ID="{58C7DE4A-9978-49D0-933B-7D4CF96BBD09}"/>
+						<CurrentSwitchRef Name="U1" ID="{151E60F8-70C3-414A-8FE1-E5301DEB37B3}"/>
 					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Gameplay" ID="{6E8B4D05-A276-466F-9FB0-210EB5461127}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="play_music" ID="{98883931-5EE3-4DC0-9943-3150D7A46196}" WorkUnitID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Level_1" ID="{C38E0BF6-6E96-4B04-A17B-AFA8EB92B470}" WorkUnitID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="pause" ID="{7BEA60C8-0EA4-4DB6-9216-8469C9432BC8}" WorkUnitID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="resume" ID="{3BE74B7F-4FC7-469A-AB24-90C48FA80413}" WorkUnitID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PlayerMoveLoop" ID="{777C60F4-4311-41A5-8E24-08CD740203DA}" WorkUnitID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PlayerMoveStop" ID="{60B481E5-DEE5-442B-B91A-105DEBEC550F}" WorkUnitID="{E974AF80-A3E6-4014-A446-99DE10B7D3B7}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Gameplay" ID="{A977CE01-52BC-4F7A-9A9C-9B11A9541CCD}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>

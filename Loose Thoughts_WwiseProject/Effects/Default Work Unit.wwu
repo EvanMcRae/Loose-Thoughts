@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{912C223A-5024-4735-84F1-687C7BF89B35}" SchemaVersion="119">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{912C223A-5024-4735-84F1-687C7BF89B35}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{912C223A-5024-4735-84F1-687C7BF89B35}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="test" ID="{C5A99048-D0B5-4850-9041-ADF6FFF8A8C0}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3"/>
+				<Effect Name="Mid_redux" ID="{99326429-6C4D-444B-BA70-AF44DF0F3206}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FrequencyBand1" Type="Real32" Value="444"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="512"/>
+						<Property Name="GainBand1" Type="Real32" Value="-2.5"/>
+						<Property Name="GainBand2" Type="Real32" Value="-5.5"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="16.7"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

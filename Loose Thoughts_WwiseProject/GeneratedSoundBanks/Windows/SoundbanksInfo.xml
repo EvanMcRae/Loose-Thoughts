@@ -9,10 +9,13 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{EE0C1433-13A1-168A-4281-7CB824691D3C}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{02D0ADFA-F53B-4662-6022-431D8B2FD20D}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<ShareSets>
+					<Plugin Id="506891147" Name="Plate_Small" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
@@ -23,6 +26,15 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="1396213152" Name="Gameplay_Reverb">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="506891147"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="2346531308" Name="musicVolume"/>
 				<GameParameter Id="2918011349" Name="masterVolume"/>
@@ -55,13 +67,29 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{84D54E9F-AEBF-9C97-339E-4B29FC3D3A6E}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{047FCB5A-94C5-CDD4-25DF-C5D4A4C642CC}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="18099641" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Connor Guitar Pluck-G.wav</ShortName>
 					<CachePath>SFX/Connor Guitar Pluck-G_80A622CF.wem</CachePath>
+				</File>
+				<File Id="105311199" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bubble move.wav</ShortName>
+					<CachePath>SFX/Bubble move_B9D1D9D3.wem</CachePath>
+				</File>
+				<File Id="290546571" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bubble move.wav</ShortName>
+					<CachePath>SFX/Bubble move_FA96B4EA.wem</CachePath>
+				</File>
+				<File Id="308358527" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bubble move.wav</ShortName>
+					<CachePath>SFX/Bubble move_6B55FF38.wem</CachePath>
+				</File>
+				<File Id="406215122" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bubble move.wav</ShortName>
+					<CachePath>SFX/Bubble move_CDD0011D.wem</CachePath>
 				</File>
 				<File Id="425261551" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Connor Guitar Pluck-D.wav</ShortName>
@@ -87,6 +115,10 @@
 					<ShortName>Title_ Select_Strings G maj.wav</ShortName>
 					<CachePath>SFX/Title_ Select_Strings G maj_DC557B79.wem</CachePath>
 				</File>
+				<File Id="854918030" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bubble move.wav</ShortName>
+					<CachePath>SFX/Bubble move_821D8C70.wem</CachePath>
+				</File>
 				<File Id="923698779" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Connor Guitar Pluck-C.wav</ShortName>
 					<CachePath>SFX/Connor Guitar Pluck-C_AAF36A5A.wem</CachePath>
@@ -106,7 +138,10 @@
 			</Media>
 			<Plugins>
 				<ShareSets>
+					<Plugin Id="506891147" Name="Plate_Small" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="1990128658" Name="Room_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="3157003241" Name="test" LibName="Wwise Pitch Shifter" LibId="8912899"/>
+					<Plugin Id="3940599314" Name="Mid_redux" LibName="Wwise Parametric EQ" LibId="6881283"/>
 				</ShareSets>
 			</Plugins>
 			<Events>
@@ -218,7 +253,42 @@
 					</SwitchContainers>
 				</Event>
 				<Event Id="3516097432" Name="PlayerDeadWIP" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1557439607" Name="PlayerMoveWIP" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3150453395" Name="PlayerMoveLoop" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="105311199"/>
+						<MediaRef Id="290546571"/>
+						<MediaRef Id="308358527"/>
+						<MediaRef Id="406215122"/>
+						<MediaRef Id="854918030"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3157003241"/>
+							<PluginRef Id="3940599314"/>
+						</ShareSets>
+					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="1396213152" Name="Gameplay_Reverb"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="4168883761" Name="PlayerMoveStop" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<MediaRefs>
+						<MediaRef Id="105311199"/>
+						<MediaRef Id="290546571"/>
+						<MediaRef Id="308358527"/>
+						<MediaRef Id="406215122"/>
+						<MediaRef Id="854918030"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3157003241"/>
+							<PluginRef Id="3940599314"/>
+						</ShareSets>
+					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="1396213152" Name="Gameplay_Reverb"/>
+					</AuxBusRefs>
+				</Event>
 				<Event Id="953277036" Name="resume" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1114964412" Name="Start_Game" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
@@ -262,6 +332,25 @@
 					</SwitchContainers>
 				</Event>
 			</Events>
+			<Busses>
+				<Bus Id="393239870" Name="SFX"/>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3991942870" Name="Music"/>
+			</Busses>
+			<AuxBusses>
+				<AuxBus Id="1396213152" Name="Gameplay_Reverb">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="506891147"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
+			<GameParameters>
+				<GameParameter Id="2346531308" Name="musicVolume"/>
+				<GameParameter Id="2918011349" Name="masterVolume"/>
+				<GameParameter Id="3873835272" Name="soundVolume"/>
+			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="3991942870" Name="Music">
 					<States>
@@ -293,5 +382,5 @@
 			</Triggers>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F74A4581-0223-36F6-EB58-CE85D95794A9}</FileHash>
+	<FileHash>{CD05EA29-670A-7FE3-434F-302B118F3074}</FileHash>
 </SoundBanksInfo>

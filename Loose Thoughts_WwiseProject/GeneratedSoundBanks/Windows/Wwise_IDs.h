@@ -23,7 +23,8 @@ namespace AK
         static const AkUniqueID PAUSE = 3092587493U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAYERDEADWIP = 3516097432U;
-        static const AkUniqueID PLAYERMOVEWIP = 1557439607U;
+        static const AkUniqueID PLAYERMOVELOOP = 3150453395U;
+        static const AkUniqueID PLAYERMOVESTOP = 4168883761U;
         static const AkUniqueID RESUME = 953277036U;
         static const AkUniqueID START_GAME = 1114964412U;
         static const AkUniqueID STOP_MUSIC = 2837384057U;
@@ -98,6 +99,11 @@ namespace AK
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID SFX = 393239870U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID GAMEPLAY_REVERB = 1396213152U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {
